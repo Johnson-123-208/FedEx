@@ -1,45 +1,25 @@
 import React from 'react';
 
-/**
- * Status Badge component for shipment status display
- * @param {Object} props - Component props
- * @param {string} props.status - Status value
- * @param {string} props.size - Badge size (sm/md/lg)
- */
 const StatusBadge = ({ status, size = 'md' }) => {
     const getStatusClass = (status) => {
-        const statusLower = status.toLowerCase().replace(/_/g, '-');
-        switch (statusLower) {
-            case 'delivered':
-                return 'status-delivered';
-            case 'in-transit':
-            case 'in transit':
-                return 'status-in-transit';
-            case 'pending':
-                return 'status-pending';
-            case 'delayed':
-                return 'status-delayed';
-            case 'out-for-delivery':
-            case 'out for delivery':
-                return 'status-out-for-delivery';
-            default:
-                return 'status-pending';
-        }
+        const s = status.toLowerCase().replace(/[\s_]+/g, '-');
+        if (s.includes('delivered')) return 'badge-success';
+        if (s.includes('transit')) return 'badge-info';
+        if (s.includes('out-for')) return 'badge-warning';
+        if (s.includes('delay') || s.includes('fail') || s.includes('cancel')) return 'badge-error';
+        return 'badge-info';
     };
 
     const sizeClasses = {
-        sm: 'text-xs px-2 py-1',
-        md: 'text-sm px-3 py-1.5',
-        lg: 'text-base px-4 py-2',
-    };
-
-    const formatStatus = (status) => {
-        return status.replace(/_/g, ' ').toUpperCase();
+        sm: 'text-2xs px-2 py-0.5',
+        md: 'text-xs px-2.5 py-1',
+        lg: 'text-sm px-3 py-1.5',
     };
 
     return (
-        <span className={`status-badge ${getStatusClass(status)} ${sizeClasses[size]}`}>
-            {formatStatus(status)}
+        <span className={`badge ${getStatusClass(status)} ${sizeClasses[size]}`}>
+            <span className="w-1.5 h-1.5 rounded-full bg-current opacity-60"></span>
+            {status.replace(/_/g, ' ')}
         </span>
     );
 };

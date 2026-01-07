@@ -4,7 +4,7 @@ import L from 'leaflet';
 import { motion } from 'framer-motion';
 import 'leaflet/dist/leaflet.css';
 
-// Fix for default marker icons in React-Leaflet
+// Fix for default marker icons
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
     iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
@@ -12,10 +12,7 @@ L.Icon.Default.mergeOptions({
     shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
 });
 
-/**
- * Animated route line component
- */
-const AnimatedRoute = ({ positions, color = '#667eea', delay = 0 }) => {
+const AnimatedRoute = ({ positions, color = '#3b82f6', delay = 0 }) => {
     const [visiblePositions, setVisiblePositions] = useState([]);
     const map = useMap();
 
@@ -28,7 +25,7 @@ const AnimatedRoute = ({ positions, color = '#667eea', delay = 0 }) => {
             } else {
                 clearInterval(timer);
             }
-        }, 100 + delay);
+        }, 80 + delay);
 
         return () => clearInterval(timer);
     }, [positions, delay]);
@@ -44,24 +41,18 @@ const AnimatedRoute = ({ positions, color = '#667eea', delay = 0 }) => {
         <Polyline
             positions={visiblePositions}
             color={color}
-            weight={3}
-            opacity={0.7}
-            dashArray="10, 10"
+            weight={4}
+            opacity={0.8}
+            dashArray="1, 0"
         />
     ) : null;
 };
 
-/**
- * Shipment Tracking Map component
- * @param {Object} props - Component props
- * @param {Object} props.shipment - Shipment data with coordinates
- * @param {boolean} props.animated - Enable route animation
- */
 const ShipmentMap = ({ shipment, animated = true }) => {
     if (!shipment || !shipment.coordinates) {
         return (
-            <div className="bg-white rounded-xl shadow-lg p-6 h-96 flex items-center justify-center">
-                <p className="text-gray-500">No map data available</p>
+            <div className="glass-card flex items-center justify-center h-full min-h-[400px]">
+                <p className="text-slate-500">No map data available</p>
             </div>
         );
     }
@@ -72,13 +63,11 @@ const ShipmentMap = ({ shipment, animated = true }) => {
         (origin.lng + destination.lng) / 2
     ];
 
-    // Create curved route between origin and destination
-    const createCurvedRoute = (start, end, numPoints = 50) => {
+    const createCurvedRoute = (start, end, numPoints = 60) => {
         const points = [];
         const latDiff = end.lat - start.lat;
         const lngDiff = end.lng - start.lng;
-
-        // Calculate control point for curve (offset perpendicular to the line)
+        // Curve calculation
         const midLat = (start.lat + end.lat) / 2;
         const midLng = (start.lng + end.lng) / 2;
         const offset = Math.sqrt(latDiff * latDiff + lngDiff * lngDiff) * 0.2;
@@ -91,15 +80,13 @@ const ShipmentMap = ({ shipment, animated = true }) => {
             const lng = (1 - t) * (1 - t) * start.lng + 2 * (1 - t) * t * controlLng + t * t * end.lng;
             points.push([lat, lng]);
         }
-
         return points;
     };
 
     const routePoints = createCurvedRoute(origin, destination);
 
-    // Custom icons
     const originIcon = new L.Icon({
-        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-grey.png',
         shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
         iconSize: [25, 41],
         iconAnchor: [12, 41],
@@ -108,7 +95,7 @@ const ShipmentMap = ({ shipment, animated = true }) => {
     });
 
     const destinationIcon = new L.Icon({
-        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
         shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
         iconSize: [25, 41],
         iconAnchor: [12, 41],
@@ -117,71 +104,48 @@ const ShipmentMap = ({ shipment, animated = true }) => {
     });
 
     return (
-        <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-            className="bg-white rounded-xl shadow-lg p-6"
-        >
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Shipment Route</h3>
-            <div className="h-96 rounded-lg overflow-hidden">
-                <MapContainer
-                    center={center}
-                    zoom={3}
-                    style={{ height: '100%', width: '100%' }}
-                    scrollWheelZoom={false}
-                >
-                    <TileLayer
-                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        <div className="w-full h-full min-h-[400px] relative z-0">
+            <MapContainer
+                center={center}
+                zoom={3}
+                style={{ height: '100%', width: '100%', background: 'transparent' }}
+                scrollWheelZoom={false}
+                attributionControl={false}
+            >
+                <TileLayer
+                    url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+                />
+
+                <Marker position={[origin.lat, origin.lng]} icon={originIcon}>
+                    <Popup className="glass-popup">
+                        <div className="text-center">
+                            <p className="font-semibold text-slate-900">Origin</p>
+                            <p className="text-xs text-slate-600">{shipment.origin}</p>
+                        </div>
+                    </Popup>
+                </Marker>
+
+                <Marker position={[destination.lat, destination.lng]} icon={destinationIcon}>
+                    <Popup className="glass-popup">
+                        <div className="text-center">
+                            <p className="font-semibold text-slate-900">Destination</p>
+                            <p className="text-xs text-slate-600">{shipment.destination}</p>
+                        </div>
+                    </Popup>
+                </Marker>
+
+                {animated ? (
+                    <AnimatedRoute positions={routePoints} color="#3b82f6" />
+                ) : (
+                    <Polyline
+                        positions={routePoints}
+                        color="#3b82f6"
+                        weight={4}
+                        opacity={0.8}
                     />
-
-                    {/* Origin Marker */}
-                    <Marker position={[origin.lat, origin.lng]} icon={originIcon}>
-                        <Popup>
-                            <div className="text-center">
-                                <p className="font-semibold">Origin</p>
-                                <p className="text-sm">{shipment.origin}</p>
-                            </div>
-                        </Popup>
-                    </Marker>
-
-                    {/* Destination Marker */}
-                    <Marker position={[destination.lat, destination.lng]} icon={destinationIcon}>
-                        <Popup>
-                            <div className="text-center">
-                                <p className="font-semibold">Destination</p>
-                                <p className="text-sm">{shipment.destination}</p>
-                            </div>
-                        </Popup>
-                    </Marker>
-
-                    {/* Animated Route */}
-                    {animated ? (
-                        <AnimatedRoute positions={routePoints} color="#667eea" />
-                    ) : (
-                        <Polyline
-                            positions={routePoints}
-                            color="#667eea"
-                            weight={3}
-                            opacity={0.7}
-                            dashArray="10, 10"
-                        />
-                    )}
-                </MapContainer>
-            </div>
-
-            <div className="mt-4 grid grid-cols-2 gap-4">
-                <div className="flex items-center gap-2">
-                    <div className="w-4 h-4 bg-green-500 rounded-full"></div>
-                    <span className="text-sm text-gray-600">Origin: {shipment.origin}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                    <div className="w-4 h-4 bg-red-500 rounded-full"></div>
-                    <span className="text-sm text-gray-600">Destination: {shipment.destination}</span>
-                </div>
-            </div>
-        </motion.div>
+                )}
+            </MapContainer>
+        </div>
     );
 };
 
