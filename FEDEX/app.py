@@ -153,17 +153,31 @@ def track():
             destination_location = result.get('destination')
             timeline = result.get('timeline', [])
             
+            # --- VALIDATION: Filter out bad scrapes (e.g. Timezones caught as locations) ---
+            invalid_keywords = ['GMT', 'Casablanca', 'Monrovia', 'Reykjavik', 'Time Zone', 'Privacy', 'Terms']
+            
+            if origin_location and any(k in str(origin_location) for k in invalid_keywords):
+                print(f"⚠️ Discarding invalid origin: {origin_location}")
+                origin_location = None
+                
+            if destination_location and any(k in str(destination_location) for k in invalid_keywords):
+                print(f"⚠️ Discarding invalid destination: {destination_location}")
+                destination_location = None
+            # ---------------------------------------------------------------------------
+
             print(f"DEBUG - Initial origin: {origin_location}, destination: {destination_location}")
             print(f"DEBUG - Timeline has {len(timeline)} events")
 
             # Fallback: Try to infer Origin/Destination from Timeline if missing
             if (not origin_location or origin_location == 'N/A' or str(origin_location) == 'None') and timeline:
-                # Use the location of the oldest event (last in list usually, or first depending on sort)
-                # Assuming timeline is sorted new -> old. If not, we might need to check dates.
-                # Let's check the last item in the list for Origin
-                if timeline[-1].get('location') and timeline[-1]['location'].strip():
-                    origin_location = timeline[-1]['location']
-                    print(f"DEBUG - Extracted origin from timeline: {origin_location}")
+                # Use the location of the oldest event (last in list)
+                # We need to find the first NON-EMPTY location from the end
+                for event in reversed(timeline):
+                    loc = event.get('location')
+                    if loc and len(loc) > 3:
+                        origin_location = loc
+                        print(f"DEBUG - Extracted origin from timeline: {origin_location}")
+                        break
             
             if (not destination_location or destination_location == 'N/A' or str(destination_location) == 'None') and timeline:
                 # Use the location of the newest event (first in list)

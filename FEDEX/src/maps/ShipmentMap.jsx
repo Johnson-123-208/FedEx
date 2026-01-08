@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, Polyline, useMap } from 'react-leaflet';
 import L from 'leaflet';
-import { motion } from 'framer-motion';
+
 import 'leaflet/dist/leaflet.css';
 
 // Fix for default marker icons
@@ -31,11 +31,14 @@ const AnimatedRoute = ({ positions, color = '#3b82f6', delay = 0 }) => {
     }, [positions, delay]);
 
     useEffect(() => {
-        if (visiblePositions.length > 0) {
-            const bounds = L.latLngBounds(visiblePositions);
-            map.fitBounds(bounds, { padding: [50, 50] });
+        if (positions.length > 0) {
+            const bounds = L.latLngBounds(positions);
+            // Verify map is valid
+            if (map && map.getSize().x > 0) {
+                map.fitBounds(bounds, { padding: [50, 50] });
+            }
         }
-    }, [visiblePositions, map]);
+    }, [positions, map]);
 
     return visiblePositions.length > 1 ? (
         <Polyline

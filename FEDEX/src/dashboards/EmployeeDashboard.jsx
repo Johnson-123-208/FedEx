@@ -48,26 +48,25 @@ const EmployeeDashboard = () => {
                 const sheets = indexData.sheets;
 
                 // Process in chunks to prevent UI blocking
+                // Helper function to fetch a batch
+                const fetchBatch = (batch) => Promise.all(
+                    batch.map(sheet => fetch(`/data/${sheet.file}`).then(res => res.json()))
+                );
+
+                // Process in chunks to prevent UI blocking
                 const batchSize = 5;
                 for (let i = 0; i < sheets.length; i += batchSize) {
                     const batch = sheets.slice(i, i + batchSize);
                     console.log(`Loading batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(sheets.length / batchSize)}...`);
 
-                    const batchPromises = batch.map(sheet =>
-                        fetch(`/data/${sheet.file}`).then(res => res.json())
-                    );
+                    const batchResults = await fetchBatch(batch);
 
-                    const batchResults = await Promise.all(batchPromises);
-
-                    // Safe combine using concat (prevents stack overflow)
+                    // Safe combine using concat
                     batchResults.forEach(data => {
                         if (data && data.shipments) {
                             allShipments = allShipments.concat(data.shipments);
                         }
                     });
-
-                    // Optional: Update state progressively if you want to show data appearing
-                    // For now, we wait for all to ensure consistency
                 }
 
                 console.log(`Loaded ${allShipments.length} total shipments`);

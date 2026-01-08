@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { motion, useAnimation } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const Home = () => {
     const [stats, setStats] = useState({ deliveries: 0, rating: 0, success: 0 });

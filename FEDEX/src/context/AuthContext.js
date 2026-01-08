@@ -19,9 +19,9 @@ export const AuthProvider = ({ children }) => {
 
                 const sessionPromise = supabase.auth.getSession();
 
-                const { data: { session }, error } = await Promise.race([sessionPromise, timeoutPromise]);
+                const { data: { session } } = await Promise.race([sessionPromise, timeoutPromise]);
 
-                if (error) throw error;
+
 
                 if (session?.user) {
                     setUser(session.user);

@@ -21,8 +21,9 @@ const TrackShipment = () => {
         setSearchResult(null);
 
         try {
+            const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
             console.log(`Fetching ${selectedProvider} details for ${awbNumber}...`);
-            const response = await fetch('http://localhost:5000/track', {
+            const response = await fetch(`${apiUrl}/track`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ awb: awbNumber, provider: selectedProvider })
