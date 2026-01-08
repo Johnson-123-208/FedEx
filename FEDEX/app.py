@@ -154,7 +154,7 @@ def track():
             timeline = result.get('timeline', [])
             
             # --- VALIDATION: Filter out bad scrapes (e.g. Timezones caught as locations) ---
-            invalid_keywords = ['GMT', 'Casablanca', 'Monrovia', 'Reykjavik', 'Time Zone', 'Privacy', 'Terms']
+            invalid_keywords = ['GMT', 'Casablanca', 'Monrovia', 'Reykjavik', 'Time Zone', 'Privacy', 'Terms', 'DELIVERY STATUS', 'Label Created']
             
             if origin_location and any(k in str(origin_location) for k in invalid_keywords):
                 print(f"⚠️ Discarding invalid origin: {origin_location}")
@@ -181,10 +181,16 @@ def track():
             
             if (not destination_location or destination_location == 'N/A' or str(destination_location) == 'None') and timeline:
                 # Use the location of the newest event (first in list)
-                if timeline[0].get('location') and timeline[0]['location'].strip():
-                    destination_location = timeline[0]['location']
-                    print(f"DEBUG - Extracted destination from timeline: {destination_location}")
-
+                # Iterate to find the first valid location from the top
+                for event in timeline:
+                    loc = event.get('location')
+                    # VALIDATE the fallback location too
+                    if (loc and len(loc) > 3 and 
+                        not any(k in str(loc) for k in invalid_keywords)):
+                        destination_location = loc
+                        print(f"DEBUG - Extracted destination from timeline: {destination_location}")
+                        break
+            
             print(f"DEBUG - Final origin: {origin_location}, destination: {destination_location}")
 
             # Geocode locations for map

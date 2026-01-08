@@ -149,7 +149,8 @@ def get_fedex_tracking_details(awb_number, driver):
                     
                     # Validate location
                     if (location and len(location) > 5 and len(location) < 100 and
-                        not any(noise in location.lower() for noise in ui_noise)):
+                        not any(noise in location.lower() for noise in ui_noise) and
+                        "DELIVERY STATUS" not in location.upper()):
                         pass  # Location is valid
                     else:
                         location = ""
