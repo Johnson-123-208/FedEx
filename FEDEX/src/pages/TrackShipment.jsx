@@ -4,7 +4,7 @@ import Timeline from '../components/Timeline';
 import ShipmentMap from '../maps/ShipmentMap';
 import StatusBadge from '../components/StatusBadge';
 
-const PROVIDERS = ['FedEx', 'DHL', 'Atlantic', 'Courier Wala', 'ICL', 'PXC Pacific'];
+const PROVIDERS = ['FedEx', 'DHL', 'Atlantic', 'Courier Wala', 'ICL', 'PXC Pacific', 'United Express'];
 
 const TrackShipment = () => {
     const [awbNumber, setAwbNumber] = useState('');

@@ -81,6 +81,11 @@ try:
 except ImportError:
     print("Could not import PXC script")
 
+try:
+    from update_united_tracking import get_united_tracking_details
+except ImportError:
+    print("Could not import United Express script")
+
 app = Flask(__name__)
 CORS(app)
 
@@ -138,6 +143,8 @@ def track():
                 result = get_icl_tracking_details(awb, drv)
             elif provider == 'PXC Pacific':
                 result = get_pxc_tracking_details(awb, drv)
+            elif provider == 'United Express':
+                result = get_united_tracking_details(awb, drv)
             else:
                 return jsonify({"error": "Unknown Provider - logic not implemented"}), 400
             

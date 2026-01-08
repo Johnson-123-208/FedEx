@@ -1,38 +1,5 @@
 {
   "provider": "United Express",
-  "updated_at": "2026-01-08T09:52:18.400410",
-  "shipments": [
-    {
-      "awb": 99193184,
-      "status": "Unknown",
-      "origin": null,
-      "destination": null,
-      "delivery_date": null,
-      "timeline": []
-    },
-    {
-      "awb": 99193479,
-      "status": "Unknown",
-      "origin": null,
-      "destination": null,
-      "delivery_date": null,
-      "timeline": []
-    },
-    {
-      "awb": 99194198,
-      "status": "Unknown",
-      "origin": null,
-      "destination": null,
-      "delivery_date": null,
-      "timeline": []
-    },
-    {
-      "awb": 99194105,
-      "status": "Unknown",
-      "origin": null,
-      "destination": null,
-      "delivery_date": null,
-      "timeline": []
-    }
-  ]
+  "updated_at": "2026-01-08T23:24:20.435151",
+  "shipments": []
 }
