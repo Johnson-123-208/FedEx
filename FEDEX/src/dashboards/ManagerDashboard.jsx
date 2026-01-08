@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 import { motion } from 'framer-motion';
 import KPICard from '../components/KPICard';
 import Table from '../components/Table';
@@ -13,6 +15,8 @@ import {
 } from '../data/mockData';
 
 const ManagerDashboard = () => {
+    const { signOut } = useAuth();
+    const navigate = useNavigate();
     const [metrics, setMetrics] = useState({
         total: 0,
         delivered: 0,
@@ -20,6 +24,11 @@ const ManagerDashboard = () => {
         success_rate: 0
     });
     const [loading, setLoading] = useState(true);
+
+    const handleSignOut = async () => {
+        await signOut();
+        navigate('/login');
+    };
 
     // Fetch real metrics from API
     useEffect(() => {
@@ -97,6 +106,9 @@ const ManagerDashboard = () => {
                     <p className="text-slate-400">Executive overview and operational metrics.</p>
                 </motion.div>
                 <div className="flex gap-3">
+                    <button onClick={handleSignOut} className="px-4 py-2 rounded-lg border border-red-500/30 text-red-400 hover:bg-red-500/10 transition-colors text-sm font-medium">
+                        Logout
+                    </button>
                     <button className="btn-secondary text-sm">Review Alerts</button>
                     <button className="btn-primary text-sm">Global Settings</button>
                 </div>

@@ -1,10 +1,20 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 import { motion } from 'framer-motion';
 import KPICard from '../components/KPICard';
 import Table from '../components/Table';
 
 const EmployeeDashboard = () => {
+    const { signOut } = useAuth();
+    const navigate = useNavigate();
     const [filterStatus, setFilterStatus] = useState('all');
+
+    const handleSignOut = async () => {
+        await signOut();
+        navigate('/login');
+    };
+
     const [shipments, setShipments] = useState([]);
     const [metrics, setMetrics] = useState({
         total: 0,
@@ -200,6 +210,9 @@ const EmployeeDashboard = () => {
                     <p className="text-slate-400">Welcome back, Agent. Here's your daily overview.</p>
                 </motion.div>
                 <div className="flex gap-3">
+                    <button onClick={handleSignOut} className="px-4 py-2 rounded-lg border border-red-500/30 text-red-400 hover:bg-red-500/10 transition-colors text-sm font-medium">
+                        Logout
+                    </button>
                     <button className="btn-secondary text-sm">Download Report</button>
                     <button className="btn-primary text-sm">+ New Shipment</button>
                 </div>

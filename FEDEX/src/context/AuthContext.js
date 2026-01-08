@@ -11,12 +11,29 @@ export const AuthProvider = ({ children }) => {
     useEffect(() => {
         // Check active session
         const getSession = async () => {
-            const { data: { session }, error } = await supabase.auth.getSession();
-            if (session?.user) {
-                setUser(session.user);
-                await fetchUserRole(session.user.id);
+            try {
+                // Safety timeout: If Supabase doesn't respond in 3s, proceed as logged out
+                const timeoutPromise = new Promise((_, reject) =>
+                    setTimeout(() => reject(new Error('Auth timeout')), 3000)
+                );
+
+                const sessionPromise = supabase.auth.getSession();
+
+                const { data: { session }, error } = await Promise.race([sessionPromise, timeoutPromise]);
+
+                if (error) throw error;
+
+                if (session?.user) {
+                    setUser(session.user);
+                    await fetchUserRole(session.user.id);
+                }
+            } catch (err) {
+                console.warn('Auth check failed or timed out:', err);
+                // Proceed as guest if auth fails
+                setUser(null);
+            } finally {
+                setLoading(false);
             }
-            setLoading(false);
         };
 
         getSession();
@@ -58,9 +75,17 @@ export const AuthProvider = ({ children }) => {
         setRole(null);
     };
 
+    if (loading) {
+        return (
+            <div className="min-h-screen flex items-center justify-center bg-[#0B1120]">
+                <div className="w-16 h-16 border-4 border-brand-500 border-t-transparent rounded-full animate-spin"></div>
+            </div>
+        );
+    }
+
     return (
         <AuthContext.Provider value={{ user, role, loading, signOut }}>
-            {!loading && children}
+            {children}
         </AuthContext.Provider>
     );
 };
