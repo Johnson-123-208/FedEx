@@ -1,0 +1,883 @@
+{
+  "provider": "ATLANTIC",
+  "updated_at": "2026-01-08T08:38:12.197094",
+  "total_shipments": 11,
+  "shipments": [
+    {
+      "awb": 9221060683,
+      "status": "Delivered",
+      "consignee_name": "VIDYA BARAPATI.",
+      "destination": "U.A.E.",
+      "delivery_date": "8th November 2025, 4:12 PM",
+      "signing_for": "VIDYA SAGAR BARAPATI",
+      "fwd_no": "1000300483",
+      "timeline": [
+        {
+          "date_time": "08/11/2025 4:12 PM",
+          "activity": "Delivered",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "08/11/2025 9:44 AM",
+          "activity": "With Delivery Courier",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "08/11/2025 4:14 AM",
+          "activity": "Arrived Facility",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "08/11/2025 4:10 AM",
+          "activity": "CUSTOM CLEARED",
+          "location": "U.A.E."
+        },
+        {
+          "date_time": "08/11/2025 3:00 AM",
+          "activity": "UNDER CUSTOM PROCESS",
+          "location": "U.A.E."
+        },
+        {
+          "date_time": "07/11/2025 1:50 PM",
+          "activity": "EXPECTED ARRIVAL 07.11.2025",
+          "location": "U.A.E."
+        },
+        {
+          "date_time": "07/11/2025 1:40 PM",
+          "activity": "Handover To Airline",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "07/11/2025 1:39 PM",
+          "activity": "Shipment Information Received",
+          "location": ""
+        },
+        {
+          "date_time": "07/11/2025 12:50 PM",
+          "activity": "Arrived Export Terminal",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "07/11/2025 11:40 AM",
+          "activity": "PREPARE FOR EXPORTS",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "06/11/2025 9:00 PM",
+          "activity": "EXPECTED DEPARTURE 07/11/2025",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "06/11/2025 3:08 PM",
+          "activity": "SHIPMENT RECEIVED",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "06/11/2025 2:19 PM",
+          "activity": "SHIPMENT SENT TO DESTINATION",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "05/11/2025 7:42 PM",
+          "activity": "SHIPMENT RECEIVED",
+          "location": "HYDERABAD"
+        }
+      ]
+    },
+    {
+      "awb": 9221060706,
+      "status": "Delivered",
+      "consignee_name": "VIDYASAGAR BARAPATI",
+      "destination": "U.A.E.",
+      "delivery_date": "11th November 2025, 5:02 PM",
+      "signing_for": "VIDYASAGAR BARAPATI",
+      "fwd_no": "800142840",
+      "timeline": [
+        {
+          "date_time": "11/11/2025 5:02 PM",
+          "activity": "DELIVERED TO: VIDYASAGAR BARAPATI",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "11/11/2025 11:16 AM",
+          "activity": "OUT FOR DELIVERY",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "11/11/2025 11:13 AM",
+          "activity": "ASSIGNED TO COURIER",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "10/11/2025 3:50 PM",
+          "activity": "PACKAGE CHECKED IN",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "09/11/2025 12:00 PM",
+          "activity": "CUSTOM CLEARED",
+          "location": "U.A.E."
+        },
+        {
+          "date_time": "09/11/2025 5:00 AM",
+          "activity": "UNDER CUSTOM PROCESS",
+          "location": "U.A.E."
+        },
+        {
+          "date_time": "08/11/2025 11:15 AM",
+          "activity": "SHIPMENT DETAILS CREATED",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "08/11/2025 8:00 AM",
+          "activity": "EXPECTED ARRIVAL 08.11.2025",
+          "location": "U.A.E."
+        },
+        {
+          "date_time": "07/11/2025 9:50 PM",
+          "activity": "Handover To Airline",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "07/11/2025 9:50 PM",
+          "activity": "Arrived Export Terminal",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "07/11/2025 8:55 PM",
+          "activity": "PREPARE FOR EXPORTS",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "07/11/2025 2:28 PM",
+          "activity": "SHIPMENT SENT TO DESTINATION",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "07/11/2025 12:45 PM",
+          "activity": "SHIPMENT INFORMATION RECEIVED - SHIPMENT INFORMATION RECIEVED",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "06/11/2025 3:15 PM",
+          "activity": "SHIPMENT RECEIVED",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "05/11/2025 7:42 PM",
+          "activity": "SHIPMENT RECEIVED",
+          "location": "HYDERABAD"
+        }
+      ]
+    },
+    {
+      "awb": 9221060728,
+      "status": "Delivered",
+      "consignee_name": "MR. SAGAR BARAPATI",
+      "destination": "U.A.E.",
+      "delivery_date": "8th November 2025, 4:12 PM",
+      "signing_for": "VIDYA SAGAR BARAPATI",
+      "fwd_no": "1000300486",
+      "timeline": [
+        {
+          "date_time": "08/11/2025 4:12 PM",
+          "activity": "Delivered",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "08/11/2025 9:44 AM",
+          "activity": "With Delivery Courier",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "08/11/2025 4:10 AM",
+          "activity": "CUSTOM CLEARED",
+          "location": "U.A.E."
+        },
+        {
+          "date_time": "08/11/2025 3:00 AM",
+          "activity": "UNDER CUSTOM PROCESS",
+          "location": "U.A.E."
+        },
+        {
+          "date_time": "08/11/2025 2:30 AM",
+          "activity": "Arrived Facility",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "07/11/2025 1:50 PM",
+          "activity": "EXPECTED ARRIVAL 07.11.2025",
+          "location": "U.A.E."
+        },
+        {
+          "date_time": "07/11/2025 1:40 PM",
+          "activity": "Handover To Airline",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "07/11/2025 1:39 PM",
+          "activity": "Shipment Information Received",
+          "location": ""
+        },
+        {
+          "date_time": "07/11/2025 12:50 PM",
+          "activity": "Arrived Export Terminal",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "07/11/2025 11:40 AM",
+          "activity": "PREPARE FOR EXPORTS",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "06/11/2025 9:00 PM",
+          "activity": "EXPECTED DEPARTURE 07/11/2025",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "06/11/2025 3:11 PM",
+          "activity": "SHIPMENT RECEIVED",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "06/11/2025 2:19 PM",
+          "activity": "SHIPMENT SENT TO DESTINATION",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "05/11/2025 7:43 PM",
+          "activity": "SHIPMENT RECEIVED",
+          "location": "HYDERABAD"
+        }
+      ]
+    },
+    {
+      "awb": 9221060790,
+      "status": "Delivered",
+      "consignee_name": "VIDYA SAGAR BARAPATI",
+      "destination": "U.A.E.",
+      "delivery_date": "8th November 2025, 4:11 PM",
+      "signing_for": "VIDYA SAGAR BARAPATI",
+      "fwd_no": "1000300485",
+      "timeline": [
+        {
+          "date_time": "08/11/2025 4:11 PM",
+          "activity": "Delivered",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "08/11/2025 9:44 AM",
+          "activity": "With Delivery Courier",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "08/11/2025 4:10 AM",
+          "activity": "CUSTOM CLEARED",
+          "location": "U.A.E."
+        },
+        {
+          "date_time": "08/11/2025 3:00 AM",
+          "activity": "UNDER CUSTOM PROCESS",
+          "location": "U.A.E."
+        },
+        {
+          "date_time": "08/11/2025 2:30 AM",
+          "activity": "Arrived Facility",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "07/11/2025 1:50 PM",
+          "activity": "EXPECTED ARRIVAL 07.11.2025",
+          "location": "U.A.E."
+        },
+        {
+          "date_time": "07/11/2025 1:40 PM",
+          "activity": "Handover To Airline",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "07/11/2025 1:39 PM",
+          "activity": "Shipment Information Received",
+          "location": ""
+        },
+        {
+          "date_time": "07/11/2025 12:50 PM",
+          "activity": "Arrived Export Terminal",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "07/11/2025 11:40 AM",
+          "activity": "PREPARE FOR EXPORTS",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "06/11/2025 9:00 PM",
+          "activity": "EXPECTED DEPARTURE 07/11/2025",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "06/11/2025 3:07 PM",
+          "activity": "SHIPMENT RECEIVED",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "06/11/2025 2:19 PM",
+          "activity": "SHIPMENT SENT TO DESTINATION",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "05/11/2025 7:43 PM",
+          "activity": "SHIPMENT RECEIVED",
+          "location": "HYDERABAD"
+        }
+      ]
+    },
+    {
+      "awb": 9221060837,
+      "status": "Delivered",
+      "consignee_name": "VIDYASAGAR BARAPATI",
+      "destination": "U.A.E.",
+      "delivery_date": "8th November 2025, 4:13 PM",
+      "signing_for": "VIDYA SAGAR BARAPATI",
+      "fwd_no": "1000300484",
+      "timeline": [
+        {
+          "date_time": "08/11/2025 4:13 PM",
+          "activity": "Delivered",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "08/11/2025 9:44 AM",
+          "activity": "With Delivery Courier",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "08/11/2025 4:14 AM",
+          "activity": "Arrived Facility",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "08/11/2025 4:10 AM",
+          "activity": "CUSTOM CLEARED",
+          "location": "U.A.E."
+        },
+        {
+          "date_time": "08/11/2025 3:00 AM",
+          "activity": "UNDER CUSTOM PROCESS",
+          "location": "U.A.E."
+        },
+        {
+          "date_time": "07/11/2025 1:50 PM",
+          "activity": "EXPECTED ARRIVAL 07.11.2025",
+          "location": "U.A.E."
+        },
+        {
+          "date_time": "07/11/2025 1:40 PM",
+          "activity": "Handover To Airline",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "07/11/2025 1:39 PM",
+          "activity": "Shipment Information Received",
+          "location": ""
+        },
+        {
+          "date_time": "07/11/2025 12:50 PM",
+          "activity": "Arrived Export Terminal",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "07/11/2025 11:40 AM",
+          "activity": "PREPARE FOR EXPORTS",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "06/11/2025 9:00 PM",
+          "activity": "EXPECTED DEPARTURE 07/11/2025",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "06/11/2025 3:08 PM",
+          "activity": "SHIPMENT RECEIVED",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "06/11/2025 2:19 PM",
+          "activity": "SHIPMENT SENT TO DESTINATION",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "05/11/2025 7:42 PM",
+          "activity": "SHIPMENT RECEIVED",
+          "location": "HYDERABAD"
+        }
+      ]
+    },
+    {
+      "awb": 9221060847,
+      "status": "Delivered",
+      "consignee_name": "VIDYA SAGAR BARAPATI",
+      "destination": "U.A.E.",
+      "delivery_date": "11th November 2025, 6:08 PM",
+      "signing_for": "SIGN",
+      "fwd_no": "800142841",
+      "timeline": [
+        {
+          "date_time": "11/11/2025 6:08 PM",
+          "activity": "DELIVERED TO: SIGN",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "11/11/2025 11:16 AM",
+          "activity": "OUT FOR DELIVERY",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "11/11/2025 11:13 AM",
+          "activity": "ASSIGNED TO COURIER",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "10/11/2025 3:50 PM",
+          "activity": "PACKAGE CHECKED IN",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "09/11/2025 12:00 PM",
+          "activity": "CUSTOM CLEARED",
+          "location": "U.A.E."
+        },
+        {
+          "date_time": "09/11/2025 5:00 AM",
+          "activity": "UNDER CUSTOM PROCESS",
+          "location": "U.A.E."
+        },
+        {
+          "date_time": "08/11/2025 11:15 AM",
+          "activity": "SHIPMENT DETAILS CREATED",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "08/11/2025 8:00 AM",
+          "activity": "EXPECTED ARRIVAL 08.11.2025",
+          "location": "U.A.E."
+        },
+        {
+          "date_time": "07/11/2025 9:50 PM",
+          "activity": "Handover To Airline",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "07/11/2025 9:50 PM",
+          "activity": "Arrived Export Terminal",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "07/11/2025 8:55 PM",
+          "activity": "PREPARE FOR EXPORTS",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "07/11/2025 2:28 PM",
+          "activity": "SHIPMENT SENT TO DESTINATION",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "07/11/2025 12:45 PM",
+          "activity": "SHIPMENT INFORMATION RECEIVED - SHIPMENT INFORMATION RECIEVED",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "06/11/2025 3:12 PM",
+          "activity": "SHIPMENT RECEIVED",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "05/11/2025 7:43 PM",
+          "activity": "SHIPMENT RECEIVED",
+          "location": "HYDERABAD"
+        }
+      ]
+    },
+    {
+      "awb": 9221060876,
+      "status": "At Delivery Centre",
+      "consignee_name": "GIRISH KEDIM",
+      "destination": "GERMANY",
+      "delivery_date": "17th November 2025, 12:00 AM",
+      "signing_for": "SIGN",
+      "fwd_no": "01505485347850",
+      "timeline": [
+        {
+          "date_time": "15/11/2025 11:39 AM",
+          "activity": "At parcel delivery centre.",
+          "location": "Neufahrn (DE)"
+        },
+        {
+          "date_time": "14/11/2025 10:00 AM",
+          "activity": "EXPECTED CONNECTION TODAY",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "14/11/2025 10:00 AM",
+          "activity": "Arrived Hub",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "13/11/2025 10:00 AM",
+          "activity": "UNDER CUSTOM CLEARANCE PROCESS",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "11/11/2025 10:00 AM",
+          "activity": "UNDER CUSTOM PROCESS",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "10/11/2025 10:00 AM",
+          "activity": "EXPECTED ARRIVAL 10.11.2025",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "08/11/2025 10:00 AM",
+          "activity": "EXPECTED ARRIVAL 09.11.2025",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "08/11/2025 1:30 AM",
+          "activity": "Handed Over To Airline",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "07/11/2025 9:30 PM",
+          "activity": "Arrived Export Terminal",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "07/11/2025 8:30 PM",
+          "activity": "Prepared Export Documents",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "06/11/2025 9:09 PM",
+          "activity": "SHIPMENT SENT TO DESTINATION",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "06/11/2025 3:09 PM",
+          "activity": "SHIPMENT RECEIVED",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "05/11/2025 7:42 PM",
+          "activity": "SHIPMENT RECEIVED",
+          "location": "HYDERABAD"
+        }
+      ]
+    },
+    {
+      "awb": 9221061205,
+      "status": "In Transit",
+      "consignee_name": "KOTA KARTHIK",
+      "destination": "IRELAND",
+      "delivery_date": "18th November 2025, 12:00 AM",
+      "signing_for": "SIGN",
+      "fwd_no": "01505485347784",
+      "timeline": [
+        {
+          "date_time": "15/11/2025 11:44 AM",
+          "activity": "In transit.",
+          "location": "Erftstadt-Lechen ..."
+        },
+        {
+          "date_time": "14/11/2025 10:00 AM",
+          "activity": "EXPECTED CONNECTION TODAY",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "14/11/2025 10:00 AM",
+          "activity": "Arrived Hub",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "13/11/2025 10:00 AM",
+          "activity": "UNDER CUSTOM CLEARANCE PROCESS",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "11/11/2025 10:00 AM",
+          "activity": "UNDER CUSTOM PROCESS",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "10/11/2025 10:00 AM",
+          "activity": "EXPECTED ARRIVAL 10.11.2025",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "08/11/2025 10:00 AM",
+          "activity": "EXPECTED ARRIVAL 09.11.2025",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "08/11/2025 1:30 AM",
+          "activity": "Handed Over To Airline",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "07/11/2025 9:30 PM",
+          "activity": "Arrived Export Terminal",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "07/11/2025 8:30 PM",
+          "activity": "Prepared Export Documents",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "06/11/2025 9:09 PM",
+          "activity": "SHIPMENT SENT TO DESTINATION",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "06/11/2025 3:14 PM",
+          "activity": "SHIPMENT RECEIVED",
+          "location": "Mumbai"
+        },
+        {
+          "date_time": "05/11/2025 7:42 PM",
+          "activity": "SHIPMENT RECEIVED",
+          "location": "HYDERABAD"
+        }
+      ]
+    },
+    {
+      "awb": 9221061192,
+      "status": "In Transit",
+      "consignee_name": "KOTA KARTHIK",
+      "destination": "IRELAND",
+      "delivery_date": "18th November 2025, 12:00 AM",
+      "signing_for": "SIGN",
+      "fwd_no": "01505485347789",
+      "timeline": [
+        {
+          "date_time": "15/11/2025 11:44 AM",
+          "activity": "In transit.",
+          "location": "Erftstadt-Lechen ..."
+        },
+        {
+          "date_time": "14/11/2025 10:00 AM",
+          "activity": "EXPECTED CONNECTION TODAY",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "14/11/2025 10:00 AM",
+          "activity": "Arrived Hub",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "13/11/2025 10:00 AM",
+          "activity": "UNDER CUSTOM CLEARANCE PROCESS",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "11/11/2025 10:00 AM",
+          "activity": "UNDER CUSTOM PROCESS",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "10/11/2025 10:00 AM",
+          "activity": "EXPECTED ARRIVAL 10.11.2025",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "08/11/2025 10:00 AM",
+          "activity": "EXPECTED ARRIVAL 09.11.2025",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "08/11/2025 1:30 AM",
+          "activity": "Handed Over To Airline",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "07/11/2025 9:30 PM",
+          "activity": "Arrived Export Terminal",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "07/11/2025 8:30 PM",
+          "activity": "Prepared Export Documents",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "06/11/2025 9:09 PM",
+          "activity": "SHIPMENT SENT TO DESTINATION",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "06/11/2025 3:16 PM",
+          "activity": "SHIPMENT RECEIVED",
+          "location": "Mumbai"
+        },
+        {
+          "date_time": "05/11/2025 7:41 PM",
+          "activity": "SHIPMENT RECEIVED",
+          "location": "HYDERABAD"
+        }
+      ]
+    },
+    {
+      "awb": 9221062702,
+      "status": "In Transit",
+      "consignee_name": "NILOFER SHAIK",
+      "destination": "IRELAND",
+      "delivery_date": "21st November 2025, 12:00 AM",
+      "signing_for": "sign",
+      "fwd_no": "01505485348488",
+      "timeline": [
+        {
+          "date_time": "18/11/2025 7:37 PM",
+          "activity": "In transit.",
+          "location": "Erftstadt-Lechen ..."
+        },
+        {
+          "date_time": "17/11/2025 12:00 PM",
+          "activity": "EXPECTED CONNECTION TODAY",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "17/11/2025 12:00 PM",
+          "activity": "Arrived Hub",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "17/11/2025 10:00 AM",
+          "activity": "UNDER CUSTOM CLEARANCE PROCESS",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "14/11/2025 10:00 AM",
+          "activity": "UNDER CUSTOM PROCESS",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "11/11/2025 10:00 AM",
+          "activity": "EXPECTED ARRIVAL 13.11.2025",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "11/11/2025 1:30 AM",
+          "activity": "Handed Over To Airline",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "10/11/2025 9:30 PM",
+          "activity": "Arrived Export Terminal",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "10/11/2025 8:30 PM",
+          "activity": "Prepared Export Documents",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "09/11/2025 5:49 PM",
+          "activity": "EXPECTED DEPARTURE 10/11/2025",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "09/11/2025 5:28 PM",
+          "activity": "SHIPMENT SENT TO DESTINATION",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "08/11/2025 10:00 PM",
+          "activity": "EXPECTED DEPARTURE 09.11.2025",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "08/11/2025 4:13 PM",
+          "activity": "SHIPMENT RECEIVED",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "07/11/2025 8:24 PM",
+          "activity": "SHIPMENT RECEIVED",
+          "location": "HYDERABAD"
+        }
+      ]
+    },
+    {
+      "awb": 9221065431,
+      "status": "In Transit",
+      "consignee_name": "RAVI SUBBARAO",
+      "destination": "IRELAND",
+      "delivery_date": "25th November 2025, 12:00 AM",
+      "signing_for": "SIGN",
+      "fwd_no": "01505486261283",
+      "timeline": [
+        {
+          "date_time": "25/11/2025 4:22 PM",
+          "activity": "In transit.",
+          "location": "ATHLONE (IE)"
+        },
+        {
+          "date_time": "20/11/2025 11:41 AM",
+          "activity": "In transit.",
+          "location": "Erftstadt-Lechen ..."
+        },
+        {
+          "date_time": "18/11/2025 10:00 AM",
+          "activity": "UNDER CUSTOM CLEARANCE PROCESS",
+          "location": "GERMANY-FRANKFURT"
+        },
+        {
+          "date_time": "16/11/2025 10:00 AM",
+          "activity": "UNDER CUSTOM PROCESS",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "15/11/2025 10:00 AM",
+          "activity": "EXPECTED ARRIVAL 15.11.2025",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "13/11/2025 10:00 AM",
+          "activity": "EXPECTED ARRIVAL 14.11.2025",
+          "location": "GERMANY FRANKFURT"
+        },
+        {
+          "date_time": "13/11/2025 1:30 AM",
+          "activity": "Handed Over To Airline",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "12/11/2025 11:30 PM",
+          "activity": "Arrived Export Terminal",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "12/11/2025 10:00 PM",
+          "activity": "Prepared Export Documents",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "12/11/2025 6:04 PM",
+          "activity": "SHIPMENT SENT TO DESTINATION",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "12/11/2025 3:17 PM",
+          "activity": "SHIPMENT RECEIVED",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "11/11/2025 7:46 PM",
+          "activity": "SHIPMENT RECEIVED",
+          "location": "HYDERABAD"
+        }
+      ]
+    }
+  ]
+}

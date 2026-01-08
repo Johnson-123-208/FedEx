@@ -3,33 +3,55 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Timeline from '../components/Timeline';
 import ShipmentMap from '../maps/ShipmentMap';
 import StatusBadge from '../components/StatusBadge';
-import { shipments } from '../data/mockData';
+
+const PROVIDERS = ['FedEx', 'DHL', 'Atlantic', 'Courier Wala', 'ICL', 'PXC Pacific'];
 
 const TrackShipment = () => {
     const [awbNumber, setAwbNumber] = useState('');
+    const [selectedProvider, setSelectedProvider] = useState('FedEx');
     const [searchResult, setSearchResult] = useState(null);
     const [searching, setSearching] = useState(false);
     const [error, setError] = useState('');
     const [isFullScreen, setIsFullScreen] = useState(false);
 
-    const handleSearch = (e) => {
+    const handleSearch = async (e) => {
         e.preventDefault();
         setError('');
         setSearching(true);
         setSearchResult(null);
 
-        setTimeout(() => {
-            const result = shipments.find(
-                (shipment) => shipment.awb.toLowerCase() === awbNumber.toLowerCase()
-            );
+        try {
+            console.log(`Fetching ${selectedProvider} details for ${awbNumber}...`);
+            const response = await fetch('http://localhost:5000/track', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ awb: awbNumber, provider: selectedProvider })
+            });
 
-            if (result) {
-                setSearchResult(result);
+            const data = await response.json();
+
+            if (response.ok) {
+                // Normalize timeline for the UI Component
+                const normalizedTimeline = (data.timeline || []).map(t => ({
+                    status: t.activity || t.status || 'Update',
+                    date: t.date_time || t.date || t.time || '',
+                    location: t.location || '',
+                    completed: true
+                }));
+
+                setSearchResult({
+                    ...data,
+                    timeline: normalizedTimeline
+                });
             } else {
-                setError('Shipment not found. Please verify the AWB number.');
+                setError(data.error || 'Shipment not found or API error.');
             }
+        } catch (err) {
+            console.error("Tracking Error:", err);
+            setError('Failed to connect to tracking server. Is app.py running?');
+        } finally {
             setSearching(false);
-        }, 800);
+        }
     };
 
     return (
@@ -40,40 +62,43 @@ const TrackShipment = () => {
                 className="max-w-4xl mx-auto mb-10"
             >
                 <h1 className="text-3xl font-display font-bold text-white mb-2 text-center">Track Your Shipment</h1>
-                <p className="text-slate-400 text-center mb-8">Enter your AWB number to get real-time status updates.</p>
+                <p className="text-slate-400 text-center mb-8">Select your service provider and enter AWB to get real-time status.</p>
 
                 {/* Search Bar */}
-                <div className="glass-card p-2 flex items-center shadow-glow-sm max-w-2xl mx-auto">
+                <div className="glass-card p-2 flex items-center shadow-glow-sm max-w-2xl mx-auto gap-4">
+                    <select
+                        value={selectedProvider}
+                        onChange={(e) => setSelectedProvider(e.target.value)}
+                        className="bg-slate-800/50 text-white border border-slate-700/50 rounded-md py-3 px-4 outline-none focus:ring-2 focus:ring-brand-500 transition-all font-medium"
+                    >
+                        {PROVIDERS.map((p) => (
+                            <option key={p} value={p} className="bg-slate-900 text-white">
+                                {p}
+                            </option>
+                        ))}
+                    </select>
+
                     <input
                         type="text"
                         value={awbNumber}
                         onChange={(e) => setAwbNumber(e.target.value)}
                         placeholder="e.g. 6002770480"
-                        className="flex-1 bg-transparent border-none text-white placeholder-slate-500 px-6 py-3 focus:ring-0 text-lg font-mono outline-none w-full"
+                        className="flex-1 bg-transparent border-none text-white placeholder-slate-500 px-2 py-3 focus:ring-0 text-lg font-mono outline-none w-full"
                     />
                     <button
                         onClick={handleSearch}
                         disabled={searching || !awbNumber}
-                        className="btn-primary px-8 py-3 rounded-lg m-1 disabled:opacity-50"
+                        className="btn-primary px-8 py-3 rounded-lg m-1 disabled:opacity-50 whitespace-nowrap"
                     >
-                        {searching ? 'Searching...' : 'Track'}
+                        {searching ? 'Tracking...' : 'Track'}
                     </button>
                 </div>
                 {error && <p className="text-red-400 text-sm text-center mt-4">{error}</p>}
 
-                {/* Sample Numbers */}
+                {/* Sample Numbers Hint */}
                 {!searchResult && (
-                    <div className="mt-4 flex justify-center gap-4 text-sm text-slate-500">
-                        <span>Sample AWB:</span>
-                        {shipments.slice(0, 3).map((s) => (
-                            <button
-                                key={s.awb}
-                                onClick={() => setAwbNumber(s.awb)}
-                                className="text-brand-400 hover:text-brand-300 hover:underline"
-                            >
-                                {s.awb}
-                            </button>
-                        ))}
+                    <div className="mt-4 text-center text-xs text-slate-600">
+                        Try <b>ICL</b>: 6002770480, <b>FedEx</b>: 885670900649
                     </div>
                 )}
             </motion.div>
@@ -106,25 +131,25 @@ const TrackShipment = () => {
                                 {/* Origin */}
                                 <div>
                                     <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">From</p>
-                                    <p className="text-white font-semibold">{searchResult.origin}</p>
+                                    <p className="text-white font-semibold">{searchResult.origin || '-'}</p>
                                 </div>
 
                                 {/* Destination */}
                                 <div>
                                     <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">To</p>
-                                    <p className="text-white font-semibold">{searchResult.destination}</p>
+                                    <p className="text-white font-semibold">{searchResult.destination || '-'}</p>
                                 </div>
 
                                 {/* Weight */}
                                 <div>
                                     <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Weight</p>
-                                    <p className="text-white font-mono">{searchResult.weight} kg</p>
+                                    <p className="text-white font-mono">{searchResult.weight || '-'} kg</p>
                                 </div>
 
                                 {/* Est. Delivery */}
                                 <div>
                                     <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Est. Delivery</p>
-                                    <p className="text-brand-300 font-semibold">{searchResult.estimatedDelivery}</p>
+                                    <p className="text-brand-300 font-semibold">{searchResult.estimatedDelivery || '-'}</p>
                                 </div>
                             </div>
                         </div>

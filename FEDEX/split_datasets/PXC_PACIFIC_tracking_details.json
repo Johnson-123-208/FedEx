@@ -1,0 +1,85 @@
+{
+  "provider": "PXC Pacific",
+  "updated_at": "2026-01-08T09:32:48.055394",
+  "shipments": [
+    {
+      "awb": 8880632111,
+      "status": "Delivered",
+      "origin": null,
+      "destination": null,
+      "delivery_date": null,
+      "timeline": [
+        {
+          "date_time": "20/11/2025",
+          "activity": "Delivered",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "20/11/2025",
+          "activity": "Scheduled For Next Delivery Cycle",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "20/11/2025",
+          "activity": "Scheduled for the next delivery cycle",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "20/11/2025",
+          "activity": "Out For Delivery",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "19/11/2025",
+          "activity": "Arrived at TCS Facility",
+          "location": "DUBAI"
+        },
+        {
+          "date_time": "18/11/2025",
+          "activity": "AWAITING CUSTOM CLEARANCE",
+          "location": "DUBAI, U.A.E."
+        },
+        {
+          "date_time": "18/11/2025",
+          "activity": "SHIPMENT ARRIVED AT IMPORT GATEWAY",
+          "location": "DUBAI, U.A.E."
+        },
+        {
+          "date_time": "18/11/2025",
+          "activity": "IN TRANSIT",
+          "location": "MUMBAI,INDIA"
+        },
+        {
+          "date_time": "18/11/2025",
+          "activity": "IN TRANSIT",
+          "location": "MUMBAI,INDIA"
+        },
+        {
+          "date_time": "18/11/2025",
+          "activity": "SHIPMENT DEPARTED FROM EXPORT GATEWAY",
+          "location": "MUMBAI,INDIA"
+        },
+        {
+          "date_time": "18/11/2025",
+          "activity": "SHIPMENT PROCESSED AT EXPORT GATEWAY",
+          "location": "MUMBAI,INDIA"
+        },
+        {
+          "date_time": "18/11/2025",
+          "activity": "SHIPMENT ARRIVED AT EXPORT GATEWAY",
+          "location": "MUMBAI,INDIA"
+        },
+        {
+          "date_time": "17/11/2025",
+          "activity": "SHIPMENT ARRIVED AT HUB",
+          "location": "MUMBAI"
+        },
+        {
+          "date_time": "14/11/2025",
+          "activity": "SHIPMENT INFORMATION RECEIVED",
+          "location": "MUMBAI"
+        }
+      ]
+    }
+  ]
+}

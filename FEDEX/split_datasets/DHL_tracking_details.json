@@ -1,0 +1,654 @@
+{
+  "provider": "DHL",
+  "updated_at": "2026-01-08T09:24:59.393545",
+  "total_shipments": 3,
+  "shipments": [
+    {
+      "awb": 1509484944,
+      "status": "Delivered",
+      "origin": null,
+      "destination": null,
+      "delivery_date": null,
+      "timeline": [
+        {
+          "date_time": "All Shipment Updates",
+          "activity": "Monday",
+          "location": "17 November 2025"
+        },
+        {
+          "date_time": "Monday",
+          "activity": "17 November 2025",
+          "location": "10:46 am (UTC -06:00)"
+        },
+        {
+          "date_time": "Monday",
+          "activity": "17 November 2025",
+          "location": "10:46 am (UTC -06:00)"
+        },
+        {
+          "date_time": "Monday",
+          "activity": "17 November 2025",
+          "location": "10:46 am (UTC -06:00)"
+        },
+        {
+          "date_time": "Delivered",
+          "activity": "FRISCO - T - USA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Monday",
+          "activity": "17 November 2025",
+          "location": "8:36 am (UTC -06:00)"
+        },
+        {
+          "date_time": "Monday",
+          "activity": "17 November 2025",
+          "location": "8:36 am (UTC -06:00)"
+        },
+        {
+          "date_time": "Monday",
+          "activity": "17 November 2025",
+          "location": "8:36 am (UTC -06:00)"
+        },
+        {
+          "date_time": "Shipment is out with courier for delivery",
+          "activity": "CARROLLTON - Texas - USA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Shipment is in transit to destination",
+          "activity": "DALLAS - Texas - USA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Shipment has departed from a DHL facility DALLAS - USA",
+          "activity": "DALLAS - Texas - USA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Processed at DFW AIRPORT - USA",
+          "activity": "DFW AIRPORT - Texas - USA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Arrived at DHL Delivery Facility CARROLLTON - USA",
+          "activity": "CARROLLTON - Texas - USA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Sunday",
+          "activity": "16 November 2025",
+          "location": "3:33 pm (UTC -06:00)"
+        },
+        {
+          "date_time": "Sunday",
+          "activity": "16 November 2025",
+          "location": "3:33 pm (UTC -06:00)"
+        },
+        {
+          "date_time": "Sunday",
+          "activity": "16 November 2025",
+          "location": "3:33 pm (UTC -06:00)"
+        },
+        {
+          "date_time": "Payment is received and recorded for shipment related fees",
+          "activity": "DALLAS - Texas - USA",
+          "location": ""
+        },
+        {
+          "date_time": "Shipment has departed from a DHL facility CINCINNATI HUB - USA",
+          "activity": "CINCINNATI HUB - Ohio - USA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Processed at CINCINNATI HUB - USA",
+          "activity": "CINCINNATI HUB - Ohio - USA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Clearance processing complete at CINCINNATI HUB - USA",
+          "activity": "CINCINNATI HUB - Ohio - USA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Arrived at DHL Sort Facility CINCINNATI HUB - USA",
+          "activity": "CINCINNATI HUB - Ohio - USA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Saturday",
+          "activity": "15 November 2025",
+          "location": "3:03 pm (UTC -06:00)"
+        },
+        {
+          "date_time": "Saturday",
+          "activity": "15 November 2025",
+          "location": "3:03 pm (UTC -06:00)"
+        },
+        {
+          "date_time": "Saturday",
+          "activity": "15 November 2025",
+          "location": "3:03 pm (UTC -06:00)"
+        },
+        {
+          "date_time": "On hold awaiting for payment of shipment related fees",
+          "activity": "CARROLLTON - Texas - USA",
+          "location": ""
+        },
+        {
+          "date_time": "Customs clearance status updated. Note - The Customs clearance process may start while the shipment is in transit to the destination.",
+          "activity": "CINCINNATI HUB - Ohio - USA",
+          "location": ""
+        },
+        {
+          "date_time": "Customs clearance status updated. Note - The Customs clearance process may start while the shipment is in transit to the destination.",
+          "activity": "CINCINNATI HUB - Ohio - USA",
+          "location": ""
+        },
+        {
+          "date_time": "Shipment has departed from a DHL facility EAST MIDLANDS - UK",
+          "activity": "EAST MIDLANDS - UK",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Shipment is in transit to destination",
+          "activity": "EAST MIDLANDS - UK",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Customs clearance status updated. Note - The Customs clearance process may start while the shipment is in transit to the destination.",
+          "activity": "CINCINNATI HUB - Ohio - USA",
+          "location": ""
+        },
+        {
+          "date_time": "Customs clearance status updated. Note - The Customs clearance process may start while the shipment is in transit to the destination.",
+          "activity": "CINCINNATI HUB - Ohio - USA",
+          "location": ""
+        },
+        {
+          "date_time": "Friday",
+          "activity": "14 November 2025",
+          "location": "9:18 pm (UTC -05:00)"
+        },
+        {
+          "date_time": "Friday",
+          "activity": "14 November 2025",
+          "location": "9:18 pm (UTC -05:00)"
+        },
+        {
+          "date_time": "Friday",
+          "activity": "14 November 2025",
+          "location": "9:18 pm (UTC -05:00)"
+        },
+        {
+          "date_time": "Customs clearance status updated. Note - The Customs clearance process may start while the shipment is in transit to the destination.",
+          "activity": "CINCINNATI HUB - Ohio - USA",
+          "location": ""
+        },
+        {
+          "date_time": "Shipment has departed from a DHL facility LEIPZIG - GERMANY",
+          "activity": "LEIPZIG - Saxony - GERMANY",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Shipment is in transit to destination",
+          "activity": "LEIPZIG - Saxony - GERMANY",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Shipment has departed from a DHL facility BANGALORE - INDIA",
+          "activity": "BANGALORE - Karnataka - INDIA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Processed at BANGALORE - INDIA",
+          "activity": "BANGALORE - Karnataka - INDIA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Arrived at DHL Sort Facility BANGALORE - INDIA",
+          "activity": "BANGALORE - Karnataka - INDIA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Thursday",
+          "activity": "13 November 2025",
+          "location": "10:20 pm (UTC +05:30)"
+        },
+        {
+          "date_time": "Thursday",
+          "activity": "13 November 2025",
+          "location": "10:20 pm (UTC +05:30)"
+        },
+        {
+          "date_time": "Thursday",
+          "activity": "13 November 2025",
+          "location": "10:20 pm (UTC +05:30)"
+        },
+        {
+          "date_time": "Shipment has departed from a DHL facility HYDERABAD - INDIA",
+          "activity": "HYDERABAD - Telangana - INDIA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Processed at HYDERABAD - INDIA",
+          "activity": "HYDERABAD - Telangana - INDIA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Shipment picked up",
+          "activity": "HYDERABAD - Telangana - INDIA",
+          "location": "1 Piece ID: "
+        }
+      ]
+    },
+    {
+      "awb": 9232031340,
+      "status": "Delivered",
+      "origin": null,
+      "destination": null,
+      "delivery_date": null,
+      "timeline": [
+        {
+          "date_time": "All Shipment Updates",
+          "activity": "Monday",
+          "location": "17 November 2025"
+        },
+        {
+          "date_time": "Monday",
+          "activity": "17 November 2025",
+          "location": "11:34 am (UTC +08:00)"
+        },
+        {
+          "date_time": "Monday",
+          "activity": "17 November 2025",
+          "location": "11:34 am (UTC +08:00)"
+        },
+        {
+          "date_time": "Monday",
+          "activity": "17 November 2025",
+          "location": "11:34 am (UTC +08:00)"
+        },
+        {
+          "date_time": "Delivered",
+          "activity": "SUZHOU - CHINA, PEOPLES REPUBLIC",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Monday",
+          "activity": "17 November 2025",
+          "location": "9:35 am (UTC +08:00)"
+        },
+        {
+          "date_time": "Monday",
+          "activity": "17 November 2025",
+          "location": "9:35 am (UTC +08:00)"
+        },
+        {
+          "date_time": "Monday",
+          "activity": "17 November 2025",
+          "location": "9:35 am (UTC +08:00)"
+        },
+        {
+          "date_time": "Shipment is out with courier for delivery",
+          "activity": "SUZHOU - CHINA, PEOPLES REPUBLIC",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Arrived at DHL Delivery Facility SUZHOU - CHINA, PEOPLES REPUBLIC",
+          "activity": "SUZHOU - CHINA, PEOPLES REPUBLIC",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Sunday",
+          "activity": "16 November 2025",
+          "location": "10:50 pm (UTC +08:00)"
+        },
+        {
+          "date_time": "Sunday",
+          "activity": "16 November 2025",
+          "location": "10:50 pm (UTC +08:00)"
+        },
+        {
+          "date_time": "Sunday",
+          "activity": "16 November 2025",
+          "location": "10:50 pm (UTC +08:00)"
+        },
+        {
+          "date_time": "Shipment has departed from a DHL facility EAST CHINA AREA - CHINA, PEOPLES REPUBLIC",
+          "activity": "EAST CHINA AREA - CHINA, PEOPLES REPUBLIC",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Processed at EAST CHINA AREA - CHINA, PEOPLES REPUBLIC",
+          "activity": "EAST CHINA AREA - CHINA, PEOPLES REPUBLIC",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Clearance processing complete at EAST CHINA AREA - CHINA, PEOPLES REPUBLIC",
+          "activity": "EAST CHINA AREA - CHINA, PEOPLES REPUBLIC",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Arrived at DHL Sort Facility EAST CHINA AREA - CHINA, PEOPLES REPUBLIC",
+          "activity": "EAST CHINA AREA - CHINA, PEOPLES REPUBLIC",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Customs clearance status updated. Note - The Customs clearance process may start while the shipment is in transit to the destination.",
+          "activity": "EAST CHINA AREA - CHINA, PEOPLES REPUBLIC",
+          "location": ""
+        },
+        {
+          "date_time": "Shipment has departed from a DHL facility HONG KONG - HONG KONG SAR, CHINA",
+          "activity": "HONG KONG - HONG KONG SAR, CHINA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Customs clearance status updated. Note - The Customs clearance process may start while the shipment is in transit to the destination.",
+          "activity": "EAST CHINA AREA - CHINA, PEOPLES REPUBLIC",
+          "location": ""
+        },
+        {
+          "date_time": "Processed at HONG KONG - HONG KONG SAR, CHINA",
+          "activity": "HONG KONG - HONG KONG SAR, CHINA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Saturday",
+          "activity": "15 November 2025",
+          "location": "11:33 am (UTC +08:00)"
+        },
+        {
+          "date_time": "Saturday",
+          "activity": "15 November 2025",
+          "location": "11:33 am (UTC +08:00)"
+        },
+        {
+          "date_time": "Saturday",
+          "activity": "15 November 2025",
+          "location": "11:33 am (UTC +08:00)"
+        },
+        {
+          "date_time": "Arrived at DHL Sort Facility HONG KONG - HONG KONG SAR, CHINA",
+          "activity": "HONG KONG - HONG KONG SAR, CHINA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Friday",
+          "activity": "14 November 2025",
+          "location": "11:36 pm (UTC +05:30)"
+        },
+        {
+          "date_time": "Friday",
+          "activity": "14 November 2025",
+          "location": "11:36 pm (UTC +05:30)"
+        },
+        {
+          "date_time": "Friday",
+          "activity": "14 November 2025",
+          "location": "11:36 pm (UTC +05:30)"
+        },
+        {
+          "date_time": "Shipment has departed from a DHL facility BANGALORE - INDIA",
+          "activity": "BANGALORE - Karnataka - INDIA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Shipment is on hold",
+          "activity": "BANGALORE - Karnataka - INDIA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Processed at BANGALORE - INDIA",
+          "activity": "BANGALORE - Karnataka - INDIA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Arrived at DHL Sort Facility BANGALORE - INDIA",
+          "activity": "BANGALORE - Karnataka - INDIA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Thursday",
+          "activity": "13 November 2025",
+          "location": "10:20 pm (UTC +05:30)"
+        },
+        {
+          "date_time": "Thursday",
+          "activity": "13 November 2025",
+          "location": "10:20 pm (UTC +05:30)"
+        },
+        {
+          "date_time": "Thursday",
+          "activity": "13 November 2025",
+          "location": "10:20 pm (UTC +05:30)"
+        },
+        {
+          "date_time": "Shipment has departed from a DHL facility HYDERABAD - INDIA",
+          "activity": "HYDERABAD - Telangana - INDIA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Processed at HYDERABAD - INDIA",
+          "activity": "HYDERABAD - Telangana - INDIA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Shipment picked up",
+          "activity": "HYDERABAD - Telangana - INDIA",
+          "location": "1 Piece ID: "
+        }
+      ]
+    },
+    {
+      "awb": 8086567683,
+      "status": "Delivered",
+      "origin": null,
+      "destination": null,
+      "delivery_date": null,
+      "timeline": [
+        {
+          "date_time": "All Shipment Updates",
+          "activity": "Wednesday",
+          "location": "3 December 2025"
+        },
+        {
+          "date_time": "Wednesday",
+          "activity": "3 December 2025",
+          "location": "12:37 pm (UTC -05:00)"
+        },
+        {
+          "date_time": "Wednesday",
+          "activity": "3 December 2025",
+          "location": "12:37 pm (UTC -05:00)"
+        },
+        {
+          "date_time": "Wednesday",
+          "activity": "3 December 2025",
+          "location": "12:37 pm (UTC -05:00)"
+        },
+        {
+          "date_time": "Delivered",
+          "activity": "WESTERVILLE - O - USA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Wednesday",
+          "activity": "3 December 2025",
+          "location": "10:23 am (UTC -05:00)"
+        },
+        {
+          "date_time": "Wednesday",
+          "activity": "3 December 2025",
+          "location": "10:23 am (UTC -05:00)"
+        },
+        {
+          "date_time": "Wednesday",
+          "activity": "3 December 2025",
+          "location": "10:23 am (UTC -05:00)"
+        },
+        {
+          "date_time": "Shipment is out with courier for delivery",
+          "activity": "LOCKBOURNE - Ohio - USA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Shipment is on hold",
+          "activity": "CINCINNATI HUB - Ohio - USA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Tuesday",
+          "activity": "2 December 2025",
+          "location": "10:42 am (UTC -05:00)"
+        },
+        {
+          "date_time": "Tuesday",
+          "activity": "2 December 2025",
+          "location": "10:42 am (UTC -05:00)"
+        },
+        {
+          "date_time": "Tuesday",
+          "activity": "2 December 2025",
+          "location": "10:42 am (UTC -05:00)"
+        },
+        {
+          "date_time": "Shipment is on hold",
+          "activity": "COLUMBUS - WEST - Ohio - USA",
+          "location": ""
+        },
+        {
+          "date_time": "Shipment is on hold",
+          "activity": "CINCINNATI HUB - Ohio - USA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Monday",
+          "activity": "1 December 2025",
+          "location": "11:44 pm (UTC -05:00)"
+        },
+        {
+          "date_time": "Monday",
+          "activity": "1 December 2025",
+          "location": "11:44 pm (UTC -05:00)"
+        },
+        {
+          "date_time": "Monday",
+          "activity": "1 December 2025",
+          "location": "11:44 pm (UTC -05:00)"
+        },
+        {
+          "date_time": "Processed at CINCINNATI HUB - USA",
+          "activity": "CINCINNATI HUB - Ohio - USA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Clearance processing complete at CINCINNATI HUB - USA",
+          "activity": "CINCINNATI HUB - Ohio - USA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Payment is received and recorded for shipment related fees",
+          "activity": "COLUMBUS - WEST - Ohio - USA",
+          "location": ""
+        },
+        {
+          "date_time": "Shipment has departed from a DHL facility LEIPZIG - GERMANY",
+          "activity": "LEIPZIG - Saxony - GERMANY",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Shipment is in transit to destination",
+          "activity": "LEIPZIG - Saxony - GERMANY",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "On hold awaiting for payment of shipment related fees",
+          "activity": "LOCKBOURNE - Ohio - USA",
+          "location": ""
+        },
+        {
+          "date_time": "Sunday",
+          "activity": "30 November 2025",
+          "location": "11:12 pm (UTC -05:00)"
+        },
+        {
+          "date_time": "Sunday",
+          "activity": "30 November 2025",
+          "location": "11:12 pm (UTC -05:00)"
+        },
+        {
+          "date_time": "Sunday",
+          "activity": "30 November 2025",
+          "location": "11:12 pm (UTC -05:00)"
+        },
+        {
+          "date_time": "Customs clearance status updated. Note - The Customs clearance process may start while the shipment is in transit to the destination.",
+          "activity": "CINCINNATI HUB - Ohio - USA",
+          "location": ""
+        },
+        {
+          "date_time": "Customs clearance status updated. Note - The Customs clearance process may start while the shipment is in transit to the destination.",
+          "activity": "CINCINNATI HUB - Ohio - USA",
+          "location": ""
+        },
+        {
+          "date_time": "Shipment has departed from a DHL facility BANGALORE - INDIA",
+          "activity": "BANGALORE - Karnataka - INDIA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Processed at BANGALORE - INDIA",
+          "activity": "BANGALORE - Karnataka - INDIA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Arrived at DHL Sort Facility BANGALORE - INDIA",
+          "activity": "BANGALORE - Karnataka - INDIA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Saturday",
+          "activity": "29 November 2025",
+          "location": "10:30 pm (UTC +05:30)"
+        },
+        {
+          "date_time": "Saturday",
+          "activity": "29 November 2025",
+          "location": "10:30 pm (UTC +05:30)"
+        },
+        {
+          "date_time": "Saturday",
+          "activity": "29 November 2025",
+          "location": "10:30 pm (UTC +05:30)"
+        },
+        {
+          "date_time": "Shipment has departed from a DHL facility HYDERABAD - INDIA",
+          "activity": "HYDERABAD - Telangana - INDIA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Processed at HYDERABAD - INDIA",
+          "activity": "HYDERABAD - Telangana - INDIA",
+          "location": "1 Piece ID: "
+        },
+        {
+          "date_time": "Customs clearance status updated. Note - The Customs clearance process may start while the shipment is in transit to the destination.",
+          "activity": "CINCINNATI HUB - Ohio - USA",
+          "location": ""
+        },
+        {
+          "date_time": "Customs clearance status updated. Note - The Customs clearance process may start while the shipment is in transit to the destination.",
+          "activity": "CINCINNATI HUB - Ohio - USA",
+          "location": ""
+        },
+        {
+          "date_time": "Shipment picked up",
+          "activity": "HYDERABAD - Telangana - INDIA",
+          "location": "1 Piece ID: "
+        }
+      ]
+    }
+  ]
+}
