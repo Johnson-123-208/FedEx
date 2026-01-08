@@ -1,0 +1,10 @@
+flask
+flask-cors
+selenium
+pandas
+openpyxl
+lxml
+gunicorn
+geopy
+webdriver-manager
+requests
