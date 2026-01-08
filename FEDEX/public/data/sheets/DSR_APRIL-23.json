@@ -1,0 +1,2004 @@
+{
+  "sheet_name": "DSR APRIL-23",
+  "count": 222,
+  "shipments": [
+    {
+      "awb": "N/A",
+      "date": "2023-04-01",
+      "sender": "SAMSKRUTHA",
+      "destination": "USA",
+      "weight": "5.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "01.04.2023",
+      "sender": "ASAD BABA",
+      "destination": "USA",
+      "weight": "7.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "01.04.2023",
+      "sender": "SATYANARAYANA",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "01.04.2023",
+      "sender": "SNEHA",
+      "destination": "KERLA",
+      "weight": "3.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "01.04.2023",
+      "sender": "KARTHIK",
+      "destination": "IRELAND",
+      "weight": "24.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "01.04.2023",
+      "sender": "SRINIVAS",
+      "destination": "NZ",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "01.04.2023",
+      "sender": "AISHWARYA",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "01.04.2023",
+      "sender": "MALLIKARJUN",
+      "destination": "USA",
+      "weight": "4.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "01.04.2023",
+      "sender": "G.VENKATA SAI",
+      "destination": "USA",
+      "weight": "30.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "03.04.2023",
+      "sender": "M.V.N.S.MURALI",
+      "destination": "USA",
+      "weight": "14.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "03.04.2023",
+      "sender": "G.SWARNA",
+      "destination": "USA",
+      "weight": "26.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "03.04.2023",
+      "sender": "G.VENKATA SAI",
+      "destination": "USA",
+      "weight": "46.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "03.04.2023",
+      "sender": "MEENA DORCUS",
+      "destination": "USA",
+      "weight": "12.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "03.04.2023",
+      "sender": "T.PRAVEEN KUMAR",
+      "destination": "CA",
+      "weight": "3.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "03.04.2023",
+      "sender": "SESHU KUMAR",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "03.04.2023",
+      "sender": "PIRI INDIA",
+      "destination": "ODISHA",
+      "weight": "1.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "03.04.2023",
+      "sender": "MHD ZAKARIA",
+      "destination": "USA",
+      "weight": "23.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "03.04.2023",
+      "sender": "MHD. AMJAD",
+      "destination": "USA",
+      "weight": "18.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "03.04.2023",
+      "sender": "SUDARSHAN REDDY",
+      "destination": "USA",
+      "weight": "19.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "03.04.2023",
+      "sender": "S.V.V.SATYA NARAYANA",
+      "destination": "USA",
+      "weight": "25.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "04.04.2023",
+      "sender": "S.BALAMANI",
+      "destination": "AUS",
+      "weight": "43.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "04.04.2023",
+      "sender": "Y.SHELLESTY",
+      "destination": "USA",
+      "weight": "7.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "04.04.2023",
+      "sender": "D.SWARNA",
+      "destination": "USA",
+      "weight": "13.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "04.04.2023",
+      "sender": "V.PRASAD",
+      "destination": "USA",
+      "weight": "1.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "05.04.2023",
+      "sender": "KARISHMA",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "05.04.2023",
+      "sender": "PADMAJA",
+      "destination": "UK",
+      "weight": "18.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "05.04.2023",
+      "sender": "SAMANTH REDDY",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "05.04.2023",
+      "sender": "PRAGNA GROUP",
+      "destination": "SW",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "05.04.2023",
+      "sender": "SIVAJI",
+      "destination": "USA",
+      "weight": "12.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "06.04.2023",
+      "sender": "BHUVANESWARA RAO",
+      "destination": "USA",
+      "weight": "21.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "06.04.2023",
+      "sender": "RASHID MHD",
+      "destination": "USA",
+      "weight": "3.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "06.04.2023",
+      "sender": "RAMAKRISHNA",
+      "destination": "AUS",
+      "weight": "2.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "06.04.2023",
+      "sender": "SANDEEP",
+      "destination": "MALTA",
+      "weight": "8.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "06.04.2023",
+      "sender": "ANUSHA",
+      "destination": "NETHERLAND",
+      "weight": "1.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "07.04.2023",
+      "sender": "SREELAKSHMI",
+      "destination": "USA",
+      "weight": "1.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "07.04.2023",
+      "sender": "JHANSI RANI",
+      "destination": "UK",
+      "weight": "14.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "07.04.2023",
+      "sender": "DR.MADHUMITHA",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "07.04.2023",
+      "sender": "SANDEEP",
+      "destination": "USA",
+      "weight": "5.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "07.04.2023",
+      "sender": "RAM BABU",
+      "destination": "USA",
+      "weight": "22.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "08.04.2023",
+      "sender": "SHIVA",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "08.04.2023",
+      "sender": "SHREE DATTA",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "08.04.2023",
+      "sender": "JAYA KIRAN",
+      "destination": "AUS",
+      "weight": "1.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "08.04.2023",
+      "sender": "SRINIVAS",
+      "destination": "USA",
+      "weight": "8.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "08.04.2023",
+      "sender": "SRINIVAS RAO",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "08.04.2023",
+      "sender": "RANE LTD.",
+      "destination": "GERMANY",
+      "weight": "22.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "08.04.2023",
+      "sender": "V.RADHA KRISHNA",
+      "destination": "AUS",
+      "weight": "23.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "08.04.2023",
+      "sender": "AWAIS UDDIN",
+      "destination": "USA",
+      "weight": "10.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "08.04.2023",
+      "sender": "P.SRINIVAS RAO",
+      "destination": "USA",
+      "weight": "16.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "08.04.2023",
+      "sender": "C.RANGA RAO",
+      "destination": "USA",
+      "weight": "3.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "08.04.2023",
+      "sender": "B.VENKAT",
+      "destination": "USA",
+      "weight": "17.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "08.04.2023",
+      "sender": "VENKATESH",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "08.04.2023",
+      "sender": "NS BIO SCIENCES",
+      "destination": "CHINA",
+      "weight": "1.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "10.04.2023",
+      "sender": "DR.RAMA RAJU",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "10.04.2023",
+      "sender": "SRIKANTH REDDY",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "10.04.2023",
+      "sender": "ORAGATI LAKSHMI",
+      "destination": "UK",
+      "weight": "24.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "10.04.2023",
+      "sender": "MIRZA HYDER",
+      "destination": "USA",
+      "weight": "6.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "10.04.2023",
+      "sender": "MIRZA OSMAN",
+      "destination": "USA",
+      "weight": "21.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "10.04.2023",
+      "sender": "ABDULLAH YAZDANI",
+      "destination": "UK",
+      "weight": "14.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "10.04.2023",
+      "sender": "TULASI DASU",
+      "destination": "USA",
+      "weight": "1.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "10.04.2023",
+      "sender": "MANASA",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "11.04.2023",
+      "sender": "E.USHA RANI",
+      "destination": "USA",
+      "weight": "22.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "11.04.2023",
+      "sender": "ARUN KARTHEEK",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "11.04.2023",
+      "sender": "VISWATEJ",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "11.04.2023",
+      "sender": "SAM WILSON",
+      "destination": "GT",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "11.04.2023",
+      "sender": "SHAIK KALEEM",
+      "destination": "UK",
+      "weight": "43.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "11.04.2023",
+      "sender": "FARIHA",
+      "destination": "USA",
+      "weight": "4.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "11.04.2023",
+      "sender": "V.N.SANTOSH",
+      "destination": "USA",
+      "weight": "7.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "11.04.2023",
+      "sender": "SYEDA BIRJEES",
+      "destination": "USA",
+      "weight": "52.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "11.04.2023",
+      "sender": "HANUMANTH RAO",
+      "destination": "DE(GERMANY)",
+      "weight": "62.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "11.04.2023",
+      "sender": "A.SRILAKSHMI",
+      "destination": "UK",
+      "weight": "7.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "11.04.2023",
+      "sender": "SRINIVAS MOULI",
+      "destination": "USA",
+      "weight": "34.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "11.04.2023",
+      "sender": "SRIDEVI",
+      "destination": "UK",
+      "weight": "53.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "11.04.2023",
+      "sender": "SRIDEVI",
+      "destination": "UK",
+      "weight": "57.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "11.04.2023",
+      "sender": "LAXMAN RAO",
+      "destination": "CANADA",
+      "weight": "60.0",
+      "status": "nan",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "12.04.2023",
+      "sender": "BHANDARI",
+      "destination": "CHINA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "12.04.2023",
+      "sender": "IMRAN",
+      "destination": "USA",
+      "weight": "8.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "12.04.2023",
+      "sender": "MHD AAMIR",
+      "destination": "UK",
+      "weight": "11.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "12.04.2023",
+      "sender": "NARADAS",
+      "destination": "AUS",
+      "weight": "25.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "12.04.2023",
+      "sender": "MADHUNAKAR",
+      "destination": "USA",
+      "weight": "3.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "12.04.2023",
+      "sender": "VARANSI SUBRAHMANYAM",
+      "destination": "AUS",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "13.04.2023",
+      "sender": "IBRAHIM MHD",
+      "destination": "ST.MARTEN",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "13.04.2023",
+      "sender": "PAVAN KUMAR",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "13.04.2023",
+      "sender": "PAVAN KUMAR",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "13.04.2023",
+      "sender": "SRINIVAS RAO",
+      "destination": "USA",
+      "weight": "15.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "14.04.2023",
+      "sender": "MUSTAFA KHAN",
+      "destination": "USA",
+      "weight": "60.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "14.04.2023",
+      "sender": "MUSTAFA KHAN",
+      "destination": "USA",
+      "weight": "37.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "14.04.2023",
+      "sender": "JHANSI RANI",
+      "destination": "USA",
+      "weight": "1.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "14.04.2023",
+      "sender": "GAYATHRI.B",
+      "destination": "USA",
+      "weight": "12.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "14.04.2023",
+      "sender": "SARITHA.K",
+      "destination": "AUS",
+      "weight": "9.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "14.04.2023",
+      "sender": "CHANDRA SEKHAR",
+      "destination": "USA",
+      "weight": "6.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "14.04.2023",
+      "sender": "USHA RANI",
+      "destination": "USA",
+      "weight": "15.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "14.04.2023",
+      "sender": "RATNA KAMALAKAR",
+      "destination": "AE",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "14.04.2023",
+      "sender": "SHAIK AMIR",
+      "destination": "USA",
+      "weight": "37.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "14.04.2023",
+      "sender": "NARASIMHA.S",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "15.04.2023",
+      "sender": "HITESH",
+      "destination": "AUS",
+      "weight": "2.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "15.04.2023",
+      "sender": "RAFI",
+      "destination": "AUS",
+      "weight": "2.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "15.04.2023",
+      "sender": "RAHEEM",
+      "destination": "USA",
+      "weight": "10.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "15.04.2023",
+      "sender": "INDU SRI",
+      "destination": "AUS",
+      "weight": "10.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "15.04.2023",
+      "sender": "INSHA RAHEEM",
+      "destination": "UK",
+      "weight": "10.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "15.04.2023",
+      "sender": "SAJJA PALLAVI",
+      "destination": "AUS",
+      "weight": "1.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "15.04.2023",
+      "sender": "VINUSHA",
+      "destination": "AUS",
+      "weight": "17.0",
+      "status": "Awaiting Customs Release",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "15.04.2023",
+      "sender": "PHANINDHER",
+      "destination": "AUS",
+      "weight": "10.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "SRI INDU",
+      "destination": "CA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "ST.FRANCIS COLG.",
+      "destination": "CA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "REGISTAR",
+      "destination": "CA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "NARAYANAMMA",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "THE PRINCIPAL",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "BALLIAHGARI",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "BALLIAHGARI",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "SOWJANYA",
+      "destination": "USA",
+      "weight": "49.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "SRINIVASA",
+      "destination": "USA",
+      "weight": "70.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "VIJAYA",
+      "destination": "USA",
+      "weight": "60.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "VANAJA",
+      "destination": "USA",
+      "weight": "61.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "GOURI",
+      "destination": "USA",
+      "weight": "61.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "SHIVA",
+      "destination": "USA",
+      "weight": "62.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "VENKATA ",
+      "destination": "USA",
+      "weight": "62.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "P VENKATA RAMANNA",
+      "destination": "USA",
+      "weight": "60.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "THUMATLA VENKANNA",
+      "destination": "KG",
+      "weight": "12.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "JAGANNATHAM",
+      "destination": "KZ",
+      "weight": "12.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "SASHI REKHA",
+      "destination": "USA",
+      "weight": "15.0",
+      "status": "DELIVERD",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "SAUD ALI",
+      "destination": "USA",
+      "weight": "11.0",
+      "status": "DELIVERD",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "FAROOQ",
+      "destination": "USA",
+      "weight": "5.0",
+      "status": "DELIVERD",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "D.SATYA",
+      "destination": "USA",
+      "weight": "11.0",
+      "status": "DELIVERD",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "M.SIVAPRASAD",
+      "destination": "UK",
+      "weight": "11.0",
+      "status": "DELIVERD",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "MOHD ABDUL ALEEM",
+      "destination": "USA",
+      "weight": "68.0",
+      "status": "DELIVERD",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "MOHD ABDUL ALEEM",
+      "destination": "USA",
+      "weight": "38.0",
+      "status": "DELIVERD",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "MOHD ABDUL ALEEM",
+      "destination": "USA",
+      "weight": "48.0",
+      "status": "DELIVERD",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "17.04.2023",
+      "sender": "MOHD ABDUL ALEEM",
+      "destination": "USA",
+      "weight": "48.0",
+      "status": "DELIVERD",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "18.04.2023",
+      "sender": "PADMAVATHI",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERD",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "18.04.2023",
+      "sender": "CHANDRA SEKHAR",
+      "destination": "KG",
+      "weight": "26.0",
+      "status": "DELIVERD",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "18.04.2023",
+      "sender": "BALLIAHGARI",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "18.04.2023",
+      "sender": "VENKAT REDDY",
+      "destination": "USA",
+      "weight": "15.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "18.04.2023",
+      "sender": "VENKAT SANTOSH",
+      "destination": "CA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "18.04.2023",
+      "sender": "TELANGANA STATE",
+      "destination": "CA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "18.04.2023",
+      "sender": "SURESH",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "18.04.2023",
+      "sender": "THE REGISTARAR",
+      "destination": "CA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "18.04.2023",
+      "sender": "THE REGISTARAR",
+      "destination": "CA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "19.04.2023",
+      "sender": "J PRAMOD",
+      "destination": "BB",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "19.04.2023",
+      "sender": "SNIGDHA",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED\n",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "19.04.2023",
+      "sender": "RAMANA AO",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "19.04.2023",
+      "sender": "BALARAJANAYAK",
+      "destination": "AUS",
+      "weight": "12.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "20.04.2023",
+      "sender": "HARI KRISHNA GOUD",
+      "destination": "GEORGIA",
+      "weight": "52.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "20.04.2023",
+      "sender": "VENKATA KANAKA",
+      "destination": "GEORGIA",
+      "weight": "24.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "20.04.2023",
+      "sender": "RAGHU NAIK",
+      "destination": "AUS",
+      "weight": "22.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "20.04.2023",
+      "sender": "SAYED HASSAN BIN TAHER",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "20.04.2023",
+      "sender": "MADHUSMITHA SAHOO",
+      "destination": "USA",
+      "weight": "40.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "20.04.2023",
+      "sender": "RINEETHA TANDRA",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "20.04.2023",
+      "sender": "RINEETHA TANDRA",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "20.04.2023",
+      "sender": "THE PRINCIPAL",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "20.04.2023",
+      "sender": "N. SAI KRISHNA",
+      "destination": "USA",
+      "weight": "22.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "21.04.2023",
+      "sender": "UNISON I3X",
+      "destination": "JP",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "21.04.2023",
+      "sender": "MARURI",
+      "destination": "UK",
+      "weight": "12.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "21.04.2023",
+      "sender": "DUDEKULA",
+      "destination": "IE",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "21.04.2023",
+      "sender": "NARENDRA",
+      "destination": "GEORGIA",
+      "weight": "21.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "21.04.2023",
+      "sender": "SUDARSHAN",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "21.04.2023",
+      "sender": "SRINIVAS RAO",
+      "destination": "UK",
+      "weight": "19.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "21.04.2023",
+      "sender": "SHANKAR",
+      "destination": "JP",
+      "weight": "2.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "22.04.2023",
+      "sender": "VARA PRASAD",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "22.04.2023",
+      "sender": "JAYA KUMAR",
+      "destination": "JP",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "22.04.2023",
+      "sender": "SIVA RAMAKRISHNA",
+      "destination": "CA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "22.04.2023",
+      "sender": "NEHA GOSWAMI",
+      "destination": "USA",
+      "weight": "7.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "24.04.2023",
+      "sender": "K.ELIZABETH RANI",
+      "destination": "AUSTRALIA",
+      "weight": "10.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "24.04.2023",
+      "sender": "AMARAVANI",
+      "destination": "USA",
+      "weight": "14.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "24.04.2023",
+      "sender": "G.GOWRI SHANKAR LAL",
+      "destination": "USA",
+      "weight": "28.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "24.04.2023",
+      "sender": "B.ANURADHA",
+      "destination": "USA",
+      "weight": "39.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "24.04.2023",
+      "sender": "T.ABHINAY",
+      "destination": "MT",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "24.04.2023",
+      "sender": "R.RAJESH CHANDRA REDDY",
+      "destination": "USA",
+      "weight": "9.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "24.04.2023",
+      "sender": "V.REVATHI",
+      "destination": "USA",
+      "weight": "16.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "24.04.2023",
+      "sender": "Y.HEMANTH",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "24.04.2023",
+      "sender": "S.SATHISH",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "nan",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "25.04.2023",
+      "sender": "K.HARI HARA PRASAD REDDY",
+      "destination": "USA",
+      "weight": "17.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "25.04.2023",
+      "sender": "D.RAJA SEKHAR ADVOCATE",
+      "destination": "WE",
+      "weight": "15.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "25.04.2023",
+      "sender": "MD.KHAJA HABEEBUDDIN",
+      "destination": "USA",
+      "weight": "1.0",
+      "status": "deLIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "25.04.2023",
+      "sender": "T.SAMBASIVARAO",
+      "destination": "KG ",
+      "weight": "24.0",
+      "status": "deLIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "25.04.2023",
+      "sender": "SANDEEP GOSWAMI",
+      "destination": "USA",
+      "weight": "8.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "26.04.2023",
+      "sender": "M.HANUMANTHA RAO",
+      "destination": "USA",
+      "weight": "9.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "26.04.2023",
+      "sender": "K.VENU PRIYA",
+      "destination": "USA",
+      "weight": "36.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "26.04.2023",
+      "sender": "K.KONDAL RAO",
+      "destination": "DE",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "26.04.2023",
+      "sender": "D.BALAJI",
+      "destination": "AE",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "26.04.2023",
+      "sender": "K.V.N.MURTHY",
+      "destination": "USA",
+      "weight": "31.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "26.04.2023",
+      "sender": "I.PADMA",
+      "destination": "USA",
+      "weight": "12.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "26.04.2023",
+      "sender": "MD.YOUSUF UR RAHMAN",
+      "destination": "USA",
+      "weight": "16.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "26.04.2023",
+      "sender": "RATHNA REDDY THIRUMALA REDDY",
+      "destination": "AUSTRALIA",
+      "weight": "22.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "27-04-2023",
+      "sender": "T.SAI SURYANATH",
+      "destination": "DE",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "27-04-2023",
+      "sender": "KAMATAM SOMAIAH",
+      "destination": "KUWAIT",
+      "weight": "4.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "27-04-2023",
+      "sender": "D.SITA",
+      "destination": "USA",
+      "weight": "12.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "27-04-2023",
+      "sender": "SIVA LAKSHMAN RAO Y ",
+      "destination": "MALTA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "27-04-2023",
+      "sender": "P.THIRUMAl RAO",
+      "destination": "USA",
+      "weight": "35.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "27-04-2023",
+      "sender": "PARITALA SRAVANI",
+      "destination": "USA",
+      "weight": "10.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "27-04-2023",
+      "sender": "NAJEEB AHMED",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "27-04-2023",
+      "sender": "ARRA SRIKANTH",
+      "destination": "USA",
+      "weight": "1.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "27-04-2023",
+      "sender": "VERTEX HOMES",
+      "destination": "UK",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "27-04-2023",
+      "sender": "P.NAGA DEEPIKA",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "27-04-2023",
+      "sender": "K.JUHI KUMAR",
+      "destination": "PH",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "27-04-2023",
+      "sender": "SUHA SIDDIQUI",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "28-04-2023",
+      "sender": "E.VENKATESWARA RAO",
+      "destination": "MOROCCO",
+      "weight": "21.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "28-04-2023",
+      "sender": "MOHD ABRAR AHMED",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "29-04-2023",
+      "sender": "DUPOINT SPECIALITY PRODCUTS INDIA PVT LTD",
+      "destination": "SINGAPORE",
+      "weight": "1.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "29-04-2023",
+      "sender": "S.BHASKAR",
+      "destination": "USA",
+      "weight": "7.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "29-04-2023",
+      "sender": "R.SIVAJI",
+      "destination": "CANADA",
+      "weight": "52.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "29-04-2023",
+      "sender": "K.RAJANIPRIYA",
+      "destination": "AUSTRALIA",
+      "weight": "22.0",
+      "status": "Scheduled Arrival at Destination Hub",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "29-04-2023",
+      "sender": "AJAY SEKUBOYINA",
+      "destination": "UK",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "29-04-2023",
+      "sender": "R.SIVAJI",
+      "destination": "USA",
+      "weight": "12.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "2023-06-04",
+      "sender": "nan",
+      "destination": "JAPAN",
+      "weight": "4.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "2023-06-04",
+      "sender": "nan",
+      "destination": "JAPAN",
+      "weight": "2.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "2023-06-04",
+      "sender": "nan",
+      "destination": "JAPAN",
+      "weight": "13.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "2023-06-04",
+      "sender": "nan",
+      "destination": "USA",
+      "weight": "20.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "2023-06-04",
+      "sender": "nan",
+      "destination": "USA",
+      "weight": "13.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "2023-12-04",
+      "sender": "nan",
+      "destination": "CHINA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "2023-07-04",
+      "sender": "DUBEY PERFUMES",
+      "destination": "SA",
+      "weight": "1.0",
+      "status": "nan",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "2023-11-04",
+      "sender": "DECCAN FINE CHEMICALS",
+      "destination": "USA",
+      "weight": "2.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "2023-11-04",
+      "sender": "DECCAN FINE CHEMICALS",
+      "destination": "USA",
+      "weight": "19.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "13-04-2023",
+      "sender": "IMMUNOCARE",
+      "destination": "USA",
+      "weight": "0.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "18-04-2023",
+      "sender": "DECCAN FINE CHEMICALS",
+      "destination": "AUSTRALIA",
+      "weight": "2.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "2023-10-04",
+      "sender": "DECCAN FINE CHEMICALS",
+      "destination": "USA",
+      "weight": "19.5",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "19-04-2023",
+      "sender": "DECCAN FINE CHEMICALS",
+      "destination": "USA",
+      "weight": "2.0",
+      "status": "DELIVERED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "19-04-2023",
+      "sender": "DECCAN FINE CHEMICALS",
+      "destination": "CO",
+      "weight": "13.0",
+      "status": "CANCELED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "19-04-2023",
+      "sender": "ZOOM TECHNOLOGY",
+      "destination": "CZ",
+      "weight": "1.5",
+      "status": "nan",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "21-04-2023",
+      "sender": "DECCAN FINE CHEMICALS",
+      "destination": "CO",
+      "weight": "13.0",
+      "status": "CANCELLED",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "25-04-2023",
+      "sender": "DECCAN FINE CHEMICALS",
+      "destination": "CH  ",
+      "weight": "4.0",
+      "status": "nan",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "25-04-2023",
+      "sender": "BHANDARI AGENCIES",
+      "destination": "CN",
+      "weight": "0.5",
+      "status": "nan",
+      "service": "N/A"
+    },
+    {
+      "awb": "N/A",
+      "date": "nan",
+      "sender": "nan",
+      "destination": "nan",
+      "weight": "nan",
+      "status": "nan",
+      "service": "N/A"
+    }
+  ]
+}

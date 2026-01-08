@@ -1,0 +1,2301 @@
+{
+  "sheet_name": "DSR JUNE-25",
+  "count": 255,
+  "shipments": [
+    {
+      "awb": "6002441483",
+      "date": "2025-01-11",
+      "sender": "KASULADEV PUSHPA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "881690970056",
+      "date": "2025-01-11",
+      "sender": "ARRA SRIKANTH",
+      "destination": "TAIWAN",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002442032",
+      "date": "2025-01-11",
+      "sender": "SHAIK YASEEN",
+      "destination": "PHILIPPINES",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002442176",
+      "date": "2025-01-11",
+      "sender": "ABDUL KAREEM KHAN",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002442650",
+      "date": "2025-01-11",
+      "sender": "MUTHYALA PREM NAGESH REDDY",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002443862",
+      "date": "2025-01-11",
+      "sender": "KUKUTAM SRINIVAS",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "881700648554",
+      "date": "2025-01-11",
+      "sender": "E ISAAC NUTHAN PAUL",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "881648746144",
+      "date": "2025-01-11",
+      "sender": "VIVA MEDICINES PVT LTD",
+      "destination": "SINGAPORE",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "881726013439",
+      "date": "2025-01-11",
+      "sender": "SRICHEM LIFE SCIENCES PVT LTD",
+      "destination": "CHINA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002445818",
+      "date": "2025-01-11",
+      "sender": "BOLLENI VENKATA LAKSHMI NARAYANA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "881726795964",
+      "date": "2025-01-11",
+      "sender": "VEERA REDDY ARAVA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "881726394485",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS INDIA PVT LTD",
+      "destination": "GERMANY",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "6002445956",
+      "date": "2025-01-11",
+      "sender": "SHAIK MUNNI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "881729304041",
+      "date": "2025-01-11",
+      "sender": "ANITA GUPTHA",
+      "destination": "UK",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002446089",
+      "date": "2025-01-11",
+      "sender": "KUMMARAGUNTA JYOTSNA",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002446126",
+      "date": "2025-01-11",
+      "sender": "CH FARHAT SUBHAANA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002446388",
+      "date": "2025-01-11",
+      "sender": "MANDA VALLI ARUDRA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002446622",
+      "date": "2025-01-11",
+      "sender": "BALASA LAKSHMI PRASANNA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002446937",
+      "date": "2025-01-11",
+      "sender": "PATTASWAMY PURNIMA",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "881731643768",
+      "date": "2025-01-11",
+      "sender": "NRG FOODS PVT LTD",
+      "destination": "CHILE",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002447171",
+      "date": "2025-01-11",
+      "sender": "THANGUDU SAMBAMURTHY",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "8880516686",
+      "date": "2025-01-11",
+      "sender": "ALLAM MAMATHA",
+      "destination": "UK",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "PXC PACIFIC"
+    },
+    {
+      "awb": "30326632",
+      "date": "2025-01-11",
+      "sender": "UMA REDDY SIRIGIRI",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "COURIER WALA"
+    },
+    {
+      "awb": "30326646",
+      "date": "2025-01-11",
+      "sender": "UMA REDDY SIRIGIRI",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "COURIER WALA"
+    },
+    {
+      "awb": "881733142175",
+      "date": "2025-01-11",
+      "sender": "K SOUMYA CEO",
+      "destination": "CHINA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "9220923769",
+      "date": "2025-01-11",
+      "sender": "DR KHETAVATH CHANDRAKALA E",
+      "destination": "GERMANY",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "ATLANTIC"
+    },
+    {
+      "awb": "8880515788",
+      "date": "2025-01-11",
+      "sender": "SANDEEP KANTH BEDADI",
+      "destination": "UK",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "PXC PACIFIC"
+    },
+    {
+      "awb": "6002448610",
+      "date": "2025-01-11",
+      "sender": "KODALI SUSHMA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002449193",
+      "date": "2025-01-11",
+      "sender": "BALASA LAKSHMI PRASANNA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002448831",
+      "date": "2025-01-11",
+      "sender": "K LAKSHMI PRASANNA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "881763124709",
+      "date": "2025-01-11",
+      "sender": "PULI BENSON",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "881763666422",
+      "date": "2025-01-11",
+      "sender": "RAKESH ROUTHU",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "881764295435",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS INDIA PVT LTD",
+      "destination": "GERMANY",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "881765105350",
+      "date": "2025-01-11",
+      "sender": "MERET AUDIO PRIVATE MILITED",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "881764218459",
+      "date": "2025-01-11",
+      "sender": "ASHISH DAK",
+      "destination": "SINGAPORE",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "99176967",
+      "date": "2025-01-11",
+      "sender": "SHAMEEM SHAIK",
+      "destination": "IRELAND",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "UNITED EXPRESS"
+    },
+    {
+      "awb": "99176971",
+      "date": "2025-01-11",
+      "sender": "SHAMEEM SHAIK",
+      "destination": "IRELAND",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "UNITED EXPRESS"
+    },
+    {
+      "awb": "6002451096",
+      "date": "2025-01-11",
+      "sender": "T S REDDY",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002451069",
+      "date": "2025-01-11",
+      "sender": "KANDUKURI RAJA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002451113",
+      "date": "2025-01-11",
+      "sender": "RAJESH ANNAM",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002451288",
+      "date": "2025-01-11",
+      "sender": "MEENAGARI UJWAL",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002451384",
+      "date": "2025-01-11",
+      "sender": "S SANKARA SASTRY",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "881793694388",
+      "date": "2025-01-11",
+      "sender": "NOONE ABHISHEK KUMAR",
+      "destination": "LATVIA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "881793803356",
+      "date": "2025-01-11",
+      "sender": "DAMMU RAJESH KUMAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "881795204830",
+      "date": "2025-01-11",
+      "sender": "FARAZ MOHAMMED SALEEM",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002451945",
+      "date": "2025-01-11",
+      "sender": "BALASA LAKSHMI PRASANNA",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002451140",
+      "date": "2025-01-11",
+      "sender": "PASARI SANKARA RAO",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "881796890847",
+      "date": "2025-01-11",
+      "sender": "CEREMORPHIC TECHNOLOGIES PVT LTD",
+      "destination": "JAPAN",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "881798187053",
+      "date": "2025-01-11",
+      "sender": "INVENTE INNOVATIONS LABS PVT LTD",
+      "destination": "LIBERIA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "881822649710",
+      "date": "2025-01-11",
+      "sender": "BUCHA MANGESWARI",
+      "destination": "KYRGYSTHAN",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "6002453937",
+      "date": "2025-01-11",
+      "sender": "KONTHAM MOHAN REDDY",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "881826315693",
+      "date": "2025-01-11",
+      "sender": "AHMED",
+      "destination": "SAUDI ARABIA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "881825895323",
+      "date": "2025-01-11",
+      "sender": "GMFC LABS PVT LTD",
+      "destination": "ITALY",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "881827786248",
+      "date": "2025-01-11",
+      "sender": "PIONEER DRIP SYSTEMS (P) LTD",
+      "destination": "MALAWI",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "6002454602",
+      "date": "2025-01-11",
+      "sender": "MOHAMMED ABDUL SAMAD JAMEEL",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002455307",
+      "date": "2025-01-11",
+      "sender": "ADIGOPPULA RAMCHANDAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002455350",
+      "date": "2025-01-11",
+      "sender": "MURALI VENKATARAMANAN",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "881851960925",
+      "date": "2025-01-11",
+      "sender": "JASHWIN VITREOUS",
+      "destination": "CHINA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "881852128905",
+      "date": "2025-01-11",
+      "sender": "JASHWIN VITREOUS",
+      "destination": "CHINA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "5580697975",
+      "date": "2025-01-11",
+      "sender": "MOHAMMED ABDUL LATEEF",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "DHL/WW"
+    },
+    {
+      "awb": "881852184375",
+      "date": "2025-01-11",
+      "sender": "VENU GOPAL",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "881852247400",
+      "date": "2025-01-11",
+      "sender": "RAJAPPAN ANIL KUMAR",
+      "destination": "SOUTH AFRICA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "8880519008",
+      "date": "2025-01-11",
+      "sender": "AKKALDEVI VIJAY KUMAR",
+      "destination": "UK",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "PXC PACIFIC"
+    },
+    {
+      "awb": "881870607542",
+      "date": "2025-01-11",
+      "sender": "MADDIRALA RANGA MEGHANA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002457841",
+      "date": "2025-01-11",
+      "sender": "TAMMANAGARI NEELA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002457739",
+      "date": "2025-01-11",
+      "sender": "NEKKADAPU NARASMIHA RAO",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "881874557333",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS INDIA PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "881874681650",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS INDIA PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002458582",
+      "date": "2025-01-11",
+      "sender": "PALAKEETI SWAROOPA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "30327904",
+      "date": "2025-01-11",
+      "sender": "ARUN MALVE",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "COURIER WALA"
+    },
+    {
+      "awb": "8880519255",
+      "date": "2025-01-11",
+      "sender": "POTTURI VENKATA MADHUSUDAN",
+      "destination": "UK",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "PXC PACIFIC"
+    },
+    {
+      "awb": "881877853195",
+      "date": "2025-01-11",
+      "sender": "INDIRA PRIYADARSHINI BALACHANDRAN",
+      "destination": "THAILAND",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002459675",
+      "date": "2025-01-11",
+      "sender": "MOHAMMED ABDUL HAMEED",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002459710",
+      "date": "2025-01-11",
+      "sender": "MOHAMMED ABDUL HAMEED",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002460706",
+      "date": "2025-01-11",
+      "sender": "TELANGANA BOARD OF INTERMEDIATE EDUCATION",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002460779",
+      "date": "2025-01-11",
+      "sender": "P PARVATHEE DEVI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "1300742984",
+      "date": "2025-01-11",
+      "sender": "TALLURI SARITHA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "DHL"
+    },
+    {
+      "awb": "881909874766",
+      "date": "2025-01-11",
+      "sender": "ATLURI SMITHA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "881910109516",
+      "date": "2025-01-11",
+      "sender": "MOHAMMED AL MASUODI",
+      "destination": "JORDAN",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "6002461122",
+      "date": "2025-01-11",
+      "sender": "KODAVATI GANTI RAMACHANDRA MOHAN",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "881907525892",
+      "date": "2025-01-11",
+      "sender": "MALAPALLE RAKESH REDDY",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002462155",
+      "date": "2025-01-11",
+      "sender": "NEKKADAPU NARASMIHA RAO",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "8880520152",
+      "date": "2025-01-11",
+      "sender": "KHATRAVATH DEEPAK",
+      "destination": "UK",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "PXC PACIFIC"
+    },
+    {
+      "awb": "6002463246",
+      "date": "2025-01-11",
+      "sender": "KANAKATLA VIKAS",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002461508",
+      "date": "2025-01-11",
+      "sender": "THUMMALA SAI CHANDU",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "881909715890",
+      "date": "2025-01-11",
+      "sender": "ALIVIRA ANIMAL HEALTH LIMITED",
+      "destination": "NETHERLANDS",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "881910628272",
+      "date": "2025-01-11",
+      "sender": "THUMMALA SAI CHANDU",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "8733900346",
+      "date": "2025-01-11",
+      "sender": "B KALYANI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "DHL"
+    },
+    {
+      "awb": "3012276256",
+      "date": "2025-01-11",
+      "sender": "B KALYANI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "DHL"
+    },
+    {
+      "awb": "881913627220",
+      "date": "2025-01-11",
+      "sender": "SOUMYA KUKRETI CEO",
+      "destination": "CHINA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "881939294341",
+      "date": "2025-01-11",
+      "sender": "SHANTVEER G UPPIN",
+      "destination": "GERMANY",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "81937981381",
+      "date": "2025-01-11",
+      "sender": "SUMMIT CONSULTING SERVICES",
+      "destination": "NORWAY",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002463896",
+      "date": "2025-01-11",
+      "sender": "BALASA LAKSHMI PRASANNA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "8880520275",
+      "date": "2025-01-11",
+      "sender": "SHAIK NAZEER UDDIN",
+      "destination": "UK",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "PXC PACIFIC"
+    },
+    {
+      "awb": "881941379193",
+      "date": "2025-01-11",
+      "sender": "JOGENDER SINGH LOHIYA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002464554",
+      "date": "2025-01-11",
+      "sender": "SOLOMON PALVAI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "881939676229",
+      "date": "2025-01-11",
+      "sender": "CHANDRA ROUT",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002464879",
+      "date": "2025-01-11",
+      "sender": "DIRECTOR OF GOVERNMENT",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002464891",
+      "date": "2025-01-11",
+      "sender": "MOHAMMAD ABDUL RAB",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002464684",
+      "date": "2025-01-11",
+      "sender": "AKULA ANOOP SATYA NAIDU",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "881973513867",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS INDIA PVT LTD",
+      "destination": "BELIGIUM",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "8880520690",
+      "date": "2025-01-11",
+      "sender": "PABBOJI NARASIMHA CHARY",
+      "destination": "UK",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "PXC PACIFIC"
+    },
+    {
+      "awb": "30331256",
+      "date": "2025-01-11",
+      "sender": "THIYYARAPU HARISH",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "COURIER WALA"
+    },
+    {
+      "awb": "881969866720",
+      "date": "2025-01-11",
+      "sender": "BRAGONI CHAITANYA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002466038",
+      "date": "2025-01-11",
+      "sender": "BALASA LAKSHMI PRASANNA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "881973173130",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS INDIA PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "6002466356",
+      "date": "2025-01-11",
+      "sender": "MADANU JOHNA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "1188412750",
+      "date": "2025-01-11",
+      "sender": "SABIHA TASNEEM",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "DHL"
+    },
+    {
+      "awb": "6002466801",
+      "date": "2025-01-11",
+      "sender": "CHALLA DIVYA REDDY",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002466933",
+      "date": "2025-01-11",
+      "sender": "NITHIN NETHIKUNTA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "881977317370",
+      "date": "2025-01-11",
+      "sender": "JADI PREM KUMAR",
+      "destination": "SINGAPORE",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(234)"
+    },
+    {
+      "awb": "6002467475",
+      "date": "2025-01-11",
+      "sender": "DANDA PRASAHNTH REDDY",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002467524",
+      "date": "2025-01-11",
+      "sender": "SURENDRANADH PERALA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002467545",
+      "date": "2025-01-11",
+      "sender": "METTAM UPENDER",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "595003294782",
+      "date": "2025-01-11",
+      "sender": "THIYYARAPU HARISH",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "DTDC"
+    },
+    {
+      "awb": "6002467943",
+      "date": "2025-01-11",
+      "sender": "BOJJA SUMALATHA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002468541",
+      "date": "2025-01-11",
+      "sender": "ASHISH DAK",
+      "destination": "SINGAPORE",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "882006513060",
+      "date": "2025-01-11",
+      "sender": "DARAM GANESH",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002468614",
+      "date": "2025-01-11",
+      "sender": "SAGARIKA LOYA ADVOCATE",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002469462",
+      "date": "2025-01-11",
+      "sender": "SARANG SHAH CO",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002469680",
+      "date": "2025-01-11",
+      "sender": "MOHAMMED NUSRATH ALI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002469705",
+      "date": "2025-01-11",
+      "sender": "MOHAMMED NUSRATH ALI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002469721",
+      "date": "2025-01-11",
+      "sender": "MOHAMMED NUSRATH ALI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002469740",
+      "date": "2025-01-11",
+      "sender": "MOHAMMED NUSRATH ALI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "882028846800",
+      "date": "2025-01-11",
+      "sender": "B LAXMINARAYANA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "7566054473",
+      "date": "2025-01-11",
+      "sender": "B SATHISH KUMAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "DHL"
+    },
+    {
+      "awb": "6002469886",
+      "date": "2025-01-11",
+      "sender": "TIRUMALASETTI ABHITEJ",
+      "destination": "UK",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002471472",
+      "date": "2025-01-11",
+      "sender": "BULUSU ARUN KUMAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002471530",
+      "date": "2025-01-11",
+      "sender": "PAMPANA SRINIVAS",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002472118",
+      "date": "2025-01-11",
+      "sender": "SAVAN KUMAR KULKARNI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002472860",
+      "date": "2025-01-11",
+      "sender": "MOHD MUDASSIR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002472742",
+      "date": "2025-01-11",
+      "sender": "SRINIVAS NADIKOTA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002473321",
+      "date": "2025-01-11",
+      "sender": "NORIA GUSTI JALL",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002473204",
+      "date": "2025-01-11",
+      "sender": "BODDU RAMARAO",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "882054284592",
+      "date": "2025-01-11",
+      "sender": "DURGAMADHAVI BENDAPUDI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882081103030",
+      "date": "2025-01-11",
+      "sender": "VEGESNA LINGA RAJU",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002475490",
+      "date": "2025-01-11",
+      "sender": "RAHMATH BEGUM",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "882086638730",
+      "date": "2025-01-11",
+      "sender": "VASUDHA PHARMA CHEM LIMITED",
+      "destination": "BELGIUM",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882089981932",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS INDIA PVT LTD",
+      "destination": "GERMANY",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882082319307",
+      "date": "2025-01-11",
+      "sender": "SIRASALA PRAVEENA",
+      "destination": "SAINT KITTS AND NEVIS",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "882088381182",
+      "date": "2025-01-11",
+      "sender": "GOWKANAPALLI VENKATA KRISHNA REDDY",
+      "destination": "URUGUAY",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "882081312339",
+      "date": "2025-01-11",
+      "sender": "HEMANTH SUNKAVALLI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "30347889",
+      "date": "2025-01-11",
+      "sender": "KATRAGADDA NAGASWAMY",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "COURIER WALA"
+    },
+    {
+      "awb": "6002476738",
+      "date": "2025-01-11",
+      "sender": "VEMURI SIVA KUMAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "882117097805",
+      "date": "2025-01-11",
+      "sender": "LEXTRO BIO SOLUTIONS PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "882114870753",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS INDIA PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002477881",
+      "date": "2025-01-11",
+      "sender": "ROYYURU SREE VARALAKSHMI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "882118453799",
+      "date": "2025-01-11",
+      "sender": "PULI BENSON",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002478198",
+      "date": "2025-01-11",
+      "sender": "PENDAM NAVNEETH",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002478581",
+      "date": "2025-01-11",
+      "sender": "FITJEE WORLD SCHOOL AMEERPET",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002478623",
+      "date": "2025-01-11",
+      "sender": "SRI CHAITANYA RATAN TATA CAMPUS",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "882117379723",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS INDIA PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "882117418632",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS INDIA PVT LTD",
+      "destination": "BELGIUM",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "882117483590",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS INDIA PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882114952584",
+      "date": "2025-01-11",
+      "sender": "LAKKULA DINESH",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882145119928",
+      "date": "2025-01-11",
+      "sender": "LAVANYA REDDY",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882144211305",
+      "date": "2025-01-11",
+      "sender": "BERRY ALLOYS LTD",
+      "destination": "INDONESIA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002479406",
+      "date": "2025-01-11",
+      "sender": "B RAGASUDHA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "882147794657",
+      "date": "2025-01-11",
+      "sender": "INDIAN COUNCIL OF AGRICULTURAL RESEARCH",
+      "destination": "VIETNAM",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882149854832",
+      "date": "2025-01-11",
+      "sender": "MANUBOLU DEEPTHI PRIYA",
+      "destination": "GERMANY",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002479756",
+      "date": "2025-01-11",
+      "sender": "HARISHWAR REDDY",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002480310",
+      "date": "2025-01-11",
+      "sender": "YALAMANCHILI TEJAS",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "882121252782",
+      "date": "2025-01-11",
+      "sender": "RAYABARAPU JEEVAN KUMAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882148386507",
+      "date": "2025-01-11",
+      "sender": "KOPPISETTY NAGA PRANEETH",
+      "destination": "TANZANIA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002481120",
+      "date": "2025-01-11",
+      "sender": "HARISH SHANKAR OFFICE",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "882171855131",
+      "date": "2025-01-11",
+      "sender": "M RADHA",
+      "destination": "ARABIC EMIRATES",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882177575008",
+      "date": "2025-01-11",
+      "sender": "OORWINS LABS INDIA PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882173414144",
+      "date": "2025-01-11",
+      "sender": "TFL QUINN INDIA PRIVATE LIMITED",
+      "destination": "THAILAND",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882173483681",
+      "date": "2025-01-11",
+      "sender": "TFL QUINN INDIA PRIVATE LIMITED",
+      "destination": "BRAZIL",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882173761917",
+      "date": "2025-01-11",
+      "sender": "PADAIPETTU USHA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882178057067",
+      "date": "2025-01-11",
+      "sender": "KASAM THERAPEUTICS PVT LTD",
+      "destination": "SOUTH KOREA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882179130390",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS INDIA PVT LTD",
+      "destination": "FRANCE",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "6002483046",
+      "date": "2025-01-11",
+      "sender": "ALEKYA MOLANGOORI",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "882197328226",
+      "date": "2025-01-11",
+      "sender": "SAPTAGIRI LABORATORIES PVT LTD",
+      "destination": "FRANCE",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882178639260",
+      "date": "2025-01-11",
+      "sender": "CH NAGARAJU",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882178892656",
+      "date": "2025-01-11",
+      "sender": "CH NAGARAJU",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882197414130",
+      "date": "2025-01-11",
+      "sender": "SEELAM SRINIVAS RAO",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002483133",
+      "date": "2025-01-11",
+      "sender": "JORIGE RADHAKRISHNA RAO",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "882199785969",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS INDIA PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882199307183",
+      "date": "2025-01-11",
+      "sender": "MOHAMMED AMIN ABDUL DHADA",
+      "destination": "ZW",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002483481",
+      "date": "2025-01-11",
+      "sender": "RAVI VARMA CHIPPA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "882199431695",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS INDIA PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882199857674",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS INDIA PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002484558",
+      "date": "2025-01-11",
+      "sender": "GUDI RAMNATH VIJAY KUMAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002485245",
+      "date": "2025-01-11",
+      "sender": "JELLA MAHESH YADAV",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002485265",
+      "date": "2025-01-11",
+      "sender": "DIVITI BHAGYA LAXMI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002485294",
+      "date": "2025-01-11",
+      "sender": "PENUGONDA PADMA SRINIVAS",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002485446",
+      "date": "2025-01-11",
+      "sender": "KAMTOLA ABHISHEK",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002485697",
+      "date": "2025-01-11",
+      "sender": "NURULL HUSSAIN S",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002486125",
+      "date": "2025-01-11",
+      "sender": "DASIKA RADHA ANNAPURNA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002486261",
+      "date": "2025-01-11",
+      "sender": "GOVARDHAN MALEMPATI",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "882225614390",
+      "date": "2025-01-11",
+      "sender": "TRAKITNOW TECHNOLOGIES PVT LTD",
+      "destination": "SAUDI ARABIA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "1852688342",
+      "date": "2025-01-11",
+      "sender": "GONE SRI VYNIKA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "DHL"
+    },
+    {
+      "awb": "1152329732",
+      "date": "2025-01-11",
+      "sender": "SAVANNAH SEEDS PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "DHL"
+    },
+    {
+      "awb": "882253751398",
+      "date": "2025-01-11",
+      "sender": "AZEEM SHAREEF",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002488665",
+      "date": "2025-01-11",
+      "sender": "THE DIRECTOR OF MEDICLA EDUCATION",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002490053",
+      "date": "2025-01-11",
+      "sender": "CHALLA DIVYA REDDY",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "882258985533",
+      "date": "2025-01-11",
+      "sender": "VELDI SATYANARAYANA RAO",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "8880526933",
+      "date": "2025-01-11",
+      "sender": "JYOTHSNA NANADKUMAR NIRMAL",
+      "destination": "UK",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "PXC PACIFIC"
+    },
+    {
+      "awb": "6002490950",
+      "date": "2025-01-11",
+      "sender": "TELANGANA BOARD OF INTERMEDIATE EDUCATION",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "882289958116",
+      "date": "2025-01-11",
+      "sender": "RAJSEKHAR SIVA SAI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882290350866",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS INDIA PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882290271092",
+      "date": "2025-01-11",
+      "sender": "M PAVAN NAIDU",
+      "destination": "CHINA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "7899626490",
+      "date": "2025-01-11",
+      "sender": "SAVANNAH SEEDS PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "DHL"
+    },
+    {
+      "awb": "99179570",
+      "date": "2025-01-11",
+      "sender": "SHAMEEM SHAIK",
+      "destination": "IRELAND",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "UNITED EXPRESS"
+    },
+    {
+      "awb": "882314149331",
+      "date": "2025-01-11",
+      "sender": "POTTI PAVAN KUMAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "4822381664",
+      "date": "2025-01-11",
+      "sender": "CANARA BANK",
+      "destination": "NEPAL",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "DHL"
+    },
+    {
+      "awb": "6002492886",
+      "date": "2025-01-11",
+      "sender": "RIZA RUKSAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "882315815497",
+      "date": "2025-01-11",
+      "sender": "RIZA RUKSAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "8880527564",
+      "date": "2025-01-11",
+      "sender": "SURYADEVARA SATEESH KUMAR",
+      "destination": "UK",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "PXC PACIFIC"
+    },
+    {
+      "awb": "6002493003",
+      "date": "2025-01-11",
+      "sender": "MOTATI MUKUND REDDY",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002492685",
+      "date": "2025-01-11",
+      "sender": "MAHIMUNNISA BEGUM",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "882319208303",
+      "date": "2025-01-11",
+      "sender": "BHUSHANAM SATISH KUMAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882319636462",
+      "date": "2025-01-11",
+      "sender": "AMERANENI LENIN BABU",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882320091007",
+      "date": "2025-01-11",
+      "sender": "B LAXMINARAYANA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882322828271",
+      "date": "2025-01-11",
+      "sender": "APITORIA PHARMA PVT LTD",
+      "destination": "NEW ZEALAND",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "882322996061",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS INDIA PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882320853821",
+      "date": "2025-01-11",
+      "sender": "MOHAMMED IMRAN",
+      "destination": "CHINA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882344657830",
+      "date": "2025-01-11",
+      "sender": "K.SRINIVASULU",
+      "destination": "IRELAND",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002495347",
+      "date": "2025-01-11",
+      "sender": "ADITYA CHANDRAMOULI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "882345093345",
+      "date": "2025-01-11",
+      "sender": "PUPPLA PUNYAVATHI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882347425780",
+      "date": "2025-01-11",
+      "sender": "PADI RAJ SHEKAR REDDY",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002495558",
+      "date": "2025-01-11",
+      "sender": "SITARAPU KRUPANANDAM PETER",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002495793",
+      "date": "2025-01-11",
+      "sender": "NARAHARISETTI MERWAN",
+      "destination": "UK",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002496013",
+      "date": "2025-01-11",
+      "sender": "SUNALKAR SREYAS KUMAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "99179780",
+      "date": "2025-01-11",
+      "sender": "MUTYALA SIVA KOTI REDDY",
+      "destination": "SWEDEN",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "UNITED EXPRESS"
+    },
+    {
+      "awb": "882348800360",
+      "date": "2025-01-11",
+      "sender": "SANKURI VINAY",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882348412157",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS INDIA PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "882373395508",
+      "date": "2025-01-11",
+      "sender": "SYED AMAIR",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "1ZGX05920433107522",
+      "date": "2025-01-11",
+      "sender": "MALLAM POOTI MADHU",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "ICL(UPS)/WW"
+    },
+    {
+      "awb": "6002496794",
+      "date": "2025-01-11",
+      "sender": "CHINTADA PHANINDER",
+      "destination": "NEW ZEALAND",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002496826",
+      "date": "2025-01-11",
+      "sender": "DASARI SATYANARAYANA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002497103",
+      "date": "2025-01-11",
+      "sender": "V PRASANNA SATYA PARIMALA RAO",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "882375580547",
+      "date": "2025-01-11",
+      "sender": "ERYTHRO PHARMA PVT LTD",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "1ZGX05920412384165",
+      "date": "2025-01-11",
+      "sender": "RAVINDRANATH BHAVARAJU",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "ICL(UPS)/WW"
+    },
+    {
+      "awb": "30333767",
+      "date": "2025-01-11",
+      "sender": "KOTTURI VENKATA ELLESWARARAO",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "COURIER WALA"
+    },
+    {
+      "awb": "30333788",
+      "date": "2025-01-11",
+      "sender": "MOHAMMAD YOUNUS",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "COURIER WALA"
+    },
+    {
+      "awb": "1ZGX05920408701650",
+      "date": "2025-01-11",
+      "sender": "RAVINDRANATH BHAVARAJU",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "ICL(UPS)/WW"
+    },
+    {
+      "awb": "30333792",
+      "date": "2025-01-11",
+      "sender": "MOHAMMAD YOUNUS",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "COURIER WALA"
+    },
+    {
+      "awb": "882375832911",
+      "date": "2025-01-11",
+      "sender": "CCL PRODUCTS INDIA LTD",
+      "destination": "SWITZERLAND",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "99179916",
+      "date": "2025-01-11",
+      "sender": "K HEMANTH VENKAT KIRAN KUMAR",
+      "destination": "IRELNAD",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "UNITED EXPRESS"
+    },
+    {
+      "awb": "6002498595",
+      "date": "2025-01-11",
+      "sender": "S NARAYANA RAO",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002498958",
+      "date": "2025-01-11",
+      "sender": "RESHMA FATIMA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "882001029111",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS INDIA PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(3026)"
+    },
+    {
+      "awb": "882199457559",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS INDIA PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882396566909",
+      "date": "2025-01-11",
+      "sender": "RESHMA FATIMA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "1ZGX05920438398325",
+      "date": "2025-01-11",
+      "sender": "REDDIPALLI SIVAJI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "ICL(UPS)/WW"
+    },
+    {
+      "awb": "882396256645",
+      "date": "2025-01-11",
+      "sender": "ZAKIR ALI SYED",
+      "destination": "BANGLADESH",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "882398756295",
+      "date": "2025-01-11",
+      "sender": "PRIYANSHA MUDALIAR",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(564)"
+    },
+    {
+      "awb": "6002500003",
+      "date": "2025-01-11",
+      "sender": "PADMA RAGINI KATARI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002498675",
+      "date": "2025-01-11",
+      "sender": "T VARA LAXMI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002500492",
+      "date": "2025-01-11",
+      "sender": "NARNE SRINIVASA RAO",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "6002500601",
+      "date": "2025-01-11",
+      "sender": "MEDASANI CHENNAKESAVULU",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "FEDEX(ICL)"
+    },
+    {
+      "awb": "8880529587",
+      "date": "2025-01-11",
+      "sender": "DEGAPATI GERATAIAH",
+      "destination": "UK",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "PXC PACIFIC"
+    },
+    {
+      "awb": "1ZGX05920433214246",
+      "date": "2025-01-11",
+      "sender": "MOHD KAREEMUDDIN",
+      "destination": "USA",
+      "weight": "0",
+      "status": "Unknown",
+      "service": "ICL(UPS)/WW"
+    }
+  ]
+}

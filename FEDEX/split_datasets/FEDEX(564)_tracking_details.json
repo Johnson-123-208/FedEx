@@ -1,0 +1,234 @@
+{
+  "provider": "FedEx",
+  "updated_at": "2026-01-08T17:17:53.679268",
+  "shipments": [
+    {
+      "awb": "885670900649",
+      "status": "Unknown",
+      "origin": "KRISHNA, AP IN",
+      "destination": "Obtain proof of delivery",
+      "timeline": [
+        {
+          "date_time": "11/6/25 at 1:20 PM",
+          "activity": "Signed for by: ..ATL_SENDER",
+          "location": "Obtain proof of delivery"
+        },
+        {
+          "date_time": "11/1/25 5:58 AM",
+          "activity": "We have your package",
+          "location": "Delivered"
+        },
+        {
+          "date_time": "11/1/25 5:50 PM",
+          "activity": "ON THE WAY",
+          "location": "Delivered"
+        },
+        {
+          "date_time": "11/6/25 8:30 AM",
+          "activity": "OUT FOR DELIVERY",
+          "location": "Delivered"
+        },
+        {
+          "date_time": "11/6/25 9:09 AM",
+          "activity": "Delivered",
+          "location": "Delivered"
+        },
+        {
+          "date_time": "11/6/25 at 1:20 PM",
+          "activity": "shipmentItem.keyStatus",
+          "location": "View travel history"
+        },
+        {
+          "date_time": "11/7/25 before 5:00 PM",
+          "activity": "DELIVERED",
+          "location": "11/6/25 at 1:20 PM"
+        },
+        {
+          "date_time": "11/6/25 at 1:20 PM",
+          "activity": "Services",
+          "location": "Service"
+        },
+        {
+          "date_time": "Saturday, 11/1/25 5:58 AM",
+          "activity": "Shipment information sent to FedEx",
+          "location": "5:50 PM"
+        },
+        {
+          "date_time": "Saturday, 11/1/25 5:50 PM",
+          "activity": "Picked up",
+          "location": "Package received after FedEx cutoff"
+        },
+        {
+          "date_time": "Saturday, 11/1/25 8:47 PM",
+          "activity": "Left FedEx origin facility",
+          "location": "HYDERABAD IN"
+        },
+        {
+          "date_time": "Sunday, 11/2/25 5:10 PM",
+          "activity": "On the way",
+          "location": "NEW DELHI IN"
+        },
+        {
+          "date_time": "Sunday, 11/2/25 7:09 PM",
+          "activity": "International shipment release - Export",
+          "location": "NEW DELHI IN"
+        },
+        {
+          "date_time": "Monday, 11/3/25 12:56 PM",
+          "activity": "On the way",
+          "location": "NEW DELHI IN"
+        },
+        {
+          "date_time": "Monday, 11/3/25 4:43 PM",
+          "activity": "At local FedEx facility",
+          "location": "DUBAI WORLD CENTRAL (DWC) AE"
+        },
+        {
+          "date_time": "Tuesday, 11/4/25 4:21 PM",
+          "activity": "On the way",
+          "location": "DUBAI WORLD CENTRAL AE"
+        },
+        {
+          "date_time": "Wednesday, 11/5/25 7:31 AM",
+          "activity": "On the way",
+          "location": "SINGAPORE SG"
+        },
+        {
+          "date_time": "Wednesday, 11/5/25 4:19 PM",
+          "activity": "At destination sort facility",
+          "location": "MASCOT AU"
+        },
+        {
+          "date_time": "Wednesday, 11/5/25 8:13 PM",
+          "activity": "International shipment release - Import",
+          "location": "MATRAVILLE AU"
+        },
+        {
+          "date_time": "Wednesday, 11/5/25 8:13 PM",
+          "activity": "On the way",
+          "location": "Package available for clearance"
+        },
+        {
+          "date_time": "Wednesday, 11/5/25 8:15 PM",
+          "activity": "At local FedEx facility",
+          "location": "MATRAVILLE AU"
+        },
+        {
+          "date_time": "Thursday, 11/6/25 7:00 AM",
+          "activity": "On the way",
+          "location": "ERSKINE PARK AU"
+        },
+        {
+          "date_time": "Thursday, 11/6/25 8:30 AM",
+          "activity": "At local FedEx facility",
+          "location": "ERSKINE PARK AU"
+        },
+        {
+          "date_time": "Thursday, 11/6/25 9:09 AM",
+          "activity": "On FedEx vehicle for delivery",
+          "location": "ERSKINE PARK AU"
+        },
+        {
+          "date_time": "Thursday, 11/6/25 1:20 PM",
+          "activity": "Delivered",
+          "location": "BELLA VISTA AU"
+        },
+        {
+          "date_time": "Thursday, 11/6/25 11/7/25 before 5:00 PM",
+          "activity": "DELIVERED",
+          "location": "11/6/25 at 1:20 PM"
+        },
+        {
+          "date_time": "Thursday, 11/6/25 11/6/25 at 1:20 PM",
+          "activity": "Services",
+          "location": "Service"
+        },
+        {
+          "date_time": "Saturday, 11/1/25 5:58 AM",
+          "activity": "Shipment information sent to FedEx",
+          "location": "5:50 PM"
+        },
+        {
+          "date_time": "Saturday, 11/1/25 5:50 PM",
+          "activity": "Picked up",
+          "location": "Package received after FedEx cutoff"
+        },
+        {
+          "date_time": "Saturday, 11/1/25 8:47 PM",
+          "activity": "Left FedEx origin facility",
+          "location": "HYDERABAD IN"
+        },
+        {
+          "date_time": "Sunday, 11/2/25 5:10 PM",
+          "activity": "On the way",
+          "location": "NEW DELHI IN"
+        },
+        {
+          "date_time": "Sunday, 11/2/25 7:09 PM",
+          "activity": "International shipment release - Export",
+          "location": "NEW DELHI IN"
+        },
+        {
+          "date_time": "Monday, 11/3/25 12:56 PM",
+          "activity": "On the way",
+          "location": "NEW DELHI IN"
+        },
+        {
+          "date_time": "Monday, 11/3/25 4:43 PM",
+          "activity": "At local FedEx facility",
+          "location": "DUBAI WORLD CENTRAL (DWC) AE"
+        },
+        {
+          "date_time": "Tuesday, 11/4/25 4:21 PM",
+          "activity": "On the way",
+          "location": "DUBAI WORLD CENTRAL AE"
+        },
+        {
+          "date_time": "Wednesday, 11/5/25 7:31 AM",
+          "activity": "On the way",
+          "location": "SINGAPORE SG"
+        },
+        {
+          "date_time": "Wednesday, 11/5/25 4:19 PM",
+          "activity": "At destination sort facility",
+          "location": "MASCOT AU"
+        },
+        {
+          "date_time": "Wednesday, 11/5/25 8:13 PM",
+          "activity": "International shipment release - Import",
+          "location": "MATRAVILLE AU"
+        },
+        {
+          "date_time": "Wednesday, 11/5/25 8:13 PM",
+          "activity": "On the way",
+          "location": "Package available for clearance"
+        },
+        {
+          "date_time": "Wednesday, 11/5/25 8:15 PM",
+          "activity": "At local FedEx facility",
+          "location": "MATRAVILLE AU"
+        },
+        {
+          "date_time": "Thursday, 11/6/25 7:00 AM",
+          "activity": "On the way",
+          "location": "ERSKINE PARK AU"
+        },
+        {
+          "date_time": "Thursday, 11/6/25 8:30 AM",
+          "activity": "At local FedEx facility",
+          "location": "ERSKINE PARK AU"
+        },
+        {
+          "date_time": "Thursday, 11/6/25 9:09 AM",
+          "activity": "On FedEx vehicle for delivery",
+          "location": "ERSKINE PARK AU"
+        },
+        {
+          "date_time": "Thursday, 11/6/25 1:20 PM",
+          "activity": "Delivered",
+          "location": "BELLA VISTA AU"
+        }
+      ]
+    }
+  ]
+}

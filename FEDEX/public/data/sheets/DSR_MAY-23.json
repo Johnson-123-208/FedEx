@@ -1,0 +1,1914 @@
+{
+  "sheet_name": "DSR MAY-23",
+  "count": 212,
+  "shipments": [
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "K.V.S.S.R.KRISHNA KUMAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "MD FAIZ",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "SYED SHAZAN",
+      "destination": "MALTA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(250)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "HARINI KAYRAVINI VENKATESH",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(320)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "G.APPARAO",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "DHL"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "P.ABHIJAY YADAV",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "DHL"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "N.VENKATESHWARLU",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "DHL"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "M.SANDEEP KUMAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "MOHD MUJAHED",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "D.SRINIVAS REDDY",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "MD ABDUL SAMAD KHAN",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "RAGHU",
+      "destination": "MUMBAI",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "XPRESS BEES"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "RAGHU",
+      "destination": "INDORE",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "DELIVERY"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "ALIVIRA ANIMAL HEALTH LIMITED",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(252)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "BHAVANA CHINNAM",
+      "destination": "UK",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "T VENKATA SICARAMAKRISHNA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(320)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "ATUL JAJU",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "SACHIN RAO",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "P NARESH",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "MUTTA SAMANTH REDDY",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "ADNAN(FEDEX)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "SURYANARAYANA MURTHY",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "nan",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "RANITRONICS",
+      "destination": "CHINA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "MA WAHEED",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "N.VINEETHA REDDY",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "SAMREENA SULTHANA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "G.SUBBA RAO",
+      "destination": "GERMANY",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "P RATNA BABU",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "ADNAN(FEDEX)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "T PATTABI RAMA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "K JHANSI",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "MD ABDUL SAMAD  ",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "deLIVERED",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "P DEEPIKA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "K SAI KUMAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "K JAYANTH KUMAR",
+      "destination": "UK",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "MD MUJAHED",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "P ANANTHA LAKSHMI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "DHL"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "M RATNAVATI",
+      "destination": "NEWZEALAND",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "ATLANTIC"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "S MALLIK",
+      "destination": "NEWZEALAND",
+      "weight": "0",
+      "status": "deLIVERED",
+      "service": "ATLANTIC"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "CH BHAWANI PRASAD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "A RAMULU",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "V GYARA SEKHAR",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS PVT LTD",
+      "destination": "JAPAN",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "AJAY V KADAM",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(320)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "A PRASANTH",
+      "destination": "USA",
+      "weight": "0",
+      "status": "RETURN",
+      "service": "DHL"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "N RAVI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "CH RANGA RAO",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "V SATISH",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "MD ABDUL SAMAD KHAN",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "MD HAMEED",
+      "destination": "UAE",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "D.VENKATA SAI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "S.V.V.SATYANARAYANA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "A RAVI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "SURYA KARAN RADHAKRISHNA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "P RAMA RAO",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "V SAMSON",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "DHL"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "K SRINIVAS",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "G ANKAMMA RAO",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(ADNAN)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "P SRIDHAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(ADNAN)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "J BADRACHALAM",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "KP DIITALS",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(320)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "CH NAVEEN KUMAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "SAI KRISHNA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(250)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "SAINATH REDDY",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(250)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(252)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "HONDA NIKHIL",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "T USHASREE",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(ADNAN)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "DR KHETAVATH CHANDRAKALA",
+      "destination": "DE(GERMANY)",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "K VENKATA SATYA",
+      "destination": "UK",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "PRASANTH AMANTH",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "DHL"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "MOHD MUJAHED",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "K RAMESH BABU",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(ADNAN)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "MR PARESH JADHAV",
+      "destination": "HU(HUNGARY)",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(320)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "THE CONTROLLING OF EXAMINATION",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(250)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "K VENKATA RAMA RAO",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "P SWATHI",
+      "destination": "UAE",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "M RAVINDER REDDY",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(ADNAN)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "RAGILLA ANURADHA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(250)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "RAVI MALLULA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(320)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "B LAXMI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(ADNAN)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "A RAJESH",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(ADNAN)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "T JOHNSON",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(ADNAN)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "JOAN GARCIA",
+      "destination": "INDIA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(614)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "G SWARNALATHA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "JAMES MACKINTOSH & CO PUT LTD",
+      "destination": "SINGAPORE",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "DHL"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "GLOBAL PHARMA TEK INDIA LTD",
+      "destination": "EGYPT",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "IMMUNOCURE DISCOVERY SOLUTIONS DR K K RAJ",
+      "destination": "CHINA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "CH SANTHOSH KUMAR",
+      "destination": "MALAYSIA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(320)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "BASAVA VISHWESHWAR",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "SHAIK MASTHAN",
+      "destination": "UK",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "KUNDAN KUMAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "KUNDAN KUMAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "KUNDAN KUMAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "KUNDAN KUMAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "KUNDAN KUMAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "KUNDAN KUMAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "WES REFERENCE 6006044",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(250)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "AISHWARYA SAI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "THE UNIVERSIRTY OF TEXAS",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(250)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "K PRANEETH ELIA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(ADNAN)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "PROPHARMEX INDIA PRIVATE LIMITED",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "CH MAHAMMAD FAYAS",
+      "destination": "KUWAIT",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS PVT LTD",
+      "destination": "JAPAN",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(252)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "J RAVI KUMKAR",
+      "destination": "NEGERIA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "J VENKATA SITA MAHALAXMI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "AVULA SAI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(250)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "M ADITYA SHARMA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "G KALYANA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(ADNAN)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "D SEKHAR VARMA",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "Y SUDHEER",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "G HARISH CHOWDHARY",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "K SRINIVASULU",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "G SRINIVAS",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS PVT LTD",
+      "destination": "JAPAN",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(252)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS PVT LTD",
+      "destination": "GERMANY",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(252)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS PVT LTD",
+      "destination": "GERMANY",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(252)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS PVT LTD",
+      "destination": "GERMANY",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(252)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS PVT LTD",
+      "destination": "JAPAN",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(252)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "nan",
+      "destination": "TAMILNADU",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "DELHIVERY"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "SRIKANTH KOVURA",
+      "destination": "NETHERLAND",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(320)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "nan",
+      "destination": "DEHRADUN",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "BLUEDART"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "P GIRIJA LAKSHMI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(250)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "P RAMBHADRA RAJU",
+      "destination": "UK",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "BHANDARI AGENCIES PVT LTD",
+      "destination": "CHINA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "DEEPIKA PADAVALA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "NAGARAJ BASALINGAPPA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "A JOHN RATNA KUMAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS PVT LTD",
+      "destination": "JAPAN",
+      "weight": "0",
+      "status": "delivered",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "L SRIKANTH",
+      "destination": "UK",
+      "weight": "0",
+      "status": "DElivered",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "RA VI KUMAR",
+      "destination": "HONGKONG",
+      "weight": "0",
+      "status": "delivered",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "R CHANDRAKALA",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "CH MOHAN REDDY",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "DElivered",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "KOLA MADHUPRIYA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "P LALITH SRINIVAS",
+      "destination": "USA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "FEDEX(ADNAN)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "P LALITH SRINIVAS",
+      "destination": "USA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "FEDEX(ADNAN)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "MOHAN BASWAPATHI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "FEDEX(320)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "SOMASI RAMARANI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "DHL"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "D SUJATA DEVI",
+      "destination": "AO(ANGOLA)",
+      "weight": "0",
+      "status": "delivered",
+      "service": "FEDX(320)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "ALAMPALLY SRINIVAS",
+      "destination": "UK",
+      "weight": "0",
+      "status": "delivered",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "J NAGA RAJU",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(ADNAN)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "nan",
+      "destination": "ONGOLE",
+      "weight": "0",
+      "status": "nan",
+      "service": "DELHIVERY"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "NANDURI ALIVELU",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "M VIJAYENDRA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "V CHAITANYA RAJU",
+      "destination": "ANTIGUA & BARBUDA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "K RAJA SHEKHAR REDDY",
+      "destination": "UK",
+      "weight": "0",
+      "status": "delivered",
+      "service": "ATLANTIC"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "I ARUNDHATHI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "KANNEGANTI JYOTHI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "SYED HUSSAIN",
+      "destination": "USA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "SUPRANENI VVS NARAYANA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "DHL"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "CH JHANSI LAKSHMI",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "PRINCIPAL VEDAPRAKASH",
+      "destination": "USA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "FEDEX(250)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "K SURENDER RAO",
+      "destination": "USA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "AKSHAY MOHITH K",
+      "destination": "USA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "FEDEX(320)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "RINEETHA TANDRA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "GOSHIKA THIRUPATHAIAH",
+      "destination": "USA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "ABDUL RAHMAN",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "MOHD BIN SALMAN",
+      "destination": "INDONESIA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "REDDY MAHENDRANATH",
+      "destination": "USA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "PATTA SWAMY PURNIMA",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "FEDEX(ADNAN)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "A SURESH BABU",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "DHL"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "nan",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "TIRUMALAGIRI PAVANI",
+      "destination": "UAE",
+      "weight": "0",
+      "status": "delivered",
+      "service": "FEDEX(320)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "TIRUMALAGIRI PAVANI",
+      "destination": "UAE",
+      "weight": "0",
+      "status": "delivered",
+      "service": "FEDEX(320)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "nan",
+      "service": "FEDEX(252)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "INANI INTERIOR",
+      "destination": "CHINA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "T KUSUMA KUMARI",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "K SURESH PHANENDRA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(ADNAN)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "K ANAND GOUD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(ADNAN)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "MD ABDUL ROWOOF",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "G.BHASKAR RAJ",
+      "destination": "UK",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "C.V.V.RAMA RAO",
+      "destination": "GERMANY",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "K.HARI HARA PRASAD",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "nan",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "KUNDAN KUMAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "FEDEX(ADNAN)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "B.SRI LAKSHMI PRANITHA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "delivered",
+      "service": "FEDEX(ADNAN)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "CHARWAKA MITRA",
+      "destination": "FRANCE",
+      "weight": "0",
+      "status": "delivered",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "P KRISHNA",
+      "destination": "KUWAIT",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "AADITRI HOUSING PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "IMMUNOCURE PVT LTD",
+      "destination": "CHINA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "GOPAL SILVERU",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "CIRIMULLA VENU GOPAL",
+      "destination": "ARABIC EMIRATES",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "V PRAVEEN KUMAR",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "AMMAR AHMED",
+      "destination": "SAUDI ARABIA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(320)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "P VENKATA SIVA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS PVT LTD",
+      "destination": "JAPAN",
+      "weight": "0",
+      "status": "nan",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "M MADHUKAR",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "nan",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "T CHANDRA SEKHAR",
+      "destination": "USA",
+      "weight": "0",
+      "status": "deLIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "SATISH REDDY",
+      "destination": "UK(GB",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "M/S CANFELL ENGINEERING PVT LTD",
+      "destination": "NEGERIA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "CHANDRA PRAKASH",
+      "destination": "GHAZIABAD",
+      "weight": "0",
+      "status": "delivered",
+      "service": "DTDC"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "A MAHALAKSHMI NAGA KAVYA",
+      "destination": "UK",
+      "weight": "0",
+      "status": "delivered",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "T JAYA KIRAN",
+      "destination": "AUSTRALIA",
+      "weight": "0",
+      "status": "nan",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS PVT LTD",
+      "destination": "USA",
+      "weight": "0",
+      "status": "nan",
+      "service": "FEDEX(252)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "DECCAN FINE CHEMICALS PVT LTD",
+      "destination": "GERMANY",
+      "weight": "0",
+      "status": "nan",
+      "service": "FEDEX(252)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "AVASARALA PURUSHOTHAM RAO",
+      "destination": "USA",
+      "weight": "0",
+      "status": "deivered",
+      "service": "FEDEX(ADNAN)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "AVASARALA PURUSHOTHAM RAO",
+      "destination": "USA",
+      "weight": "0",
+      "status": "deivered",
+      "service": "FEDEX(ADNAN)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "AAHLAD NAGAPPA",
+      "destination": "AE(DUBAI)",
+      "weight": "0",
+      "status": "deivered",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "KONTHAM VANI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "deivered",
+      "service": "DHL"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "MOHD ATHER",
+      "destination": "USA",
+      "weight": "0",
+      "status": "deivered",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "V NAGESHWARA RAO",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "deivered",
+      "service": "FEDEX(ADNAN)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "A VENKATA KRISHNA REDDY",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "deivered",
+      "service": "FEDEX(ADNAN)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "MARY TULINA FRANCIS",
+      "destination": "USA",
+      "weight": "0",
+      "status": "deivered",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "DR KHETAVATH CHANDRAKALA",
+      "destination": "GERMANY",
+      "weight": "0",
+      "status": "deivered",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "REDDIPALLI SIVAJI",
+      "destination": "CANADA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(ADNAN)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "VADDEPALLI SRIKARI",
+      "destination": "UK",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "SISTA VISALAKSHMI",
+      "destination": "IRELAND",
+      "weight": "0",
+      "status": "nan",
+      "service": "FEDEX(DL)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "CHALLA GUNDLA JYOTHI",
+      "destination": "UK",
+      "weight": "0",
+      "status": "delivered",
+      "service": "YKE"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "G SHYAM SUNDER",
+      "destination": "PHILLAPPINES",
+      "weight": "0",
+      "status": "DELIVERRED",
+      "service": "FEDEX(252)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "TELU SIVA PRASANNA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERRED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "KANTHALA RAJIREDDY",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERRED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "WASIMA NIGHAT",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERRED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "R SUCHITRA PRANAVI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "UPS"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "VUMMADI RAMADEVI",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "FEDEX(414)"
+    },
+    {
+      "awb": "N/A",
+      "date": "2025-01-11",
+      "sender": "B SHARATH CHANDRA",
+      "destination": "USA",
+      "weight": "0",
+      "status": "DELIVERED",
+      "service": "UPS"
+    }
+  ]
+}

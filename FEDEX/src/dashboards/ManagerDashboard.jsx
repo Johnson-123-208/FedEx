@@ -1,13 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-// import Header from '../components/Header'; // Removed: Handled by Layout
 import KPICard from '../components/KPICard';
 import Table from '../components/Table';
 import PerformanceChart from '../charts/PerformanceChart';
 import StatusPieChart from '../charts/StatusPieChart';
 import RegionChart from '../charts/RegionChart';
 import {
-    kpiData,
     employeeData,
     monthlyPerformance,
     deliveryStatusBreakdown,
@@ -15,6 +13,33 @@ import {
 } from '../data/mockData';
 
 const ManagerDashboard = () => {
+    const [metrics, setMetrics] = useState({
+        total: 0,
+        delivered: 0,
+        in_transit: 0,
+        success_rate: 0
+    });
+    const [loading, setLoading] = useState(true);
+
+    // Fetch real metrics from API
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('http://localhost:5000/api/shipments');
+                const data = await response.json();
+                setMetrics(data.metrics);
+                setLoading(false);
+            } catch (error) {
+                console.error('Error fetching metrics:', error);
+                setLoading(false);
+            }
+        };
+
+        fetchData();
+        const interval = setInterval(fetchData, 30000);
+        return () => clearInterval(interval);
+    }, []);
+
     const employeeColumns = [
         { key: 'name', label: 'Employee Name' },
         { key: 'role', label: 'Role' },
@@ -49,6 +74,17 @@ const ManagerDashboard = () => {
         }
     ];
 
+    if (loading) {
+        return (
+            <div className="container mx-auto px-4 py-8 flex items-center justify-center min-h-[60vh]">
+                <div className="text-center">
+                    <div className="w-16 h-16 border-4 border-brand-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+                    <p className="text-slate-400">Loading dashboard data...</p>
+                </div>
+            </div>
+        );
+    }
+
     return (
         <div className="container mx-auto px-4 py-8 text-slate-300">
             {/* Header Area */}
@@ -66,12 +102,40 @@ const ManagerDashboard = () => {
                 </div>
             </div>
 
-            {/* KPI Cards */}
+            {/* KPI Cards - Real Data */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-                <KPICard title="Total Revenue" value="₹12.5M" icon="💰" trend="up" trendValue="18%" color="green" />
-                <KPICard title="Active Employees" value="247" icon="👥" trend="up" trendValue="5%" color="blue" />
-                <KPICard title="Cust. Satisfaction" value={`${kpiData.customerSatisfaction}/5.0`} icon="⭐" trend="up" trendValue="0.3" color="yellow" />
-                <KPICard title="On-Time Delivery" value={`${kpiData.onTimeRate}%`} icon="✅" trend="up" trendValue="2.1%" color="purple" />
+                <KPICard
+                    title="Total Shipments"
+                    value={metrics.total}
+                    icon="📦"
+                    trend="up"
+                    trendValue="2.8%"
+                    color="blue"
+                />
+                <KPICard
+                    title="Delivered"
+                    value={metrics.delivered}
+                    icon="✅"
+                    trend="up"
+                    trendValue="8%"
+                    color="green"
+                />
+                <KPICard
+                    title="In Transit"
+                    value={metrics.in_transit}
+                    icon="🚚"
+                    trend="down"
+                    trendValue="3%"
+                    color="yellow"
+                />
+                <KPICard
+                    title="Success Rate"
+                    value={`${metrics.success_rate}%`}
+                    icon="⚡"
+                    trend="up"
+                    trendValue="2.1%"
+                    color="purple"
+                />
             </div>
 
             {/* Performance Metrics Rows */}

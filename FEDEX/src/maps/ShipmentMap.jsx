@@ -48,7 +48,23 @@ const AnimatedRoute = ({ positions, color = '#3b82f6', delay = 0 }) => {
     ) : null;
 };
 
-const ShipmentMap = ({ shipment, animated = true }) => {
+// Component to handle map resize events
+const MapResizer = ({ isFullScreen }) => {
+    const map = useMap();
+
+    useEffect(() => {
+        // Wait a small tick for the container to resize first
+        const timer = setTimeout(() => {
+            map.invalidateSize();
+        }, 100);
+        return () => clearTimeout(timer);
+    }, [map, isFullScreen]);
+
+    return null;
+};
+
+const ShipmentMap = ({ shipment, animated = true, isFullScreen = false }) => {
+    // Check if shipment and coordinates exist
     if (!shipment || !shipment.coordinates) {
         return (
             <div className="glass-card flex items-center justify-center h-full min-h-[400px]">
@@ -58,6 +74,17 @@ const ShipmentMap = ({ shipment, animated = true }) => {
     }
 
     const { origin, destination } = shipment.coordinates;
+
+    // Check if origin and destination have valid coordinates
+    if (!origin || !destination ||
+        typeof origin.lat !== 'number' || typeof origin.lng !== 'number' ||
+        typeof destination.lat !== 'number' || typeof destination.lng !== 'number') {
+        return (
+            <div className="glass-card flex items-center justify-center h-full min-h-[400px]">
+                <p className="text-slate-500">No map data available</p>
+            </div>
+        );
+    }
     const center = [
         (origin.lat + destination.lat) / 2,
         (origin.lng + destination.lng) / 2
@@ -112,6 +139,7 @@ const ShipmentMap = ({ shipment, animated = true }) => {
                 scrollWheelZoom={false}
                 attributionControl={false}
             >
+                <MapResizer isFullScreen={isFullScreen} />
                 <TileLayer
                     url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
                 />

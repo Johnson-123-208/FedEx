@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-01-08T19:08:00",
+  "total_sheets": 33,
+  "metrics": {
+    "total": 8369,
+    "delivered": 1657,
+    "in_transit": 5,
+    "success_rate": 19.8
+  },
+  "sheets": [
+    {
+      "name": "DSR NOV-25",
+      "file": "sheets/DSR_NOV-25.json",
+      "count": 254
+    },
+    {
+      "name": "FOLLOW UP",
+      "file": "sheets/FOLLOW_UP.json",
+      "count": 150
+    },
+    {
+      "name": "DSR OCT-25",
+      "file": "sheets/DSR_OCT-25.json",
+      "count": 280
+    },
+    {
+      "name": "DSR SEPT-25",
+      "file": "sheets/DSR_SEPT-25.json",
+      "count": 260
+    },
+    {
+      "name": "DSR AUG-25",
+      "file": "sheets/DSR_AUG-25.json",
+      "count": 245
+    }
+  ]
+}

@@ -10,180 +10,182 @@ from datetime import datetime
 import traceback
 import io
 import os
+import re
 
 def get_fedex_tracking_details(awb_number, driver):
     """
-    Fetch tracking info from FedEx
+    Scrapes FedEx tracking data from their website.
+    Returns: dict with status, origin, destination, timeline
     """
-    driver.get(f"https://www.fedex.com/fedextrack/?trknbr={awb_number}")
-    time.sleep(10) # 10s wait for load
+    url = f"https://www.fedex.com/fedextrack/?trknbr={awb_number}"
+    driver.get(url)
     
-    tracking_data = {
+    result = {
         "awb": awb_number,
         "status": "Unknown",
-        "origin": None,
-        "destination": None,
-        "delivery_date": None,
+        "origin": "",
+        "destination": "",
         "timeline": []
     }
     
     try:
-        # 1. Handle Cookie Banner
-        try:
-            WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.ID, "onetrust-accept-btn-handler"))).click()
-            time.sleep(1)
-        except: pass
-
-        # 2. Extract Status (Main Header)
-        try:
-            # Try multiple selectors for the main status
-            selectors = [
-                ".redesign-snapshot-status", 
-                ".snapshotController_status_desc", 
-                "h1.testing", 
-                ".key-status"
-            ]
-            for sel in selectors:
-                try:
-                    el = driver.find_element(By.CSS_SELECTOR, sel)
-                    if el.text.strip():
-                        tracking_data["status"] = el.text.strip()
-                        break
-                except: continue
-        except: pass
+        # Wait for page to load - FedEx uses AJAX so needs more time
+        print(f"⏳ FedEx: Waiting for tracking data to load...")
+        time.sleep(20)
         
-        # Fallback Status from Body Text
-        if tracking_data["status"] == "Unknown":
-            body_text = driver.find_element(By.TAG_NAME, "body").text.upper()
-            if "DELIVERED" in body_text: tracking_data["status"] = "Delivered"
-            elif "IN TRANSIT" in body_text: tracking_data["status"] = "In Transit"
-            elif "ON FEDEX VEHICLE FOR DELIVERY" in body_text: tracking_data["status"] = "Out for Delivery"
-
-        # 3. Expand Timeline
-        # Try to click "View details" / "Travel History"
-        expanded = False
-        try:
-            # Click "View details" link if present
-            links = driver.find_elements(By.CSS_SELECTOR, "a")
-            for link in links:
-                if "VIEW" in link.text.upper() and "DETAILS" in link.text.upper():
-                    driver.execute_script("arguments[0].click();", link)
-                    time.sleep(2)
-                    break
-            
-            # Click "Travel History" toggle
-            toggles = driver.find_elements(By.CSS_SELECTOR, "button[aria-label*='Travel history'], button.travel-history-toggle")
-            for toggle in toggles:
-                driver.execute_script("arguments[0].click();", toggle)
-                time.sleep(2)
-                expanded = True
-        except: pass
-
-        # 4. Extract Timeline Events
-        try:
-            # Look for scan event rows
-            # Strategy: Find all elements that look like scanning events
-            scan_events = driver.find_elements(By.CSS_SELECTOR, ".travel-history__scan-event, li.travel-history-slide")
-            
-            for event in scan_events:
-                text = event.text.strip()
-                lines = [l.strip() for l in text.split('\n') if l.strip()]
+        # Extract ALL text from page (including Shadow DOM)
+        page_text = driver.execute_script("""
+            function extractAllText(root) {
+                let text = "";
+                if (!root) return text;
                 
-                if len(lines) >= 2:
-                    # Typical format: [Time], [Activity], [Location] OR [Date], [Time]...
-                    # FedEx structure is complex. Let's capture as much as possible.
-                    
-                    # If date is separate header, we might miss it.
-                    # But often the row contains basic info.
-                    
-                    evt = {
-                        "date_time": lines[0],
-                        "activity": lines[1] if len(lines) > 1 else "",
-                        "location": lines[-1] if len(lines) > 2 else ""
-                    }
-                    tracking_data["timeline"].append(evt)
-                    
-            if not tracking_data["timeline"] and expanded:
-                 # Try finding via generic text block in the specific container
-                 history_container = driver.find_element(By.ID, "travel-history-accordion")
-                 lines = history_container.text.split('\n')
-                 # This is raw, but better than nothing
-                 for line in lines:
-                      if len(line) > 10:
-                          tracking_data["timeline"].append({"activity": line, "date_time": "", "location": ""})
-
-        except: pass
-
-    except Exception as e:
-        pass
+                if (root.nodeType === Node.TEXT_NODE) {
+                    return root.textContent.trim() + "\\n";
+                }
+                
+                if (root.shadowRoot) {
+                    text += extractAllText(root.shadowRoot);
+                }
+                
+                if (root.childNodes) {
+                    root.childNodes.forEach(child => {
+                        text += extractAllText(child);
+                    });
+                }
+                
+                return text;
+            }
+            return extractAllText(document.body);
+        """)
         
-    return tracking_data
+        if not page_text or len(page_text) < 100:
+            print(f"⚠️ FedEx: Empty page content for {awb_number} (length: {len(page_text) if page_text else 0})")
+            return result
+        
+        print(f"📄 FedEx: Extracted {len(page_text)} chars. Preview: {page_text[:500]}")
+        
+        # Check if we actually got tracking content (not just homepage)
+        if "tracking" not in page_text.lower() and "shipment" not in page_text.lower():
+            print(f"⚠️ FedEx: Page loaded but no tracking content found. Might be homepage or error.")
+            return result
+            
+        # Check for error messages
+        if "we're sorry" in page_text.lower() or "permission" in page_text.lower():
+            print(f"⚠️ FedEx: Access blocked for {awb_number}")
+            return result
+        
+        lines = [line.strip() for line in page_text.split('\n') if line.strip()]
+        
+        # Filter out common UI noise
+        ui_noise = ['obtain proof of delivery', 'view details', 'view travel history', 
+                    'track another', 'help', 'sign up', 'log in', 'fedex home',
+                    'shipping', 'tracking', 'locations', 'support']
+        
+        lines = [line for line in lines if line.lower() not in ui_noise]
+        
+        # === STATUS EXTRACTION ===
+        status_keywords = {
+            "DELIVERED": "Delivered",
+            "IN TRANSIT": "In Transit", 
+            "ON THE WAY": "In Transit",
+            "OUT FOR DELIVERY": "Out for Delivery",
+            "PICKED UP": "In Transit",
+            "SHIPMENT EXCEPTION": "Exception",
+            "DELIVERY EXCEPTION": "Exception",
+            "PENDING": "In Transit",
+            "AT LOCAL FEDEX FACILITY": "In Transit",
+            "ARRIVED AT FEDEX LOCATION": "In Transit"
+        }
+        
+        for i, line in enumerate(lines[:200]):
+            line_upper = line.upper()
+            for keyword, normalized in status_keywords.items():
+                if keyword in line_upper and len(line) < 100:
+                    result["status"] = normalized
+                    print(f"✓ FedEx Status: {normalized}")
+                    break
+            if result["status"] != "Unknown":
+                break
+        
+        # === ORIGIN/DESTINATION EXTRACTION ===
+        for i, line in enumerate(lines):
+            if line.upper() == "FROM" or "ORIGIN" in line.upper():
+                for j in range(1, 5):
+                    if i + j < len(lines):
+                        candidate = lines[i + j]
+                        if ("," in candidate and 5 < len(candidate) < 60 and 
+                            not any(noise in candidate.lower() for noise in ['view', 'click', 'button', 'link'])):
+                            result["origin"] = candidate
+                            break
+            
+            if line.upper() == "TO" or "DESTINATION" in line.upper():
+                for j in range(1, 5):
+                    if i + j < len(lines):
+                        candidate = lines[i + j]
+                        if ("," in candidate and 5 < len(candidate) < 60 and
+                            not any(noise in candidate.lower() for noise in ['view', 'click', 'button', 'link'])):
+                            result["destination"] = candidate
+                            break
+        
+        # === TIMELINE EXTRACTION ===
+        date_pattern = re.compile(r'\w+,\s*\d{1,2}/\d{1,2}/\d{2,4}')
+        time_pattern = re.compile(r'\d{1,2}:\d{2}\s*(?:AM|PM)', re.IGNORECASE)
+        
+        current_date = ""
+        timeline = []
+        
+        for i, line in enumerate(lines):
+            if date_pattern.search(line):
+                current_date = line
+                continue
+            
+            if time_pattern.search(line):
+                event_time = line
+                activity = lines[i + 1] if i + 1 < len(lines) else ""
+                location = lines[i + 2] if i + 2 < len(lines) else ""
+                
+                if (activity and not time_pattern.search(activity) and len(activity) > 3 and
+                    not any(noise in activity.lower() for noise in ui_noise)):
+                    
+                    # Validate location
+                    if (location and len(location) > 5 and len(location) < 100 and
+                        not any(noise in location.lower() for noise in ui_noise)):
+                        pass  # Location is valid
+                    else:
+                        location = ""
+                    
+                    timeline.append({
+                        "date_time": f"{current_date} {event_time}".strip(),
+                        "activity": activity,
+                        "location": location
+                    })
+        
+        result["timeline"] = timeline
+        print(f"✓ FedEx Timeline: {len(timeline)} events")
+        
+        # === FALLBACK: Extract origin/dest from timeline ===
+        if not result["origin"] and len(timeline) > 0:
+            last_loc = timeline[-1].get("location", "")
+            if last_loc and len(last_loc) > 2:
+                result["origin"] = last_loc
+        
+        if not result["destination"] and len(timeline) > 0:
+            if result["status"] == "Delivered":
+                first_loc = timeline[0].get("location", "")
+                if first_loc and len(first_loc) > 2:
+                    result["destination"] = first_loc
+        
+    except Exception as e:
+        print(f"❌ FedEx error for {awb_number}: {e}")
+        traceback.print_exc()
+        
+    return result
+
 
 def process_fedex_file(file_path):
-    print(f"\n📦 Processing file: {file_path}")
-    if not os.path.exists(file_path): return
+    """Legacy batch processing function - not used by app.py"""
+    pass
 
-    try:
-        df = pd.read_excel(file_path)
-    except: return
-        
-    chrome_options = Options()
-    chrome_options.add_argument('--headless')
-    chrome_options.add_argument('--disable-gpu')
-    chrome_options.add_argument('--no-sandbox')
-    chrome_options.add_argument('--window-size=1920,1080')
-    driver = webdriver.Chrome(options=chrome_options)
-    
-    all_tracking_data = [] 
-    
-    try:
-        if 'STATUS' not in df.columns: df['STATUS'] = ''
-        
-        # AWB Column
-        awb_col_name = 'AWBNO.'
-        if awb_col_name not in df.columns:
-            cols = [c for c in df.columns if 'AWB' in str(c).upper()]
-            if cols: awb_col_name = cols[0]
-            else: awb_col_name = df.columns[2]
-
-        processed_count = 0
-        for index, row in df.iterrows():
-            # Skip valid
-            if str(row['STATUS']).lower() in ['delivered', 'in transit', 'out for delivery']:
-                continue
-
-            awb = row[awb_col_name]
-            if pd.notna(awb):
-                awb = str(awb).replace(' ', '').strip()
-                print(f"[{index+1}/{len(df)}] Tracking AWB: {awb}")
-                
-                details = get_fedex_tracking_details(awb, driver)
-                
-                df.at[index, 'STATUS'] = details['status']
-                all_tracking_data.append(details)
-                processed_count += 1
-                
-                print(f"   ✓ Status: {details['status']}")
-                print(f"   ✓ Timeline: {len(details['timeline'])}")
-                
-                if processed_count % 5 == 0:
-                    try: df.to_excel(file_path, index=False)
-                    except: pass
-                
-                time.sleep(2)
-        
-        try: df.to_excel(file_path, index=False)
-        except: pass
-        
-        json_path = file_path.replace('.xlsx', '_tracking_details.json')
-        with open(json_path, 'w', encoding='utf-8') as f:
-            json.dump({"provider": "FedEx", "updated_at": datetime.now().isoformat(), "shipments": all_tracking_data}, f, indent=2)
-
-    except Exception as e:
-        print(f"❌ Error: {e}")
-    finally:
-        driver.quit()
 
 if __name__ == "__main__":
-    for f in ['split_datasets/FEDEX(564).xlsx', 'split_datasets/FEDEX(3026).xlsx']:
-        process_fedex_file(f)
+    print("This module is imported by app.py for tracking")

@@ -191,7 +191,11 @@ const TrackShipment = () => {
 
                                     {/* Map Container */}
                                     <div className="w-full h-full bg-slate-900">
-                                        <ShipmentMap shipment={searchResult} animated={true} />
+                                        <ShipmentMap
+                                            shipment={searchResult}
+                                            animated={true}
+                                            isFullScreen={isFullScreen}
+                                        />
                                     </div>
                                 </div>
                             </div>

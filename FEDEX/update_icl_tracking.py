@@ -10,6 +10,7 @@ from datetime import datetime
 import traceback
 import io
 import os
+import re
 
 def get_icl_tracking_details(awb_number, driver):
     """
@@ -20,112 +21,195 @@ def get_icl_tracking_details(awb_number, driver):
         driver.get("https://iclexpress.in/tracking/")
         time.sleep(3)
         
-        # 1. Click International Tab
+        # 0. Dismiss any popups/modals that might be blocking interactions
         try:
+            # Try to find and close any popup/modal
+            popup_close_selectors = [
+                "//div[contains(@class, 'dialog-close-button')]",
+                "//button[contains(@class, 'dialog-close')]",
+                "//div[contains(@class, 'elementor-popup-modal')]//i[contains(@class, 'eicon-close')]",
+                "//button[@aria-label='Close']"
+            ]
+            for selector in popup_close_selectors:
+                try:
+                    close_btn = driver.find_element(By.XPATH, selector)
+                    if close_btn.is_displayed():
+                        close_btn.click()
+                        print("✓ Closed popup/modal")
+                        time.sleep(1)
+                        break
+                except:
+                    continue
+        except:
+            pass  # No popup found, continue
+        
+        # 1. Click International Tab - CRITICAL STEP
+        try:
+            # First, try clicking by the exact ID discovered from browser inspection
             intl_tab = WebDriverWait(driver, 10).until(
                 EC.element_to_be_clickable((By.ID, "elementor-tab-title-9352"))
             )
             intl_tab.click()
-            time.sleep(1)
+            print("✓ Clicked International tab")
+            time.sleep(2)  # Wait for tab content to load
         except Exception as e:
-            # print(f"Warning: Could not click International tab: {e}")
-            pass
-            
-        # 2. Input AWB
+            print(f"Warning: Could not click International tab: {e}")
+            # Try alternative method
+            try:
+                driver.execute_script("document.getElementById('elementor-tab-title-9352').click();")
+                time.sleep(2)
+                print("✓ Clicked International tab via JavaScript")
+            except:
+                print("⚠️ Could not switch to International tab - proceeding anyway")
+
+        # 2. Input AWB into the International tracking field
         try:
+            # Wait for the International tab's input field to be visible
             awb_input = WebDriverWait(driver, 10).until(
                 EC.visibility_of_element_located((By.ID, "awbNumber"))
             )
             awb_input.clear()
             awb_input.send_keys(str(awb_number))
-        except:
-             return {"awb": awb_number, "status": "Error", "timeline": []}
+            print(f"✓ Entered AWB: {awb_number}")
+            time.sleep(1)
+        except Exception as e:
+            print(f"Could not find AWB input field: {e}")
+            return {"awb": awb_number, "status": "Error Input", "origin": None, "destination": None, "timeline": []}
 
-        # 3. Click Track
+        # 3. Click Track Button
         try:
-            track_btn = driver.find_element(By.CSS_SELECTOR, "#elementor-tab-content-9352 button")
-            track_btn.click()
-        except:
-            return {"awb": awb_number, "status": "Error", "timeline": []}
+            # The button is next to the input field and has onclick="trackShipment()"
+            # Try multiple strategies to find and click it
+            track_btn = None
             
-        # Wait for results and Scroll
+            # Strategy 1: Find button with onclick="trackShipment()"
+            try:
+                track_btn = driver.find_element(By.XPATH, "//button[@onclick='trackShipment()']")
+                if track_btn.is_displayed():
+                    track_btn.click()
+                    print("✓ Clicked Track button (via onclick attribute)")
+            except:
+                pass
+            
+            # Strategy 2: Find button containing "Track Shipment" text in International tab
+            if not track_btn:
+                try:
+                    track_btn = WebDriverWait(driver, 5).until(
+                        EC.element_to_be_clickable((By.XPATH, "//div[@id='elementor-tab-content-9352']//button[contains(text(), 'Track Shipment')]"))
+                    )
+                    track_btn.click()
+                    print("✓ Clicked Track button (via text content)")
+                except:
+                    pass
+            
+            # Strategy 3: JavaScript click as fallback
+            if not track_btn:
+                try:
+                    driver.execute_script("""
+                        const input = document.getElementById('awbNumber');
+                        const button = input.parentElement.querySelector('button');
+                        if (button) button.click();
+                    """)
+                    print("✓ Clicked Track button (via JavaScript)")
+                except Exception as js_error:
+                    print(f"Could not find Track button: {js_error}")
+                    return {"awb": awb_number, "status": "Error Button", "origin": None, "destination": None, "timeline": []}
+                 
+        except Exception as e:
+            print(f"Could not find Track button: {e}")
+            return {"awb": awb_number, "status": "Error Button", "origin": None, "destination": None, "timeline": []}
+            
+        # Wait for results
         time.sleep(6)
-        driver.execute_script("window.scrollBy(0, 500);")
-        time.sleep(2)
         
         tracking_data = {
             "awb": awb_number,
             "status": "Unknown",
             "origin": None,
             "destination": None,
-            "delivery_date": None,
             "timeline": []
         }
         
         # 4. Extract Results
         try:
-            page_source = driver.page_source
-            page_text = driver.find_element(By.TAG_NAME, "body").text.upper()
+            html = driver.page_source
             
-            # Global check for Delivered
-            is_delivered_global = "DELIVERED" in page_text
+            # Check for error msg
+            if "Invalid" in html or "Not Found" in html:
+                 tracking_data["status"] = "Not Found"
             
-            # Use pandas to parse tables - best way to get timeline
-            dfs = pd.read_html(io.StringIO(page_source))
+            dfs = pd.read_html(io.StringIO(html))
             
             for df in dfs:
-                table_str = df.to_string().upper()
+                df.columns = [str(c).strip() for c in df.columns]
+                col_names = [c.upper() for c in df.columns]
                 
-                # Check for Timeline Table
-                if "LOCATION" in table_str and ("TIME" in table_str or "STATUS" in table_str):
-                     # Likely timeline
-                     df.columns = [str(c).upper().strip() for c in df.columns]
-                     
-                     for _, row in df.iterrows():
-                         row_text = " ".join([str(x) for x in row.values if pd.notna(x)])
-                         
-                         event = {
-                             "date_time": row_text, # Just grab the whole row as text for safety
-                             "activity": row_text,
-                             "location": ""
-                         }
-                         tracking_data["timeline"].append(event)
+                # Check for Date in Header (e.g., "28/08/2025 Status")
+                current_date = ""
+                # Look for date pattern in the first column name
+                date_match = re.search(r'\d{1,2}[/-]\d{1,2}[/-]\d{4}', df.columns[0])
+                if date_match:
+                    current_date = date_match.group(0)
+                
+                # Identify columns
+                status_col = None
+                location_col = None
+                time_col = None
+                
+                for i, col in enumerate(col_names):
+                    if "STATUS" in col: status_col = df.columns[i]
+                    if "LOCATION" in col: location_col = df.columns[i]
+                    if "TIME" in col: time_col = df.columns[i]
+                
+                # Only process if we found meaningful columns
+                if status_col:
+                    for _, row in df.iterrows():
+                        activity = str(row[status_col]).strip()
+                        location = str(row[location_col]).strip() if location_col and pd.notna(row[location_col]) else ""
+                        time_val = str(row[time_col]).strip() if time_col and pd.notna(row[time_col]) else ""
+                        
+                        full_date = f"{current_date} {time_val}".strip()
+                        
+                        if activity and activity.lower() != "nan" and activity.upper() != "STATUS":
+                            tracking_data["timeline"].append({
+                                "date_time": full_date,
+                                "activity": activity,
+                                "location": location
+                            })
 
-            # Determine Status
-            if is_delivered_global:
-                tracking_data["status"] = "Delivered"
-            elif tracking_data["timeline"]:
-                # Check first and last event
-                first_event = str(tracking_data["timeline"][0]).upper()
-                last_event = str(tracking_data["timeline"][-1]).upper()
-                
-                # Check identifying keywords in first event
-                if any(x in first_event for x in ["DELIVERED", "TRANSIT", "ARRIVED", "DEPARTED", "LEFT", "SENT"]):
-                     tracking_data["status"] = tracking_data["timeline"][0]["activity"]
-                elif any(x in last_event for x in ["DELIVERED", "TRANSIT", "ARRIVED", "DEPARTED", "LEFT", "SENT"]):
-                     tracking_data["status"] = tracking_data["timeline"][-1]["activity"]
+            # Determine main status
+            if tracking_data["timeline"]:
+                if any("DELIVERED" in t["activity"].upper() for t in tracking_data["timeline"]):
+                    tracking_data["status"] = "Delivered"
                 else:
-                     tracking_data["status"] = tracking_data["timeline"][0]["activity"] # Default to first
-
-                # Normalize common lengthy statuses
-                s = tracking_data["status"].upper()
-                if "SENT TO DESTINATION" in s: tracking_data["status"] = "Sent to Destination"
-                elif "LEFT" in s and "ORIGIN" in s: tracking_data["status"] = "Left Origin"
-                elif "PICKED UP" in s: tracking_data["status"] = "Picked Up"
-
-            if tracking_data["status"] == "Unknown":
-                if "NOT FOUND" in page_text:
-                    tracking_data["status"] = "Not Found"
-                elif "Invalid" in page_text: # Case insensitive check
-                     tracking_data["status"] = "Invalid AWB"
-
+                    tracking_data["status"] = tracking_data["timeline"][0]["activity"]
+                
+                # Extract origin and destination from timeline
+                # Origin: earliest event (last in timeline if sorted newest first)
+                # Destination: latest event (first in timeline if sorted newest first)
+                
+                # Get destination from the first event with a location
+                for event in tracking_data["timeline"]:
+                    if event.get("location") and event["location"].strip():
+                        tracking_data["destination"] = event["location"]
+                        break
+                
+                # Get origin from the last event with a location
+                for event in reversed(tracking_data["timeline"]):
+                    if event.get("location") and event["location"].strip():
+                        tracking_data["origin"] = event["location"]
+                        break
+                    
         except Exception as e:
+            # print(f"Error parsing table: {e}")
             pass
             
         return tracking_data
 
     except Exception as e:
-        return {"awb": awb_number, "status": "Error", "timeline": []}
+        print(f"Global Error: {e}")
+        traceback.print_exc()
+        return {"awb": awb_number, "status": "Error Script", "origin": None, "destination": None, "timeline": []}
 
 def update_icl_tracking():
     file_path = 'split_datasets/FEDEX(ICL).xlsx'
@@ -133,7 +217,6 @@ def update_icl_tracking():
     # Check regular file access
     if not os.access(file_path, os.W_OK):
         print(f"⚠️ Warning: File '{file_path}' seems locked. Please close it.")
-        # We can still proceed if we read into memory, but saving will fail.
     
     df = pd.read_excel(file_path)
     
@@ -153,11 +236,8 @@ def update_icl_tracking():
         if 'STATUS' not in df.columns: df['STATUS'] = ''
             
         for index, row in df.iterrows():
-            # Skip if already has a valid status (optional, but good for resuming)
             current_status = str(row['STATUS']).lower()
             if "delivered" in current_status or "destination" in current_status or "picked" in current_status:
-                 # Already processed? 
-                 # Actually, let's just skip the first 10 we did successfully
                  if index < 10: 
                      continue
 
