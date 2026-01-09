@@ -6,8 +6,26 @@
 
 @layer base {
   :root {
-    --glass-border: rgba(255, 255, 255, 0.08);
-    --glass-surface: rgba(255, 255, 255, 0.03);
+    /* FedEx Brand Colors */
+    --fedex-purple: #4D148C;
+    --fedex-orange: #FF6600;
+
+    /* Neutrals */
+    --white: #FFFFFF;
+    --off-white: #F5F5F5;
+    --light-gray: #EEEEEE;
+
+    /* Text */
+    --text-primary: #222222;
+    --text-secondary: #555555;
+    --text-muted: #777777;
+
+    /* Effects */
+    --overlay-dark: rgba(0, 0, 0, 0.6);
+    --icon-muted: #999999;
+
+    --glass-border: rgba(77, 20, 140, 0.15);
+    --glass-surface: rgba(255, 255, 255, 0.9);
   }
 
   html {
@@ -16,7 +34,7 @@
   }
 
   body {
-    @apply font-sans text-slate-300 bg-slate-950 selection:bg-brand-500/30 selection:text-brand-100;
+    @apply font-sans text-[#222222] bg-[#F5F5F5] selection:bg-brand-500/20 selection:text-brand-900;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
 
@@ -26,37 +44,36 @@
   h4,
   h5,
   h6 {
-    @apply font-display text-white tracking-tight;
+    @apply font-display text-[#222222] tracking-tight;
   }
 }
 
 @layer components {
 
-  /* Ultra-premium Glass Effect */
+  /* Light Theme Glass Effect */
   .glass {
-    @apply backdrop-blur-md bg-white/[0.02] border border-white/[0.05] shadow-xl;
+    @apply backdrop-blur-md bg-white/90 border border-[#EEEEEE] shadow-lg;
   }
 
   .glass-card {
-    @apply backdrop-blur-xl bg-slate-900/40 border border-white/[0.08] shadow-2xl rounded-2xl;
+    @apply backdrop-blur-xl bg-white/95 border border-[#EEEEEE] shadow-xl rounded-2xl;
   }
 
   .glass-panel {
-    @apply backdrop-blur-xl bg-slate-950/70 border-r border-white/[0.05];
+    @apply backdrop-blur-xl bg-white/90 border-r border-[#EEEEEE];
   }
 
   /* Interactive Elements */
-  /* REMOVED 'group' from apply as it causes build errors in some postcss versions */
   .btn-primary {
-    @apply relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-white transition-all duration-300 bg-brand-600 rounded-lg hover:bg-brand-500 hover:shadow-glow hover:-translate-y-1 active:translate-y-0 active:scale-95;
+    @apply relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-white transition-all duration-300 bg-brand-500 rounded-lg hover:bg-brand-600 hover:shadow-lg hover:shadow-brand-500/30 hover:-translate-y-1 active:translate-y-0 active:scale-95;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center px-6 py-3 font-medium text-slate-300 transition-all duration-300 border border-slate-700/50 rounded-lg hover:bg-slate-800/50 hover:text-white hover:border-slate-600 hover:-translate-y-1 active:translate-y-0 active:scale-95;
+    @apply inline-flex items-center justify-center px-6 py-3 font-medium text-[#222222] transition-all duration-300 border-2 border-[#EEEEEE] bg-white rounded-lg hover:bg-[#F5F5F5] hover:border-brand-500/30 hover:-translate-y-1 active:translate-y-0 active:scale-95;
   }
 
   .input-field {
-    @apply w-full px-4 py-3 bg-slate-900/50 border border-slate-800 rounded-lg text-slate-200 placeholder-slate-500 focus:outline-none focus:border-brand-500/50 focus:ring-2 focus:ring-brand-500/20 transition-all duration-200;
+    @apply w-full px-4 py-3 bg-white border-2 border-[#EEEEEE] rounded-lg text-[#222222] placeholder-[#777777] focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 transition-all duration-200;
   }
 
   /* Status Badges */
@@ -65,29 +82,29 @@
   }
 
   .badge-success {
-    @apply bg-emerald-500/10 text-emerald-400 border border-emerald-500/20;
+    @apply bg-emerald-50 text-emerald-700 border border-emerald-200;
   }
 
   .badge-warning {
-    @apply bg-amber-500/10 text-amber-400 border border-amber-500/20;
+    @apply bg-amber-50 text-amber-700 border border-amber-200;
   }
 
   .badge-error {
-    @apply bg-rose-500/10 text-rose-400 border border-rose-500/20;
+    @apply bg-rose-50 text-rose-700 border border-rose-200;
   }
 
   .badge-info {
-    @apply bg-brand-500/10 text-brand-400 border border-brand-500/20;
+    @apply bg-brand-50 text-brand-700 border border-brand-200;
   }
 }
 
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#222222] via-[#555555] to-[#777777];
   }
 
   .text-gradient-brand {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-300 via-brand-100 to-white;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-700 via-brand-500 to-accent-500;
   }
 
   .scrollbar-hide::-webkit-scrollbar {
@@ -106,30 +123,37 @@
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-slate-950;
+  @apply bg-[#F5F5F5];
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-slate-800 rounded-full hover:bg-slate-700 transition-colors;
+  @apply bg-[#CCCCCC] rounded-full hover:bg-brand-400 transition-colors;
 }
 
 /* Custom Animations */
 @keyframes blob {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translate(0, 0) scale(1);
   }
+
   33% {
     transform: translate(30px, -50px) scale(1.1);
   }
+
   66% {
     transform: translate(-20px, 20px) scale(0.9);
   }
 }
 
 @keyframes gradient {
-  0%, 100% {
+
+  0%,
+  100% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
@@ -153,5 +177,5 @@
 }
 
 .shadow-glow {
-  box-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
+  box-shadow: 0 0 30px rgba(77, 20, 140, 0.5);
 }

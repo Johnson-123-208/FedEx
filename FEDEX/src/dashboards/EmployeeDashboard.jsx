@@ -124,7 +124,7 @@ const EmployeeDashboard = () => {
             key: 'weight',
             label: 'Weight',
             render: (val) => (
-                <span className="font-mono text-slate-400">
+                <span className="font-mono text-[#555555]">
                     {val} <span className="text-xs">kg</span>
                 </span>
             )
@@ -134,11 +134,11 @@ const EmployeeDashboard = () => {
             label: 'Status',
             render: (val) => {
                 const statusColors = {
-                    'Delivered': 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20',
-                    'In Transit': 'bg-blue-500/10 text-blue-400 border-blue-500/20',
-                    'Out for Delivery': 'bg-amber-500/10 text-amber-400 border-amber-500/20',
-                    'Pending': 'bg-slate-500/10 text-slate-400 border-slate-500/20',
-                    'Exception': 'bg-rose-500/10 text-rose-400 border-rose-500/20'
+                    'Delivered': 'bg-emerald-50 text-emerald-700 border-emerald-200',
+                    'In Transit': 'bg-blue-50 text-blue-700 border-blue-200',
+                    'Out for Delivery': 'bg-amber-50 text-amber-700 border-amber-200',
+                    'Pending': 'bg-slate-50 text-slate-700 border-slate-200',
+                    'Exception': 'bg-rose-50 text-rose-700 border-rose-200'
                 };
                 const colorClass = statusColors[val] || statusColors['Pending'];
                 return (
@@ -152,7 +152,7 @@ const EmployeeDashboard = () => {
             key: 'actions',
             label: 'Actions',
             render: () => (
-                <button className="text-brand-400 hover:text-brand-300 font-medium text-xs border border-brand-500/30 px-3 py-1 rounded hover:bg-brand-500/10 transition-colors">
+                <button className="text-brand-500 hover:text-brand-600 font-medium text-xs border border-brand-500/30 px-3 py-1 rounded hover:bg-brand-50 transition-colors">
                     View
                 </button>
             )
@@ -172,7 +172,7 @@ const EmployeeDashboard = () => {
             <div className="container mx-auto px-4 py-8 flex items-center justify-center min-h-[60vh]">
                 <div className="text-center">
                     <div className="w-16 h-16 border-4 border-brand-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-                    <p className="text-slate-400">Loading shipment data...</p>
+                    <p className="text-[#555555]">Loading shipment data...</p>
                 </div>
             </div>
         );
@@ -205,8 +205,8 @@ const EmployeeDashboard = () => {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                 >
-                    <h1 className="text-3xl font-bold text-white mb-2 font-display">Employee Hub</h1>
-                    <p className="text-slate-400">Welcome back, Agent. Here's your daily overview.</p>
+                    <h1 className="text-3xl font-bold text-[#222222] mb-2 font-display">Employee Hub</h1>
+                    <p className="text-[#555555]">Welcome back, Agent. Here's your daily overview.</p>
                 </motion.div>
                 <div className="flex gap-3">
                     <button onClick={handleSignOut} className="px-4 py-2 rounded-lg border border-red-500/30 text-red-400 hover:bg-red-500/10 transition-colors text-sm font-medium">
@@ -268,15 +268,15 @@ const EmployeeDashboard = () => {
                             className={`
                                 relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300
                                 ${filterStatus === filter.value
-                                    ? 'bg-brand-500/20 text-brand-300 border border-brand-500/30 shadow-glow-sm'
-                                    : 'bg-slate-900/50 text-slate-400 border border-white/5 hover:bg-white/5 hover:text-white'
+                                    ? 'bg-brand-500 text-white border border-brand-500 shadow-lg'
+                                    : 'bg-white text-[#555555] border-2 border-[#EEEEEE] hover:bg-[#F5F5F5] hover:text-[#222222] hover:border-brand-500/30'
                                 }
                             `}
                         >
                             {filter.label}
                             <span className={`
                                 ml-2 text-xs opacity-60 px-1.5 py-0.5 rounded
-                                ${filterStatus === filter.value ? 'bg-brand-500/30' : 'bg-slate-800'}
+                                ${filterStatus === filter.value ? 'bg-white/20' : 'bg-[#F5F5F5]'}
                             `}>
                                 {filter.count}
                             </span>

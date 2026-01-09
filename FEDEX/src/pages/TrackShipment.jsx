@@ -62,18 +62,18 @@ const TrackShipment = () => {
                 animate={{ opacity: 1, y: 0 }}
                 className="max-w-4xl mx-auto mb-10"
             >
-                <h1 className="text-3xl font-display font-bold text-white mb-2 text-center">Track Your Shipment</h1>
-                <p className="text-slate-400 text-center mb-8">Select your service provider and enter AWB to get real-time status.</p>
+                <h1 className="text-3xl font-display font-bold text-[#222222] mb-2 text-center">Track Your Shipment</h1>
+                <p className="text-[#555555] text-center mb-8">Select your service provider and enter AWB to get real-time status.</p>
 
                 {/* Search Bar */}
                 <div className="glass-card p-2 flex items-center shadow-glow-sm max-w-2xl mx-auto gap-4">
                     <select
                         value={selectedProvider}
                         onChange={(e) => setSelectedProvider(e.target.value)}
-                        className="bg-slate-800/50 text-white border border-slate-700/50 rounded-md py-3 px-4 outline-none focus:ring-2 focus:ring-brand-500 transition-all font-medium"
+                        className="bg-white text-[#222222] border-2 border-[#EEEEEE] rounded-md py-3 px-4 outline-none focus:ring-2 focus:ring-brand-500 transition-all font-medium"
                     >
                         {PROVIDERS.map((p) => (
-                            <option key={p} value={p} className="bg-slate-900 text-white">
+                            <option key={p} value={p} className="bg-white text-[#222222]">
                                 {p}
                             </option>
                         ))}
@@ -84,12 +84,12 @@ const TrackShipment = () => {
                         value={awbNumber}
                         onChange={(e) => setAwbNumber(e.target.value)}
                         placeholder="e.g. 6002770480"
-                        className="flex-1 bg-transparent border-none text-white placeholder-slate-500 px-2 py-3 focus:ring-0 text-lg font-mono outline-none w-full"
+                        className="flex-1 bg-transparent border-none text-[#222222] placeholder-[#999999] px-2 py-3 focus:ring-0 text-lg font-mono outline-none w-full"
                     />
                     <button
                         onClick={handleSearch}
                         disabled={searching || !awbNumber}
-                        className="btn-primary px-8 py-3 rounded-lg m-1 disabled:opacity-50 whitespace-nowrap"
+                        className="bg-accent-500 hover:bg-accent-600 text-white px-8 py-3 rounded-lg m-1 disabled:opacity-50 whitespace-nowrap font-semibold transition-all shadow-lg hover:shadow-accent-500/30"
                     >
                         {searching ? 'Tracking...' : 'Track'}
                     </button>

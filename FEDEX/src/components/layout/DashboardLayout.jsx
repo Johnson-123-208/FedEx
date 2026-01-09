@@ -24,17 +24,17 @@ const DashboardLayout = ({ children, role }) => {
     ];
 
     return (
-        <div className="min-h-screen bg-[#0B1120] flex">
+        <div className="min-h-screen bg-[#F5F5F5] flex">
             {/* Sidebar */}
-            <aside className="w-64 bg-slate-900 border-r border-white/5 hidden md:flex flex-col">
+            <aside className="w-64 bg-white border-r border-[#EEEEEE] hidden md:flex flex-col shadow-sm">
                 <div className="p-6">
                     <div className="flex items-center gap-3 mb-8">
                         <div className="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center font-bold text-white">
                             {role === 'manager' ? 'M' : 'E'}
                         </div>
                         <div>
-                            <h2 className="font-display font-bold text-white tracking-wide">AADYAM</h2>
-                            <p className="text-xs text-brand-400 uppercase tracking-wider">{role} Portal</p>
+                            <h2 className="font-display font-bold text-[#222222] tracking-wide">AADYAM</h2>
+                            <p className="text-xs text-brand-500 uppercase tracking-wider">{role} Portal</p>
                         </div>
                     </div>
 
@@ -47,7 +47,7 @@ const DashboardLayout = ({ children, role }) => {
                                     flex items-center gap-3 px-4 py-3 rounded-xl transition-all group
                                     ${isActive
                                         ? 'bg-brand-500 text-white shadow-lg shadow-brand-500/20'
-                                        : 'text-slate-400 hover:bg-white/5 hover:text-white'
+                                        : 'text-[#555555] hover:bg-[#F5F5F5] hover:text-[#222222]'
                                     }
                                 `}
                             >
@@ -60,14 +60,14 @@ const DashboardLayout = ({ children, role }) => {
                     </nav>
                 </div>
 
-                <div className="mt-auto p-6 border-t border-white/5">
+                <div className="mt-auto p-6 border-t border-[#EEEEEE]">
                     <div className="flex items-center gap-3 mb-4 px-2">
-                        <div className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-xs text-slate-400">
+                        <div className="w-8 h-8 rounded-full bg-brand-100 flex items-center justify-center text-xs text-brand-700 font-semibold">
                             {user?.email?.[0].toUpperCase()}
                         </div>
                         <div className="overflow-hidden">
-                            <p className="text-sm text-white truncate">{user?.email}</p>
-                            <p className="text-xs text-slate-500 truncate capitalize">{role}</p>
+                            <p className="text-sm text-[#222222] truncate">{user?.email}</p>
+                            <p className="text-xs text-[#777777] truncate capitalize">{role}</p>
                         </div>
                     </div>
                     <button
@@ -82,8 +82,8 @@ const DashboardLayout = ({ children, role }) => {
             {/* Main Content Area */}
             <main className="flex-1 overflow-x-hidden overflow-y-auto relative">
                 {/* Mobile Header (Visible only on small screens) */}
-                <div className="md:hidden h-16 bg-slate-900 border-b border-white/5 flex items-center justify-between px-4 sticky top-0 z-40">
-                    <span className="font-display font-bold text-white">AADYAM LOGISTICS</span>
+                <div className="md:hidden h-16 bg-white border-b border-[#EEEEEE] flex items-center justify-between px-4 sticky top-0 z-40 shadow-sm">
+                    <span className="font-display font-bold text-[#222222]">AADYAM LOGISTICS</span>
                     <button onClick={handleSignOut} className="text-sm text-red-400">Sign Out</button>
                 </div>
 

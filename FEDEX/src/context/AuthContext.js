@@ -12,9 +12,9 @@ export const AuthProvider = ({ children }) => {
         // Check active session
         const getSession = async () => {
             try {
-                // Safety timeout: If Supabase doesn't respond in 3s, proceed as logged out
+                // Safety timeout: If Supabase doesn't respond in 1.5s, proceed as logged out
                 const timeoutPromise = new Promise((_, reject) =>
-                    setTimeout(() => reject(new Error('Auth timeout')), 3000)
+                    setTimeout(() => reject(new Error('Auth timeout')), 1500)
                 );
 
                 const sessionPromise = supabase.auth.getSession();
@@ -77,7 +77,7 @@ export const AuthProvider = ({ children }) => {
 
     if (loading) {
         return (
-            <div className="min-h-screen flex items-center justify-center bg-[#0B1120]">
+            <div className="min-h-screen flex items-center justify-center bg-[#F5F5F5]">
                 <div className="w-16 h-16 border-4 border-brand-500 border-t-transparent rounded-full animate-spin"></div>
             </div>
         );

@@ -4,16 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const Header = () => {
     const location = useLocation();
-    const [scrolled, setScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setScrolled(window.scrollY > 20);
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
 
     const navItems = [
         { path: '/', label: 'Home' },
@@ -27,10 +18,7 @@ const Header = () => {
             <motion.header
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
-                className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-                        ? 'bg-slate-950/80 backdrop-blur-md border-b border-white/5 py-3'
-                        : 'bg-transparent py-5'
-                    }`}
+                className="fixed top-0 left-0 right-0 z-50 bg-brand-500 shadow-md py-4"
             >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center">
@@ -38,7 +26,7 @@ const Header = () => {
                         <Link to="/" className="group flex items-center gap-3">
                             <div className="relative">
                                 <div className="absolute -inset-1 bg-brand-500 rounded-lg opacity-20 group-hover:opacity-40 blur transition duration-200"></div>
-                                <div className="relative w-10 h-10 bg-gradient-to-br from-brand-600 to-brand-700 rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-lg group-hover:scale-105 transition-transform">
+                                <div className="relative w-10 h-10 bg-white rounded-lg flex items-center justify-center text-brand-500 font-bold text-xl shadow-lg group-hover:scale-105 transition-transform">
                                     A
                                 </div>
                             </div>
@@ -46,7 +34,7 @@ const Header = () => {
                                 <span className="font-display font-bold text-lg text-white leading-none tracking-tight group-hover:text-brand-100 transition-colors">
                                     AADYAM
                                 </span>
-                                <span className="text-[10px] uppercase tracking-[0.2em] text-slate-400 group-hover:text-brand-300 transition-colors">
+                                <span className="text-[10px] uppercase tracking-[0.2em] text-white/80 group-hover:text-white transition-colors">
                                     Logistics
                                 </span>
                             </div>
@@ -58,13 +46,13 @@ const Header = () => {
                                 const isActive = location.pathname === item.path;
                                 return (
                                     <Link key={item.path} to={item.path}>
-                                        <div className={`relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${isActive ? 'text-white' : 'text-slate-400 hover:text-white hover:bg-white/5'
+                                        <div className={`relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${isActive ? 'text-white bg-white/20' : 'text-white/90 hover:text-white hover:bg-white/10'
                                             }`}>
                                             {item.label}
                                             {isActive && (
                                                 <motion.div
                                                     layoutId="navbar-indicator"
-                                                    className="absolute inset-0 bg-white/10 rounded-lg border border-white/5"
+                                                    className="absolute inset-0 bg-white/20 rounded-lg border border-white/10"
                                                     transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                                                 />
                                             )}
@@ -76,7 +64,7 @@ const Header = () => {
 
                         {/* Mobile Menu Button */}
                         <button
-                            className="md:hidden p-2 text-slate-300 hover:text-white"
+                            className="md:hidden p-2 text-white hover:text-white/80"
                             onClick={() => setMobileMenuOpen(true)}
                         >
                             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -128,8 +116,8 @@ const Header = () => {
                                             animate={{ x: 0, opacity: 1 }}
                                             transition={{ delay: idx * 0.1 }}
                                             className={`p-3 rounded-lg text-sm font-semibold ${location.pathname === item.path
-                                                    ? 'bg-brand-600/20 text-brand-300 border border-brand-500/20'
-                                                    : 'text-slate-400 hover:text-white hover:bg-white/5'
+                                                ? 'bg-brand-600/20 text-brand-300 border border-brand-500/20'
+                                                : 'text-slate-400 hover:text-white hover:bg-white/5'
                                                 }`}
                                         >
                                             {item.label}

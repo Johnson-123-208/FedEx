@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer className="relative bg-slate-950 border-t border-white/5 pt-16 pb-8 overflow-hidden">
+        <footer className="relative bg-[#0B1120] border-t border-white/10 pt-16 pb-8 overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0 z-0 opacity-[0.03]"
                 style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '40px 40px' }}
@@ -21,7 +21,7 @@ const Footer = () => {
                                 AADYAM
                             </span>
                         </Link>
-                        <p className="text-slate-400 text-sm leading-relaxed mb-6">
+                        <p className="text-slate-300 text-sm leading-relaxed mb-6">
                             Redefining global logistics with cutting-edge technology and a commitment to excellence.
                             Reliable, secure, and always on time.
                         </p>
@@ -30,7 +30,7 @@ const Footer = () => {
                     {/* Quick Links */}
                     <div>
                         <h4 className="font-display font-semibold text-white mb-6">Platform</h4>
-                        <ul className="space-y-3 text-sm text-slate-400">
+                        <ul className="space-y-3 text-sm text-slate-300">
                             <li><Link to="/track" className="hover:text-brand-400 transition-colors">Track Shipment</Link></li>
                             <li><Link to="/employee-dashboard" className="hover:text-brand-400 transition-colors">Employee Portal</Link></li>
                             <li><Link to="/manager-dashboard" className="hover:text-brand-400 transition-colors">Manager Suite</Link></li>
@@ -40,7 +40,7 @@ const Footer = () => {
                     {/* Services */}
                     <div>
                         <h4 className="font-display font-semibold text-white mb-6">Services</h4>
-                        <ul className="space-y-3 text-sm text-slate-400">
+                        <ul className="space-y-3 text-sm text-slate-300">
                             <li><a href="#" className="hover:text-brand-400 transition-colors">Global Freight</a></li>
                             <li><a href="#" className="hover:text-brand-400 transition-colors">Supply Chain Analytics</a></li>
                             <li><a href="#" className="hover:text-brand-400 transition-colors">Warehousing</a></li>
@@ -51,7 +51,7 @@ const Footer = () => {
                     {/* Contact - Clean Layout */}
                     <div>
                         <h4 className="font-display font-semibold text-white mb-6">Contact</h4>
-                        <div className="space-y-4 text-sm text-slate-400">
+                        <div className="space-y-4 text-sm text-slate-300">
                             <div className="flex items-start gap-3">
                                 <svg className="w-5 h-5 text-brand-500 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />

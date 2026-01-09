@@ -72,24 +72,24 @@ const Table = ({ data, columns, sortable = true, filterable = false }) => {
                                 setFilter(e.target.value);
                                 setCurrentPage(1); // Reset to first page on search
                             }}
-                            className="w-full pl-10 pr-4 py-3 bg-slate-900/50 border border-slate-700/50 rounded-lg text-slate-200 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500/50 transition-all"
+                            className="w-full pl-10 pr-4 py-3 bg-white border-2 border-[#EEEEEE] rounded-lg text-[#222222] placeholder-[#999999] focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all"
                         />
-                        <svg className="w-5 h-5 text-slate-500 absolute left-3 top-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg className="w-5 h-5 text-[#999999] absolute left-3 top-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                     </div>
                 </div>
             )}
 
-            <div className="overflow-hidden rounded-xl border border-white/5 bg-slate-900/40 backdrop-blur-sm">
-                <table className="min-w-full divide-y divide-white/5">
-                    <thead className="bg-slate-900/80">
+            <div className="overflow-hidden rounded-xl border-2 border-[#EEEEEE] bg-white shadow-sm">
+                <table className="min-w-full divide-y divide-[#EEEEEE]">
+                    <thead className="bg-[#F5F5F5]">
                         <tr>
                             {columns.map((column) => (
                                 <th
                                     key={column.key}
                                     onClick={() => requestSort(column.key)}
-                                    className={`px-6 py-4 text-left text-xs font-semibold text-slate-400 uppercase tracking-wider ${sortable ? 'cursor-pointer hover:text-white transition-colors' : ''
+                                    className={`px-6 py-4 text-left text-xs font-semibold text-[#777777] uppercase tracking-wider ${sortable ? 'cursor-pointer hover:text-[#222222] transition-colors' : ''
                                         }`}
                                 >
                                     <div className="flex items-center gap-2">
@@ -102,17 +102,17 @@ const Table = ({ data, columns, sortable = true, filterable = false }) => {
                             ))}
                         </tr>
                     </thead>
-                    <tbody className="divide-y divide-white/5">
+                    <tbody className="divide-y divide-[#EEEEEE]">
                         {paginatedData.map((row, index) => (
                             <motion.tr
                                 key={row.id || startIndex + index}
                                 initial={{ opacity: 0, x: -10 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.2, delay: index * 0.03 }}
-                                className="group hover:bg-white/5 transition-colors"
+                                className="group hover:bg-[#F5F5F5] transition-colors"
                             >
                                 {columns.map((column) => (
-                                    <td key={column.key} className="px-6 py-4 text-sm text-slate-300 group-hover:text-white transition-colors whitespace-nowrap">
+                                    <td key={column.key} className="px-6 py-4 text-sm text-[#555555] group-hover:text-[#222222] transition-colors whitespace-nowrap">
                                         {renderCell(column, row)}
                                     </td>
                                 ))}
@@ -134,24 +134,24 @@ const Table = ({ data, columns, sortable = true, filterable = false }) => {
             {/* Pagination Controls */}
             {filteredData.length > 0 && (
                 <div className="mt-6 flex items-center justify-between">
-                    <div className="text-sm text-slate-400">
-                        Showing <span className="font-semibold text-white">{startIndex + 1}</span> to{' '}
-                        <span className="font-semibold text-white">{Math.min(endIndex, filteredData.length)}</span> of{' '}
-                        <span className="font-semibold text-white">{filteredData.length}</span> results
+                    <div className="text-sm text-[#555555]">
+                        Showing <span className="font-semibold text-[#222222]">{startIndex + 1}</span> to{' '}
+                        <span className="font-semibold text-[#222222]">{Math.min(endIndex, filteredData.length)}</span> of{' '}
+                        <span className="font-semibold text-[#222222]">{filteredData.length}</span> results
                     </div>
 
                     <div className="flex items-center gap-2">
                         <button
                             onClick={() => goToPage(1)}
                             disabled={currentPage === 1}
-                            className="px-3 py-2 rounded-lg bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+                            className="px-3 py-2 rounded-lg bg-white border border-[#EEEEEE] text-[#555555] hover:bg-[#F5F5F5] hover:text-[#222222] disabled:opacity-30 disabled:cursor-not-allowed transition-all"
                         >
                             ««
                         </button>
                         <button
                             onClick={() => goToPage(currentPage - 1)}
                             disabled={currentPage === 1}
-                            className="px-3 py-2 rounded-lg bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+                            className="px-3 py-2 rounded-lg bg-white border border-[#EEEEEE] text-[#555555] hover:bg-[#F5F5F5] hover:text-[#222222] disabled:opacity-30 disabled:cursor-not-allowed transition-all"
                         >
                             ‹
                         </button>
@@ -174,8 +174,8 @@ const Table = ({ data, columns, sortable = true, filterable = false }) => {
                                         key={i}
                                         onClick={() => goToPage(pageNum)}
                                         className={`px-4 py-2 rounded-lg font-medium transition-all ${currentPage === pageNum
-                                                ? 'bg-brand-500 text-white shadow-lg shadow-brand-500/50'
-                                                : 'bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-white'
+                                            ? 'bg-brand-500 text-white shadow-lg shadow-brand-500/30'
+                                            : 'bg-white border border-[#EEEEEE] text-[#555555] hover:bg-[#F5F5F5] hover:text-[#222222]'
                                             }`}
                                     >
                                         {pageNum}

@@ -8,20 +8,32 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          50: '#eff6ff', // Slate-blue tint
-          100: '#dbeafe',
-          200: '#bfdbfe',
-          300: '#93c5fd',
-          400: '#60a5fa',
-          500: '#3b82f6', // Primary Blue
-          600: '#2563eb',
-          700: '#1d4ed8',
-          800: '#1e40af',
-          900: '#1e3a8a',
-          950: '#172554',
+          50: '#f5e6ff',  // Lightest purple tint
+          100: '#e6ccff',
+          200: '#d4b3ff',
+          300: '#b380ff',
+          400: '#9966ff',
+          500: '#4D148C', // FedEx Purple (Primary)
+          600: '#3d1070',
+          700: '#2e0c54',
+          800: '#1f0838',
+          900: '#10041c',
+          950: '#080210',
+        },
+        accent: {
+          50: '#fff4e6',
+          100: '#ffe4cc',
+          200: '#ffd4b3',
+          300: '#ffb380',
+          400: '#ff9966',
+          500: '#FF6600', // FedEx Orange (Accent)
+          600: '#cc5200',
+          700: '#993d00',
+          800: '#662900',
+          900: '#331400',
         },
         slate: {
-          850: '#151f32', // Custom dark shade for rich backgrounds
+          850: '#151f32',
           950: '#020617',
         },
         surface: {
@@ -55,8 +67,8 @@ module.exports = {
         'xs': '2px',
       },
       boxShadow: {
-        'glow': '0 0 20px rgba(59, 130, 246, 0.5)',
-        'glow-sm': '0 0 10px rgba(59, 130, 246, 0.3)',
+        'glow': '0 0 20px rgba(77, 20, 140, 0.5)',
+        'glow-sm': '0 0 10px rgba(77, 20, 140, 0.3)',
         'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
       },
       animation: {
