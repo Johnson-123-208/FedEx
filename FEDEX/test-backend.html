@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Backend Test</title>
+</head>
+<body>
+    <h1>Test Backend Connection</h1>
+    <button onclick="testBackend()">Test Backend</button>
+    <pre id="result"></pre>
+
+    <script>
+        async function testBackend() {
+            const result = document.getElementById('result');
+            result.textContent = 'Testing...';
+            
+            try {
+                // Test 1: Health check
+                result.textContent += '\n\n1. Testing health check...';
+                const healthResponse = await fetch('https://fedex-3oat.onrender.com');
+                result.textContent += `\nHealth check: ${healthResponse.status} ${healthResponse.statusText}`;
+                
+                // Test 2: Track endpoint
+                result.textContent += '\n\n2. Testing track endpoint...';
+                const trackResponse = await fetch('https://fedex-3oat.onrender.com/track', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ awb: '9232031340', provider: 'dhl' })
+                });
+                
+                result.textContent += `\nTrack endpoint: ${trackResponse.status} ${trackResponse.statusText}`;
+                
+                const data = await trackResponse.json();
+                result.textContent += '\n\nResponse:\n' + JSON.stringify(data, null, 2);
+                
+            } catch (error) {
+                result.textContent += '\n\nERROR: ' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>
