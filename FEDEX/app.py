@@ -127,6 +127,19 @@ def get_driver():
         driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
     return driver
 
+@app.route('/', methods=['GET'])
+def health_check():
+    """Health check endpoint"""
+    return jsonify({
+        "status": "healthy",
+        "message": "FedEx Tracking API is running",
+        "version": "1.0.0",
+        "endpoints": {
+            "/": "Health check",
+            "/track": "POST - Track shipment (requires awb and provider)"
+        }
+    }), 200
+
 @app.route('/track', methods=['POST'])
 def track():
     req_data = request.json
