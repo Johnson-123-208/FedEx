@@ -1,18 +1,13 @@
 services:
   - type: web
     name: fedex-backend
-    runtime: docker
-    region: oregon
-    plan: free
+    env: docker
     dockerfilePath: ./FEDEX/backend/Dockerfile
     dockerContext: ./FEDEX/backend
+    region: oregon
+    plan: free
+    healthCheckPath: /
     envVars:
-      - key: PYTHON_VERSION
-        value: 3.11.0
-      - key: GOOGLE_CHROME_BIN
-        value: /usr/bin/google-chrome
-      - key: CHROMEDRIVER_PATH
-        value: /usr/local/bin/chromedriver
       - key: PORT
         value: 10000
-    healthCheckPath: /
+
