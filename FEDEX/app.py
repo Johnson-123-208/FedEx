@@ -87,7 +87,20 @@ except ImportError:
     print("Could not import United Express script")
 
 app = Flask(__name__)
-CORS(app)
+
+# Configure CORS to allow your frontend domains
+CORS(app, resources={
+    r"/*": {
+        "origins": [
+            "http://localhost:3000",  # Local development
+            "https://fedex-3oat.onrender.com",  # Backend itself
+            "https://*.vercel.app",  # All Vercel deployments
+            "https://*.vercel.com"   # Custom Vercel domains
+        ],
+        "methods": ["GET", "POST", "OPTIONS"],
+        "allow_headers": ["Content-Type"]
+    }
+})
 
 driver = None
 driver_lock = threading.Lock()
