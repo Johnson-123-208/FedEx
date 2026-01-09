@@ -21,7 +21,13 @@ const TrackShipment = () => {
         setSearchResult(null);
 
         try {
-            const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+            // Use production backend URL, fallback to localhost only in development
+            const apiUrl = process.env.REACT_APP_API_URL ||
+                (window.location.hostname === 'localhost'
+                    ? 'http://localhost:5000'
+                    : 'https://fedex-3oat.onrender.com');
+
+            console.log(`API URL: ${apiUrl}`);
             console.log(`Fetching ${selectedProvider} details for ${awbNumber}...`);
             const response = await fetch(`${apiUrl}/track`, {
                 method: 'POST',
