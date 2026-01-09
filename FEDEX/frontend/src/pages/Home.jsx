@@ -1,8 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const Home = () => {
+    const [trackingId, setTrackingId] = React.useState('');
+    const navigate = useNavigate();
+
+    const handleTrack = () => {
+        if (trackingId.trim()) {
+            navigate('/track');
+        }
+    };
+
     return (
         <div className="min-h-screen bg-white">
             {/* HERO SECTION - FedEx Style */}
@@ -69,9 +78,15 @@ const Home = () => {
                         <input
                             type="text"
                             placeholder="TRACKING ID"
+                            value={trackingId}
+                            onChange={(e) => setTrackingId(e.target.value)}
+                            onKeyPress={(e) => e.key === 'Enter' && handleTrack()}
                             className="flex-1 px-6 py-3 text-gray-700 placeholder-gray-400 focus:outline-none text-base"
                         />
-                        <button className="bg-accent-500 hover:bg-accent-600 text-white px-8 py-3 font-bold text-base uppercase tracking-wider transition-all flex items-center gap-2">
+                        <button
+                            onClick={handleTrack}
+                            className="bg-accent-500 hover:bg-accent-600 text-white px-8 py-3 font-bold text-base uppercase tracking-wider transition-all flex items-center gap-2"
+                        >
                             Track
                             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
