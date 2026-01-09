@@ -31,7 +31,16 @@ def get_fedex_tracking_details(awb_number, driver):
     try:
         # Wait for page to load - FedEx uses AJAX so needs more time
         print(f"⏳ FedEx: Waiting for tracking data to load...")
-        time.sleep(20)
+        
+        # Poll for content (up to 20s) instead of hard sleep
+        start_wait = time.time()
+        while time.time() - start_wait < 20:
+             # Basic check if relevant content loaded
+             src = driver.page_source.lower()
+             if "shipment" in src or "delivered" in src or "in transit" in src or "tracking" in src:
+                  time.sleep(2) # Allow settling
+                  break
+             time.sleep(1)
         
         # Extract ALL text from page (including Shadow DOM)
         page_text = driver.execute_script("""

@@ -94,7 +94,7 @@ export const AuthProvider = ({ children }) => {
                 .eq('id', userId)
                 .single();
 
-            const { data, error } = await Promise.race([fetchPromise, timeoutPromise]);
+            const { data } = await Promise.race([fetchPromise, timeoutPromise]);
 
             if (data) {
                 setRole(data.role);

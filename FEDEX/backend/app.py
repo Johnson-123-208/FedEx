@@ -115,6 +115,8 @@ def get_driver():
     chrome_options.add_argument('--disable-dev-shm-usage')  # Important for Docker
     chrome_options.add_argument('--disable-software-rasterizer')
     chrome_options.add_argument('--window-size=1920,1080')
+    chrome_options.add_argument('--no-zygote')
+    chrome_options.add_argument('--disable-features=VizDisplayCompositor')
     
     # Memory optimization
     chrome_options.add_argument('--disable-extensions')

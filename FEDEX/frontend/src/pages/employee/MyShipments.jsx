@@ -35,11 +35,11 @@ const MyShipments = () => {
                     const batch = sheets.slice(i, i + batchSize);
                     const batchResults = await fetchBatch(batch);
 
-                    batchResults.forEach(data => {
+                    for (const data of batchResults) {
                         if (data && data.shipments) {
                             allShipments = allShipments.concat(data.shipments);
                         }
-                    });
+                    }
                 }
 
                 // Transform data for table

@@ -2,6 +2,9 @@
 
 echo "🚀 Starting AADYAM LOGISTICS Platform..."
 echo ""
+
+cd frontend
+
 echo "📦 Installing dependencies (if needed)..."
 npm install
 

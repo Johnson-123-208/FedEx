@@ -202,49 +202,7 @@ const ShipmentTracker = ({ shipment }) => {
         return cleaned;
     };
 
-    // Create intermediate waypoints for long-distance routes
-    const createWaypoints = (start, end, count = 3) => {
-        const waypoints = [];
 
-        // Calculate great circle distance
-        const latDiff = Math.abs(end.lat - start.lat);
-        const lngDiff = Math.abs(end.lng - start.lng);
-
-        // If crossing major longitude (likely crossing ocean), add waypoints
-        if (lngDiff > 90) {
-            // Trans-oceanic route - add waypoints at logical transit hubs
-            const midLat = (start.lat + end.lat) / 2;
-
-            // Determine if going east or west
-            const goingEast = end.lng > start.lng;
-
-            // Add waypoints at typical air cargo hubs
-            if (goingEast) {
-                // India to US route typically goes via Middle East/Europe
-                waypoints.push(
-                    { lat: 25.2532, lng: 55.3657 }, // Dubai
-                    { lat: 51.4700, lng: -0.4543 }  // London Heathrow
-                );
-            } else {
-                // US to Asia route typically goes via Pacific
-                waypoints.push(
-                    { lat: 35.7720, lng: 140.3929 }, // Tokyo
-                    { lat: 22.3080, lng: 113.9185 }  // Hong Kong
-                );
-            }
-        } else {
-            // Continental route - simple interpolation is fine
-            for (let i = 1; i < count; i++) {
-                const ratio = i / count;
-                waypoints.push({
-                    lat: start.lat + (end.lat - start.lat) * ratio,
-                    lng: start.lng + (end.lng - start.lng) * ratio
-                });
-            }
-        }
-
-        return waypoints;
-    };
 
     // Geocode location name to coordinates with retry
     const geocodeLocation = async (locationName) => {
@@ -433,6 +391,7 @@ const ShipmentTracker = ({ shipment }) => {
         };
 
         loadCheckpoints();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [shipment]);
 
     // Determine current checkpoint (last completed or second-to-last for animation)

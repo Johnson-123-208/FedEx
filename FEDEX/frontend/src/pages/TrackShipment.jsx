@@ -13,7 +13,7 @@ const TrackShipment = () => {
     const [searchResult, setSearchResult] = useState(null);
     const [searching, setSearching] = useState(false);
     const [error, setError] = useState('');
-    const [isFullScreen, setIsFullScreen] = useState(false);
+    const [isFullScreen] = useState(false);
 
     useEffect(() => {
         if (location.state?.provider) {

@@ -41,10 +41,10 @@ const Footer = () => {
                     <div>
                         <h4 className="font-display font-semibold text-white mb-6">Services</h4>
                         <ul className="space-y-3 text-sm text-slate-300">
-                            <li><a href="#" className="hover:text-brand-400 transition-colors">Global Freight</a></li>
-                            <li><a href="#" className="hover:text-brand-400 transition-colors">Supply Chain Analytics</a></li>
-                            <li><a href="#" className="hover:text-brand-400 transition-colors">Warehousing</a></li>
-                            <li><a href="#" className="hover:text-brand-400 transition-colors">Last Mile Delivery</a></li>
+                            <li><Link to="/" className="hover:text-brand-400 transition-colors">Global Freight</Link></li>
+                            <li><Link to="/" className="hover:text-brand-400 transition-colors">Supply Chain Analytics</Link></li>
+                            <li><Link to="/" className="hover:text-brand-400 transition-colors">Warehousing</Link></li>
+                            <li><Link to="/" className="hover:text-brand-400 transition-colors">Last Mile Delivery</Link></li>
                         </ul>
                     </div>
 
@@ -77,8 +77,8 @@ const Footer = () => {
                         &copy; {new Date().getFullYear()} Aadyam Logistics Private Limited. All rights reserved.
                     </p>
                     <div className="flex gap-6 text-xs text-slate-500">
-                        <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-                        <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+                        <Link to="/" className="hover:text-white transition-colors">Privacy Policy</Link>
+                        <Link to="/" className="hover:text-white transition-colors">Terms of Service</Link>
                     </div>
                 </div>
             </div>

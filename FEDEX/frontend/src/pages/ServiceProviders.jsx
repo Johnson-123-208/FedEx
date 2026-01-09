@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const providers = [
     {
@@ -146,11 +146,6 @@ const ProviderCard = ({ provider, index }) => {
 };
 
 const ServiceProviders = () => {
-    const containerRef = useRef(null);
-    const { scrollYProgress } = useScroll({
-        target: containerRef,
-        offset: ["start start", "end end"]
-    });
 
     return (
         <div className="min-h-screen bg-white">
