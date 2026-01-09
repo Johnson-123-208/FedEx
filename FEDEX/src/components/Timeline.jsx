@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Timeline = ({ timeline }) => {
     return (
-        <div className="relative pl-4 border-l border-slate-800 space-y-8 my-4">
+        <div className="relative pl-4 border-l border-[#DDDDDD] space-y-8 my-4">
             {timeline.map((item, index) => (
                 <motion.div
                     key={index}
@@ -14,19 +14,19 @@ const Timeline = ({ timeline }) => {
                 >
                     {/* Dot */}
                     <div className={`absolute -left-[21px] top-1 w-3 h-3 rounded-full border-2 ${item.completed
-                            ? 'bg-brand-500 border-brand-500 shadow-[0_0_10px_rgba(59,130,246,0.5)]'
-                            : 'bg-slate-900 border-slate-600'
+                        ? 'bg-brand-500 border-brand-500 shadow-[0_0_10px_rgba(77,20,140,0.4)]'
+                        : 'bg-[#EEEEEE] border-[#BBBBBB]'
                         }`}></div>
 
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
-                        <h4 className={`text-sm font-semibold ${item.completed ? 'text-white' : 'text-slate-500'}`}>
+                        <h4 className={`text-sm font-semibold ${item.completed ? 'text-[#222222]' : 'text-[#777777]'}`}>
                             {item.status}
                         </h4>
-                        <span className="text-xs font-mono text-slate-500 bg-slate-900/50 px-2 py-0.5 rounded border border-white/5">
+                        <span className="text-xs font-mono text-[#555555] bg-[#F5F5F5] px-2 py-0.5 rounded border border-[#DDDDDD]">
                             {item.date}
                         </span>
                     </div>
-                    <p className="text-sm text-slate-400">{item.location}</p>
+                    <p className="text-sm text-[#555555]">{item.location}</p>
                 </motion.div>
             ))}
         </div>

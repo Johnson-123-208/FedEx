@@ -26,8 +26,10 @@ const ManagerDashboard = () => {
     const [loading, setLoading] = useState(true);
 
     const handleSignOut = async () => {
-        await signOut();
-        navigate('/login');
+        if (window.confirm("Are you sure you want to log out?")) {
+            await signOut();
+            navigate('/login');
+        }
     };
 
     // Fetch real metrics from API
@@ -95,18 +97,18 @@ const ManagerDashboard = () => {
     }
 
     return (
-        <div className="container mx-auto px-4 py-8 text-slate-300">
+        <div className="w-full px-6 py-8 text-slate-700">
             {/* Header Area */}
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
                 <motion.div
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                 >
-                    <h1 className="text-3xl font-bold text-white mb-2 font-display">Manager Dashboard</h1>
-                    <p className="text-slate-400">Executive overview and operational metrics.</p>
+                    <h1 className="text-3xl font-bold text-[#222222] mb-2 font-display">Manager Dashboard</h1>
+                    <p className="text-slate-500">Executive overview and operational metrics.</p>
                 </motion.div>
                 <div className="flex gap-3">
-                    <button onClick={handleSignOut} className="px-4 py-2 rounded-lg border border-red-500/30 text-red-400 hover:bg-red-500/10 transition-colors text-sm font-medium">
+                    <button onClick={handleSignOut} className="px-4 py-2 rounded-lg border border-red-500/30 text-red-500 hover:bg-red-500/10 transition-colors text-sm font-medium">
                         Logout
                     </button>
                     <button className="btn-secondary text-sm">Review Alerts</button>
@@ -159,39 +161,39 @@ const ManagerDashboard = () => {
             >
                 {/* Metric Card 1 */}
                 <div className="glass-card p-6 relative overflow-hidden group">
-                    <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity text-slate-900">
                         <span className="text-6xl">📈</span>
                     </div>
-                    <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-4">Daily Average</h3>
-                    <div className="text-4xl font-bold text-white mb-2 font-display">342</div>
+                    <h3 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">Daily Average</h3>
+                    <div className="text-4xl font-bold text-[#222222] mb-2 font-display">342</div>
                     <p className="text-sm text-slate-500 mb-4">Shipments per day</p>
-                    <div className="flex items-center text-emerald-400 text-sm font-medium">
+                    <div className="flex items-center text-emerald-600 text-sm font-medium">
                         <span>↑ 15% from last week</span>
                     </div>
                 </div>
 
                 {/* Metric Card 2 */}
                 <div className="glass-card p-6 relative overflow-hidden group">
-                    <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity text-slate-900">
                         <span className="text-6xl">⏰</span>
                     </div>
-                    <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-4">Peak Activity</h3>
-                    <div className="text-4xl font-bold text-white mb-2 font-display">10AM - 2PM</div>
+                    <h3 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">Peak Activity</h3>
+                    <div className="text-4xl font-bold text-[#222222] mb-2 font-display">10AM - 2PM</div>
                     <p className="text-sm text-slate-500 mb-4">Highest volume period</p>
-                    <div className="flex items-center text-brand-400 text-sm font-medium">
+                    <div className="flex items-center text-brand-600 text-sm font-medium">
                         <span>456 shipments/hour max</span>
                     </div>
                 </div>
 
                 {/* Metric Card 3 */}
                 <div className="glass-card p-6 relative overflow-hidden group">
-                    <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity text-slate-900">
                         <span className="text-6xl">🏆</span>
                     </div>
-                    <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-4">Top Region</h3>
-                    <div className="text-4xl font-bold text-white mb-2 font-display">South</div>
+                    <h3 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">Top Region</h3>
+                    <div className="text-4xl font-bold text-[#222222] mb-2 font-display">South</div>
                     <p className="text-sm text-slate-500 mb-4">Best performing zone</p>
-                    <div className="flex items-center text-emerald-400 text-sm font-medium">
+                    <div className="flex items-center text-emerald-600 text-sm font-medium">
                         <span>96% efficiency rate</span>
                     </div>
                 </div>
@@ -205,7 +207,7 @@ const ManagerDashboard = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.3 }}
                 >
-                    <h3 className="text-lg font-bold text-white mb-6 font-display">Monthly Performance Trends</h3>
+                    <h3 className="text-lg font-bold text-[#222222] mb-6 font-display">Monthly Performance Trends</h3>
                     <PerformanceChart data={monthlyPerformance} />
                 </motion.div>
 
@@ -215,7 +217,7 @@ const ManagerDashboard = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.3 }}
                 >
-                    <h3 className="text-lg font-bold text-white mb-6 font-display">Delivery Status Breakdown</h3>
+                    <h3 className="text-lg font-bold text-[#222222] mb-6 font-display">Delivery Status Breakdown</h3>
                     <StatusPieChart data={deliveryStatusBreakdown} />
                 </motion.div>
             </div>
@@ -227,7 +229,7 @@ const ManagerDashboard = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
             >
-                <h3 className="text-lg font-bold text-white mb-6 font-display">Regional Performance Comparison</h3>
+                <h3 className="text-lg font-bold text-[#222222] mb-6 font-display">Regional Performance Comparison</h3>
                 <RegionChart data={regionPerformance} />
             </motion.div>
 
@@ -238,11 +240,11 @@ const ManagerDashboard = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
             >
-                <div className="p-6 border-b border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4">
-                    <h3 className="text-lg font-bold text-white font-display">Top Employee Performance</h3>
+                <div className="p-6 border-b border-[#EEEEEE] flex flex-col sm:flex-row justify-between items-center gap-4">
+                    <h3 className="text-lg font-bold text-[#222222] font-display">Top Employee Performance</h3>
                     <div className="flex gap-3">
-                        <button className="text-xs font-medium text-slate-400 hover:text-white transition-colors">Export CSV</button>
-                        <button className="text-xs font-medium text-brand-400 hover:text-brand-300 transition-colors">View All</button>
+                        <button className="text-xs font-medium text-slate-500 hover:text-brand-500 transition-colors">Export CSV</button>
+                        <button className="text-xs font-medium text-brand-500 hover:text-brand-600 transition-colors">View All</button>
                     </div>
                 </div>
                 <div className="p-6">
@@ -259,27 +261,27 @@ const ManagerDashboard = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Key Insights */}
                 <div className="glass-card p-6">
-                    <h3 className="text-lg font-bold text-white mb-6 font-display">AI Insights</h3>
+                    <h3 className="text-lg font-bold text-[#222222] mb-6 font-display">AI Insights</h3>
                     <div className="space-y-4">
                         <div className="flex gap-4 p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/20">
-                            <div className="text-emerald-400 text-xl">✅</div>
+                            <div className="text-emerald-500 text-xl">✅</div>
                             <div>
-                                <h4 className="font-semibold text-emerald-100">On-Time Performance</h4>
-                                <p className="text-sm text-emerald-200/70">Delivery punctuality increased by 2.1% this month.</p>
+                                <h4 className="font-semibold text-emerald-800">On-Time Performance</h4>
+                                <p className="text-sm text-emerald-700/70">Delivery punctuality increased by 2.1% this month.</p>
                             </div>
                         </div>
                         <div className="flex gap-4 p-4 rounded-xl bg-blue-500/10 border border-blue-500/20">
-                            <div className="text-blue-400 text-xl">📊</div>
+                            <div className="text-blue-500 text-xl">📊</div>
                             <div>
-                                <h4 className="font-semibold text-blue-100">South Region Leading</h4>
-                                <p className="text-sm text-blue-200/70">Maintains highest efficiency at 96% for 3 consecutive months.</p>
+                                <h4 className="font-semibold text-blue-800">South Region Leading</h4>
+                                <p className="text-sm text-blue-700/70">Maintains highest efficiency at 96% for 3 consecutive months.</p>
                             </div>
                         </div>
                         <div className="flex gap-4 p-4 rounded-xl bg-amber-500/10 border border-amber-500/20">
-                            <div className="text-amber-400 text-xl">⚠️</div>
+                            <div className="text-amber-500 text-xl">⚠️</div>
                             <div>
-                                <h4 className="font-semibold text-amber-100">Capacity Warning</h4>
-                                <p className="text-sm text-amber-200/70">East region approaching max capacity during peak hours.</p>
+                                <h4 className="font-semibold text-amber-800">Capacity Warning</h4>
+                                <p className="text-sm text-amber-700/70">East region approaching max capacity during peak hours.</p>
                             </div>
                         </div>
                     </div>
@@ -287,23 +289,23 @@ const ManagerDashboard = () => {
 
                 {/* Quick Actions */}
                 <div className="glass-card p-6">
-                    <h3 className="text-lg font-bold text-white mb-6 font-display">Quick Actions</h3>
+                    <h3 className="text-lg font-bold text-[#222222] mb-6 font-display">Quick Actions</h3>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <button className="p-4 rounded-xl bg-slate-800/50 hover:bg-brand-600/20 hover:border-brand-500/30 border border-white/5 transition-all text-left group">
+                        <button className="p-4 rounded-xl bg-[#F5F5F5] hover:bg-white hover:border-brand-500 border border-[#EEEEEE] transition-all text-left group shadow-sm">
                             <span className="text-2xl mb-2 block group-hover:scale-110 transition-transform">📋</span>
-                            <span className="font-semibold text-slate-200 group-hover:text-white">Generate Report</span>
+                            <span className="font-semibold text-slate-700 group-hover:text-brand-500">Generate Report</span>
                         </button>
-                        <button className="p-4 rounded-xl bg-slate-800/50 hover:bg-brand-600/20 hover:border-brand-500/30 border border-white/5 transition-all text-left group">
+                        <button className="p-4 rounded-xl bg-[#F5F5F5] hover:bg-white hover:border-brand-500 border border-[#EEEEEE] transition-all text-left group shadow-sm">
                             <span className="text-2xl mb-2 block group-hover:scale-110 transition-transform">👥</span>
-                            <span className="font-semibold text-slate-200 group-hover:text-white">Manage Team</span>
+                            <span className="font-semibold text-slate-700 group-hover:text-brand-500">Manage Team</span>
                         </button>
-                        <button className="p-4 rounded-xl bg-slate-800/50 hover:bg-brand-600/20 hover:border-brand-500/30 border border-white/5 transition-all text-left group">
+                        <button className="p-4 rounded-xl bg-[#F5F5F5] hover:bg-white hover:border-brand-500 border border-[#EEEEEE] transition-all text-left group shadow-sm">
                             <span className="text-2xl mb-2 block group-hover:scale-110 transition-transform">⚙️</span>
-                            <span className="font-semibold text-slate-200 group-hover:text-white">System Settings</span>
+                            <span className="font-semibold text-slate-700 group-hover:text-brand-500">System Settings</span>
                         </button>
-                        <button className="p-4 rounded-xl bg-slate-800/50 hover:bg-brand-600/20 hover:border-brand-500/30 border border-white/5 transition-all text-left group">
+                        <button className="p-4 rounded-xl bg-[#F5F5F5] hover:bg-white hover:border-brand-500 border border-[#EEEEEE] transition-all text-left group shadow-sm">
                             <span className="text-2xl mb-2 block group-hover:scale-110 transition-transform">📧</span>
-                            <span className="font-semibold text-slate-200 group-hover:text-white">Announcements</span>
+                            <span className="font-semibold text-slate-700 group-hover:text-brand-500">Announcements</span>
                         </button>
                     </div>
                 </div>

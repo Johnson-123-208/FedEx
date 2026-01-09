@@ -9,8 +9,7 @@ const Header = () => {
     const navItems = [
         { path: '/', label: 'Home' },
         { path: '/track', label: 'Track Shipment' },
-        { path: '/employee-dashboard', label: 'Employee Hub' },
-        { path: '/manager-dashboard', label: 'Manager Portal' },
+        { path: '/providers', label: 'Service Providers' },
     ];
 
     return (
@@ -60,6 +59,15 @@ const Header = () => {
                                     </Link>
                                 );
                             })}
+
+                            {/* Login Button */}
+                            <div className="ml-2 pl-2 border-l border-white/20">
+                                <Link to="/login">
+                                    <div className="px-6 py-2 rounded-lg text-sm font-bold bg-white text-brand-600 hover:bg-brand-50 transition-all shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 whitespace-nowrap">
+                                        Dashboard Login
+                                    </div>
+                                </Link>
+                            </div>
                         </nav>
 
                         {/* Mobile Menu Button */}
@@ -124,6 +132,19 @@ const Header = () => {
                                         </motion.div>
                                     </Link>
                                 ))}
+
+                                <div className="h-px bg-white/10 my-2"></div>
+
+                                <Link to="/login" onClick={() => setMobileMenuOpen(false)}>
+                                    <motion.div
+                                        initial={{ x: 20, opacity: 0 }}
+                                        animate={{ x: 0, opacity: 1 }}
+                                        transition={{ delay: 0.2 }}
+                                        className="p-3 rounded-lg text-sm font-bold bg-white text-brand-900 text-center"
+                                    >
+                                        Dashboard Login
+                                    </motion.div>
+                                </Link>
                             </nav>
                         </motion.div>
                     </>

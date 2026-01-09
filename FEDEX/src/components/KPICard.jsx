@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 const KPICard = ({ title, value, icon, trend, trendValue, color = 'blue' }) => {
     // Map existing colors to our new brand/slate palette for consistency
     const colorState = {
-        blue: { bg: 'bg-brand-500/10', text: 'text-brand-400', border: 'border-brand-500/20' },
-        green: { bg: 'bg-emerald-500/10', text: 'text-emerald-400', border: 'border-emerald-500/20' },
-        yellow: { bg: 'bg-amber-500/10', text: 'text-amber-400', border: 'border-amber-500/20' },
-        red: { bg: 'bg-rose-500/10', text: 'text-rose-400', border: 'border-rose-500/20' },
-        purple: { bg: 'bg-indigo-500/10', text: 'text-indigo-400', border: 'border-indigo-500/20' },
-    }[color] || { bg: 'bg-brand-500/10', text: 'text-brand-400', border: 'border-brand-500/20' };
+        blue: { bg: 'bg-brand-500/10', text: 'text-brand-600', border: 'border-brand-500/20' },
+        green: { bg: 'bg-emerald-500/10', text: 'text-emerald-600', border: 'border-emerald-500/20' },
+        yellow: { bg: 'bg-amber-500/10', text: 'text-amber-600', border: 'border-amber-500/20' },
+        red: { bg: 'bg-rose-500/10', text: 'text-rose-600', border: 'border-rose-500/20' },
+        purple: { bg: 'bg-indigo-500/10', text: 'text-indigo-600', border: 'border-indigo-500/20' },
+    }[color] || { bg: 'bg-brand-500/10', text: 'text-brand-600', border: 'border-brand-500/20' };
 
     return (
         <motion.div

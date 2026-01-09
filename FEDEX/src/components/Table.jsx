@@ -187,14 +187,14 @@ const Table = ({ data, columns, sortable = true, filterable = false }) => {
                         <button
                             onClick={() => goToPage(currentPage + 1)}
                             disabled={currentPage === totalPages}
-                            className="px-3 py-2 rounded-lg bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+                            className="px-3 py-2 rounded-lg bg-white border border-[#EEEEEE] text-[#555555] hover:bg-[#F5F5F5] hover:text-[#222222] disabled:opacity-30 disabled:cursor-not-allowed transition-all"
                         >
                             ›
                         </button>
                         <button
                             onClick={() => goToPage(totalPages)}
                             disabled={currentPage === totalPages}
-                            className="px-3 py-2 rounded-lg bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+                            className="px-3 py-2 rounded-lg bg-white border border-[#EEEEEE] text-[#555555] hover:bg-[#F5F5F5] hover:text-[#222222] disabled:opacity-30 disabled:cursor-not-allowed transition-all"
                         >
                             »»
                         </button>

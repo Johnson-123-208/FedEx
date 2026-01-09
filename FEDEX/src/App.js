@@ -8,11 +8,13 @@ import DashboardLayout from './components/layout/DashboardLayout';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import TrackShipment from './pages/TrackShipment';
+import ServiceProviders from './pages/ServiceProviders';
 
 // Employee Pages
 import EmployeeDashboard from './dashboards/EmployeeDashboard';
 import MyShipments from './pages/employee/MyShipments';
 import Profile from './pages/employee/Profile';
+import BulkUpload from './pages/employee/BulkUpload';
 
 // Manager Pages
 import ManagerDashboard from './dashboards/ManagerDashboard';
@@ -38,6 +40,7 @@ const AnimatedRoutes = () => {
                 <Route path="/" element={<Layout><Home /></Layout>} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/track" element={<Layout><TrackShipment /></Layout>} />
+                <Route path="/providers" element={<Layout><ServiceProviders /></Layout>} />
 
                 {/* Protected Employee Routes */}
                 <Route
@@ -66,6 +69,16 @@ const AnimatedRoutes = () => {
                         <ProtectedRoute>
                             <DashboardLayout role="employee">
                                 <Profile />
+                            </DashboardLayout>
+                        </ProtectedRoute>
+                    }
+                />
+                <Route
+                    path="/employee/bulk-upload"
+                    element={
+                        <ProtectedRoute>
+                            <DashboardLayout role="employee">
+                                <BulkUpload />
                             </DashboardLayout>
                         </ProtectedRoute>
                     }

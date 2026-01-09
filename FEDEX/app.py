@@ -88,19 +88,8 @@ except ImportError:
 
 app = Flask(__name__)
 
-# Configure CORS to allow your frontend domains
-CORS(app, resources={
-    r"/*": {
-        "origins": [
-            "http://localhost:3000",  # Local development
-            "https://fedex-3oat.onrender.com",  # Backend itself
-            "https://fed-ex-red.vercel.app",  # Your Vercel deployment
-            "https://fed-ex-git-main-johnsons-projects-48b4824b.vercel.app"  # Vercel preview
-        ],
-        "methods": ["GET", "POST", "OPTIONS"],
-        "allow_headers": ["Content-Type"]
-    }
-})
+# Configure CORS to allow all origins for now to prevent connection issues
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 driver = None
 driver_lock = threading.Lock()

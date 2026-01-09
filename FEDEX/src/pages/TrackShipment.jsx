@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Timeline from '../components/Timeline';
-import ShipmentMap from '../maps/ShipmentMap';
+import ShipmentTracker from '../components/ShipmentTracker';
 import StatusBadge from '../components/StatusBadge';
 
 const PROVIDERS = ['FedEx', 'DHL', 'Atlantic', 'Courier Wala', 'ICL', 'PXC Pacific', 'United Express'];
@@ -21,11 +20,14 @@ const TrackShipment = () => {
         setSearchResult(null);
 
         try {
-            // Use production backend URL, fallback to localhost only in development
+            // Priority: Env Var > Hardcoded Production > Localhost fallback
+            // NOTE: Please verify this URL matches your Render deployment exactly
+            const prodUrl = 'https://fedex-3oal.onrender.com';
+
             const apiUrl = process.env.REACT_APP_API_URL ||
                 (window.location.hostname === 'localhost'
                     ? 'http://localhost:5000'
-                    : 'https://fedex-3oat.onrender.com');
+                    : prodUrl);
 
             console.log(`API URL: ${apiUrl}`);
             console.log(`Fetching ${selectedProvider} details for ${awbNumber}...`);
@@ -54,8 +56,8 @@ const TrackShipment = () => {
                 setError(data.error || 'Shipment not found or API error.');
             }
         } catch (err) {
-            console.error("Tracking Error:", err);
-            setError('Failed to connect to tracking server. Is app.py running?');
+            console.error("Tracking Error Detailed:", err);
+            setError(`Failed to connect to tracking server (${window.location.hostname === 'localhost' ? 'Local' : 'Remote'}). Is the backend running?`);
         } finally {
             setSearching(false);
         }
@@ -124,7 +126,7 @@ const TrackShipment = () => {
                                 <div className="flex items-center gap-4">
                                     <div>
                                         <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">AWB Number</p>
-                                        <p className="text-xl font-display font-bold text-white">{searchResult.awb}</p>
+                                        <p className="text-xl font-display font-bold text-[#222222]">{searchResult.awb}</p>
                                     </div>
                                     <StatusBadge status={searchResult.status} size="md" />
                                 </div>
@@ -132,81 +134,41 @@ const TrackShipment = () => {
                                 {/* Service */}
                                 <div>
                                     <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Service</p>
-                                    <p className="text-white font-semibold">{searchResult.service}</p>
+                                    <p className="text-[#222222] font-semibold">{searchResult.service}</p>
                                 </div>
 
                                 {/* Origin */}
                                 <div>
                                     <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">From</p>
-                                    <p className="text-white font-semibold">{searchResult.origin || '-'}</p>
+                                    <p className="text-[#222222] font-semibold">{searchResult.origin || '-'}</p>
                                 </div>
 
                                 {/* Destination */}
                                 <div>
                                     <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">To</p>
-                                    <p className="text-white font-semibold">{searchResult.destination || '-'}</p>
+                                    <p className="text-[#222222] font-semibold">{searchResult.destination || '-'}</p>
                                 </div>
 
                                 {/* Weight */}
                                 <div>
                                     <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Weight</p>
-                                    <p className="text-white font-mono">{searchResult.weight || '-'} kg</p>
+                                    <p className="text-[#222222] font-mono">{searchResult.weight || '-'} kg</p>
                                 </div>
 
                                 {/* Est. Delivery */}
                                 <div>
                                     <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Est. Delivery</p>
-                                    <p className="text-brand-300 font-semibold">{searchResult.estimatedDelivery || '-'}</p>
+                                    <p className="text-brand-600 font-semibold">{searchResult.estimatedDelivery || '-'}</p>
                                 </div>
                             </div>
                         </div>
 
-                        {/* MAP & TIMELINE GRID */}
-                        <div className="grid lg:grid-cols-3 gap-6">
-                            {/* Timeline Column */}
-                            <div className="lg:col-span-1">
-                                <div className="glass-card p-6 h-[600px] overflow-y-auto custom-scrollbar">
-                                    <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-6 sticky top-0 bg-slate-900/95 backdrop-blur-sm pb-2 -mx-6 px-6">
-                                        Tracking History
-                                    </h3>
-                                    <Timeline timeline={searchResult.timeline} />
-                                </div>
-                            </div>
 
-                            {/* Map Column */}
-                            <div className="lg:col-span-2 relative">
-                                <div className={`
-                                    glass-card p-0 border-0 overflow-hidden transition-all duration-300
-                                    ${isFullScreen ? 'fixed inset-0 z-[9999] m-0 rounded-none' : 'rounded-2xl h-[600px]'}
-                                `}>
-                                    {/* Full Screen Toggle Button */}
-                                    <button
-                                        onClick={() => setIsFullScreen(!isFullScreen)}
-                                        className="absolute top-4 right-4 z-[10000] bg-slate-900/90 hover:bg-white text-white hover:text-slate-900 p-3 rounded-lg backdrop-blur-md border border-white/10 shadow-xl transition-all group"
-                                        title={isFullScreen ? "Exit Full Screen" : "View Full Screen"}
-                                    >
-                                        {isFullScreen ? (
-                                            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                                            </svg>
-                                        ) : (
-                                            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
-                                            </svg>
-                                        )}
-                                    </button>
-
-                                    {/* Map Container */}
-                                    <div className="w-full h-full bg-slate-900">
-                                        <ShipmentMap
-                                            shipment={searchResult}
-                                            animated={true}
-                                            isFullScreen={isFullScreen}
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {/* INTEGRATED TRACKING SYSTEM */}
+                        <ShipmentTracker
+                            shipment={searchResult}
+                            isFullScreen={isFullScreen}
+                        />
                     </motion.div>
                 )}
             </AnimatePresence>
