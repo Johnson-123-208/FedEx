@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 /**
@@ -7,12 +7,27 @@ import { motion } from 'framer-motion';
  */
 const Header = () => {
     const location = useLocation();
+    const navigate = useNavigate();
+
+    // Check if user is on a dashboard
+    const isOnDashboard = location.pathname.includes('dashboard');
+
+    const handleHomeClick = (e) => {
+        if (isOnDashboard) {
+            // Logout: Clear any auth tokens/session
+            localStorage.removeItem('isAuthenticated');
+            localStorage.removeItem('userRole');
+            sessionStorage.clear();
+            // Navigate to home
+            navigate('/');
+        }
+    };
 
     const navItems = [
-        { path: '/', label: 'Home' },
+        { path: '/', label: 'Home', onClick: handleHomeClick },
         { path: '/track', label: 'Track Shipment' },
-        { path: '/employee-dashboard', label: 'Employee' },
-        { path: '/manager-dashboard', label: 'Manager' },
+        { path: '/service-providers', label: 'Service Providers' },
+        { path: '/login', label: 'Dashboard Login' }, // This will require login
     ];
 
     return (
@@ -43,6 +58,7 @@ const Header = () => {
                             <Link
                                 key={item.path}
                                 to={item.path}
+                                onClick={item.onClick}
                             >
                                 <motion.div
                                     whileHover={{ scale: 1.02 }}
@@ -75,6 +91,7 @@ const Header = () => {
                         <Link
                             key={item.path}
                             to={item.path}
+                            onClick={item.onClick}
                         >
                             <div
                                 className={`
