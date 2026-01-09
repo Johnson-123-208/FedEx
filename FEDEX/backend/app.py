@@ -6,6 +6,10 @@ import threading
 import traceback
 import sys
 import os
+from dotenv import load_dotenv
+
+# Load environment variables for FedEx API
+load_dotenv()
 
 # Add current dir to path just in case
 sys.path.append(os.getcwd())
@@ -67,9 +71,18 @@ except ImportError:
     print("Could not import DHL script")
     
 try:
-    from update_fedex_tracking import get_fedex_tracking_details
+    # Use new FedEx REST API instead of Selenium
+    from fedex_api import track_shipment as fedex_track_shipment
+    USE_FEDEX_API = True
+    print("✓ FedEx REST API loaded successfully")
 except ImportError:
-    print("Could not import FedEx script")
+    USE_FEDEX_API = False
+    try:
+        # Fallback to old Selenium method
+        from update_fedex_tracking import get_fedex_tracking_details
+        print("⚠️ Using legacy Selenium FedEx tracking (API not available)")
+    except ImportError:
+        print("Could not import FedEx tracking")
 
 try:
     from update_icl_tracking import get_icl_tracking_details
@@ -184,7 +197,38 @@ def track():
             elif provider == 'DHL':
                 result = get_dhl_tracking_details(awb, drv)
             elif provider == 'FedEx':
-                result = get_fedex_tracking_details(awb, drv)
+                if USE_FEDEX_API:
+                    # Use new REST API (no Selenium driver needed)
+                    api_result = fedex_track_shipment(awb)
+                    
+                    # Transform API response to match expected format
+                    if api_result.get('success'):
+                        result = {
+                            "awb": awb,
+                            "status": api_result.get('status', 'Unknown'),
+                            "origin": f"{api_result.get('origin', {}).get('city', '')}, {api_result.get('origin', {}).get('state', '')}".strip(', '),
+                            "destination": f"{api_result.get('destination', {}).get('city', '')}, {api_result.get('destination', {}).get('state', '')}".strip(', '),
+                            "timeline": [
+                                {
+                                    "date_time": event.get('timestamp', ''),
+                                    "activity": event.get('status', ''),
+                                    "location": f"{event.get('location', {}).get('city', '')}, {event.get('location', {}).get('state', '')}".strip(', ')
+                                }
+                                for event in api_result.get('events', [])
+                            ]
+                        }
+                    else:
+                        result = {
+                            "awb": awb,
+                            "status": "Error",
+                            "origin": "",
+                            "destination": "",
+                            "timeline": [],
+                            "error": api_result.get('error', 'Unknown error')
+                        }
+                else:
+                    # Fallback to Selenium
+                    result = get_fedex_tracking_details(awb, drv)
             elif provider == 'ICL':
                 result = get_icl_tracking_details(awb, drv)
             elif provider == 'PXC Pacific':
