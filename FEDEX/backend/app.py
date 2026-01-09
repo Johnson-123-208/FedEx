@@ -89,7 +89,14 @@ except ImportError:
 app = Flask(__name__)
 
 # Configure CORS to allow all origins for now to prevent connection issues
-CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app, resources={
+    r"/*": {
+        "origins": "*",
+        "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        "allow_headers": ["Content-Type", "Authorization"],
+        "supports_credentials": False
+    }
+})
 
 driver = None
 driver_lock = threading.Lock()
