@@ -107,25 +107,47 @@ driver_lock = threading.Lock()
 
 def get_driver():
     global driver
-    if driver is None:
-        print("Initializing Global Chrome Driver...")
-        chrome_options = Options()
-        # Use new headless mode (harder to detect)
-        chrome_options.add_argument('--headless=new')
-        chrome_options.add_argument('--disable-gpu')
-        chrome_options.add_argument('--no-sandbox')
-        chrome_options.add_argument('--window-size=1920,1080')
-        # Stealth mode settings
-        chrome_options.add_argument('--disable-blink-features=AutomationControlled')
-        chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
-        chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
-        chrome_options.add_experimental_option('useAutomationExtension', False)
-        
+    try:
+        # Test if existing driver is still alive
+        if driver is not None:
+            driver.current_url  # This will throw if driver is dead
+            return driver
+    except:
+        print("Driver is dead, recreating...")
+        driver = None
+    
+    print("Initializing Chrome Driver...")
+    chrome_options = Options()
+    
+    # Headless mode
+    chrome_options.add_argument('--headless=new')
+    chrome_options.add_argument('--disable-gpu')
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument('--disable-dev-shm-usage')  # Important for Docker
+    chrome_options.add_argument('--disable-software-rasterizer')
+    chrome_options.add_argument('--window-size=1920,1080')
+    
+    # Memory optimization
+    chrome_options.add_argument('--disable-extensions')
+    chrome_options.add_argument('--disable-setuid-sandbox')
+    chrome_options.add_argument('--single-process')  # Use single process
+    chrome_options.add_argument('--disable-dev-tools')
+    
+    # Stealth mode
+    chrome_options.add_argument('--disable-blink-features=AutomationControlled')
+    chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
+    chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    chrome_options.add_experimental_option('useAutomationExtension', False)
+    
+    try:
         driver = webdriver.Chrome(options=chrome_options)
-        
         # Hide webdriver flag
         driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-    return driver
+        print("✅ Chrome driver initialized successfully")
+        return driver
+    except Exception as e:
+        print(f"❌ Failed to initialize Chrome driver: {str(e)}")
+        raise
 
 @app.route('/', methods=['GET'])
 def health_check():
@@ -249,8 +271,27 @@ def track():
             return jsonify(response)
             
     except Exception as e:
+        error_msg = str(e)
+        print(f"❌ Tracking Error: {error_msg}")
         traceback.print_exc()
-        return jsonify({"error": str(e)}), 500
+        
+        # If it's a Selenium error, reset the driver
+        if 'invalid session id' in error_msg.lower() or 'session deleted' in error_msg.lower():
+            print("🔄 Selenium session error detected, resetting driver...")
+            global driver
+            try:
+                if driver:
+                    driver.quit()
+            except:
+                pass
+            driver = None
+            
+        return jsonify({
+            "error": "Tracking failed",
+            "message": error_msg,
+            "awb": awb,
+            "provider": provider
+        }), 500
 
 @app.route('/api/shipments', methods=['GET'])
 def get_shipments():
