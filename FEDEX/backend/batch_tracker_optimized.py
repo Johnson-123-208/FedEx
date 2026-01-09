@@ -2,7 +2,7 @@
 """
 OPTIMIZED BATCH TRACKING SYSTEM
 Target: Process 250 rows in <10 minutes
-Strategy: Provider-based parallelization with smart bot evasion
+Strategy: Provider-based parallelization with smart bot evasion + FedEx REST API
 """
 
 import pandas as pd
@@ -17,15 +17,28 @@ from selenium.webdriver.chrome.options import Options
 import traceback
 import os
 from collections import defaultdict
+from dotenv import load_dotenv
+
+# Load environment variables for FedEx API
+load_dotenv()
 
 # Import all tracking modules
 from update_atlantic_tracking import get_atlantic_tracking_details
 from update_courierwala_tracking import get_courierwala_tracking_details
 from update_dhl_tracking import get_dhl_tracking_details
-from update_fedex_tracking import get_fedex_tracking_details
+from update_fedex_tracking import get_fedex_tracking_details  # Selenium fallback
 from update_icl_tracking import get_icl_tracking_details
 from update_pxc_tracking import get_pxc_tracking_details
 from update_united_tracking import get_united_tracking_details
+
+# Try to import FedEx REST API
+try:
+    from fedex_api import track_shipment as fedex_api_track
+    USE_FEDEX_API = True
+    print("✓ FedEx REST API enabled for batch processing")
+except ImportError:
+    USE_FEDEX_API = False
+    print("⚠️ FedEx REST API not available, using Selenium fallback")
 
 # Provider mapping - handles all Excel variations
 def get_provider_function(provider_name):
@@ -126,17 +139,45 @@ def create_driver(headless=True):
     
     return driver
 
-def process_single_shipment(row_data, provider_func, driver, progress):
+def process_single_shipment(row_data, provider_func, driver, progress, is_fedex=False):
     """Process a single shipment"""
     awb = row_data['awb']
     provider = row_data['provider']
     
     try:
         # Random delay to mimic human behavior (0.5-2 seconds)
-        time.sleep(random.uniform(0.5, 2.0))
+        # Skip delay for FedEx API since it's not browser-based
+        if not is_fedex or not USE_FEDEX_API:
+            time.sleep(random.uniform(0.5, 2.0))
         
-        result = provider_func(awb, driver)
-        status = result.get('status', 'Unknown')
+        # Use FedEx REST API if available
+        if is_fedex and USE_FEDEX_API:
+            api_result = fedex_api_track(awb)
+            
+            # Transform API response to standard format
+            if api_result.get('success'):
+                result = {
+                    'awb': awb,
+                    'status': api_result.get('status', 'Unknown'),
+                    'origin': f"{api_result.get('origin', {}).get('city', '')}, {api_result.get('origin', {}).get('state', '')}".strip(', '),
+                    'destination': f"{api_result.get('destination', {}).get('city', '')}, {api_result.get('destination', {}).get('state', '')}".strip(', '),
+                    'timeline': [
+                        {
+                            'date_time': event.get('timestamp', ''),
+                            'activity': event.get('status', ''),
+                            'location': f"{event.get('location', {}).get('city', '')}, {event.get('location', {}).get('state', '')}".strip(', ')
+                        }
+                        for event in api_result.get('events', [])
+                    ]
+                }
+                status = result['status']
+            else:
+                result = {'awb': awb, 'status': 'Error', 'error': api_result.get('error', 'API Error')}
+                status = 'Error'
+        else:
+            # Use Selenium for non-FedEx or fallback
+            result = provider_func(awb, driver)
+            status = result.get('status', 'Unknown')
         
         progress.update(success=True)
         
@@ -164,7 +205,15 @@ def process_single_shipment(row_data, provider_func, driver, progress):
 
 def process_provider_batch(provider_name, shipments, progress, workers_per_provider=3):
     """Process all shipments for a single provider with multiple workers"""
-    print(f"\n🔷 Starting {provider_name}: {len(shipments)} shipments with {workers_per_provider} workers")
+    is_fedex = 'FEDEX' in provider_name.upper() and 'ICL' not in provider_name.upper()
+    
+    # FedEx API doesn't need parallel drivers - use sequential processing
+    if is_fedex and USE_FEDEX_API:
+        print(f"\n� Starting {provider_name}: {len(shipments)} shipments via REST API (no Selenium)")
+        workers = 1  # API calls are fast, don't need parallelization
+    else:
+        print(f"\n�🔷 Starting {provider_name}: {len(shipments)} shipments with {workers_per_provider} workers")
+        workers = workers_per_provider
     
     try:
         provider_func = get_provider_function(provider_name)
@@ -174,17 +223,20 @@ def process_provider_batch(provider_name, shipments, progress, workers_per_provi
     
     results = []
     
-    # Create multiple drivers for this provider
-    drivers = [create_driver() for _ in range(workers_per_provider)]
+    # Create drivers only if needed (not for FedEx API)
+    if is_fedex and USE_FEDEX_API:
+        drivers = [None]  # No driver needed for API
+    else:
+        drivers = [create_driver() for _ in range(workers)]
     
     try:
-        with ThreadPoolExecutor(max_workers=workers_per_provider) as executor:
+        with ThreadPoolExecutor(max_workers=workers) as executor:
             futures = []
             
             for i, shipment in enumerate(shipments):
-                # Assign driver in round-robin fashion
-                driver = drivers[i % workers_per_provider]
-                future = executor.submit(process_single_shipment, shipment, provider_func, driver, progress)
+                # Assign driver in round-robin fashion (or None for FedEx API)
+                driver = drivers[i % workers]
+                future = executor.submit(process_single_shipment, shipment, provider_func, driver, progress, is_fedex)
                 futures.append(future)
             
             for future in as_completed(futures):
@@ -192,12 +244,13 @@ def process_provider_batch(provider_name, shipments, progress, workers_per_provi
                 results.append(result)
     
     finally:
-        # Clean up drivers
+        # Clean up drivers (skip None for FedEx API)
         for driver in drivers:
-            try:
-                driver.quit()
-            except:
-                pass
+            if driver is not None:
+                try:
+                    driver.quit()
+                except:
+                    pass
     
     return results
 
