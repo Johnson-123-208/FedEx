@@ -28,10 +28,8 @@ const TrackShipment = () => {
         setSearchResult(null);
 
         try {
-            // Priority: Env Var > Hardcoded Production
-            const prodUrl = 'https://fedex-backend-t4su.onrender.com';
-
-            const apiUrl = process.env.REACT_APP_API_URL || prodUrl;
+            // HARDCODED: Use new Render backend URL
+            const apiUrl = 'https://fedex-backend-t4su.onrender.com';
 
             console.log(`API URL: ${apiUrl}`);
             console.log(`Fetching ${selectedProvider} details for ${awbNumber}...`);
