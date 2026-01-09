@@ -38,20 +38,24 @@ class FedExTokenManager:
             self.client_secret = os.getenv('FEDEX_CLIENT_SECRET')
             self.mode = os.getenv('FEDEX_MODE', 'sandbox').lower()
             
-            # Validate credentials
+            # Validate credentials - WARN instead of FAIL
             if not self.client_id or not self.client_secret:
-                raise ValueError(
-                    "Missing FedEx credentials. "
-                    "Set FEDEX_CLIENT_ID and FEDEX_CLIENT_SECRET in .env"
+                logger.warning(
+                    "FedEx credentials not found in environment. "
+                    "FedEx tracking will not be available. "
+                    "Set FEDEX_CLIENT_ID and FEDEX_CLIENT_SECRET to enable."
                 )
-            
-            # Set OAuth endpoint based on mode
-            if self.mode == 'production':
-                self.oauth_url = 'https://apis.fedex.com/oauth/token'
+                self.credentials_available = False
             else:
-                self.oauth_url = 'https://apis-sandbox.fedex.com/oauth/token'
+                self.credentials_available = True
+                # Set OAuth endpoint based on mode
+                if self.mode == 'production':
+                    self.oauth_url = 'https://apis.fedex.com/oauth/token'
+                else:
+                    self.oauth_url = 'https://apis-sandbox.fedex.com/oauth/token'
+                
+                logger.info(f"FedEx Token Manager initialized in {self.mode.upper()} mode")
             
-            logger.info(f"FedEx Token Manager initialized in {self.mode.upper()} mode")
             self.initialized = True
     
     def get_access_token(self) -> str:
@@ -63,8 +67,15 @@ class FedExTokenManager:
             str: Valid OAuth access token
             
         Raises:
-            Exception: If token generation fails
+            Exception: If token generation fails or credentials not available
         """
+        # Check if credentials are available
+        if not hasattr(self, 'credentials_available') or not self.credentials_available:
+            raise Exception(
+                "FedEx API credentials not configured. "
+                "Set FEDEX_CLIENT_ID and FEDEX_CLIENT_SECRET in environment."
+            )
+        
         # Check if cached token is still valid
         if self._is_token_valid():
             logger.debug("Using cached access token")
