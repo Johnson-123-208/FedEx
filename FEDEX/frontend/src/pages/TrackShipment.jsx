@@ -28,14 +28,10 @@ const TrackShipment = () => {
         setSearchResult(null);
 
         try {
-            // Priority: Env Var > Hardcoded Production > Localhost fallback
-            // NOTE: Please verify this URL matches your Render deployment exactly
-            const prodUrl = 'https://fedex-3oal.onrender.com';
+            // Priority: Env Var > Hardcoded Production
+            const prodUrl = 'https://fedex-backend-t4su.onrender.com';
 
-            const apiUrl = process.env.REACT_APP_API_URL ||
-                (window.location.hostname === 'localhost'
-                    ? 'http://localhost:5000'
-                    : prodUrl);
+            const apiUrl = process.env.REACT_APP_API_URL || prodUrl;
 
             console.log(`API URL: ${apiUrl}`);
             console.log(`Fetching ${selectedProvider} details for ${awbNumber}...`);
