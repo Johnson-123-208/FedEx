@@ -1,17 +1,18 @@
 services:
   - type: web
     name: fedex-backend
-    env: python
+    runtime: docker
     region: oregon
     plan: free
-    buildCommand: |
-      chmod +x build.sh
-      ./build.sh
-      pip install -r requirements.txt
-    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
+    dockerfilePath: ./Dockerfile
+    dockerContext: ./
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.0
+      - key: GOOGLE_CHROME_BIN
+        value: /usr/bin/google-chrome
+      - key: CHROMEDRIVER_PATH
+        value: /usr/local/bin/chromedriver
       - key: PORT
         value: 10000
     healthCheckPath: /
